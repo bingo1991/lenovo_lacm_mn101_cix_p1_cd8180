@@ -34,6 +34,7 @@ The full table is in [docs/hardware.md](docs/hardware.md).
 | Path | Content |
 | --- | --- |
 | `acpi/` | ACPI tables. Raw, decompiled, and a text dump. |
+| `benchmarks/` | Performance run: raw logs, CSV, JSON and charts. |
 | `hardware/` | Command output from the running system. |
 | `dts/` | Device tree source, bindings, and `make` support. |
 | `docs/` | Hardware, ACPI and device tree documents. |
@@ -51,6 +52,17 @@ make
 The build needs `cpp` and `dtc`. It needs no kernel tree.
 
 Read the node sources in [docs/acpi-to-dt-mapping.md](docs/acpi-to-dt-mapping.md).
+
+## Performance
+
+The machine reached 2,790 events/s on one thread and 22,618 events/s on
+twelve threads in `sysbench cpu`. The NVMe reached 1,932 MiB/s sequential
+read and 273,257 IOPS random write. Peak SoC temperature under full load
+was 58 degC, with no throttling.
+
+Full report: [docs/performance.md](docs/performance.md). The charts are
+in [benchmarks/charts](benchmarks/charts), the raw logs in
+[benchmarks/raw](benchmarks/raw).
 
 ## How the data was collected
 

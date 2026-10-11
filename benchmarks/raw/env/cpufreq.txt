@@ -1,0 +1,25 @@
+== /sys/devices/system/cpu/cpufreq/policy0
+0 1
+schedutil
+800000
+2600000
+== /sys/devices/system/cpu/cpufreq/policy10
+10 11
+schedutil
+800000
+2500000
+== /sys/devices/system/cpu/cpufreq/policy2
+2 3 4 5
+schedutil
+800000
+1800000
+== /sys/devices/system/cpu/cpufreq/policy6
+6 7
+schedutil
+800000
+2300000
+== /sys/devices/system/cpu/cpufreq/policy8
+8 9
+schedutil
+800000
+2200000

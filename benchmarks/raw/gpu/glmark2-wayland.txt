@@ -1,0 +1,20 @@
+[desktop] effect=shadow:windows=4: FPS: 5479 FrameTime: 0.183 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 271 FrameTime: 3.691 ms
+[buffer] columns=200:interleave=false:update-dispersion=0.9:update-fraction=0.5:update-method=subdata: FPS: 297 FrameTime: 3.368 ms
+[buffer] columns=200:interleave=true:update-dispersion=0.9:update-fraction=0.5:update-method=map: FPS: 474 FrameTime: 2.110 ms
+[ideas] speed=duration: FPS: 947 FrameTime: 1.056 ms
+[jellyfish] <default>: FPS: 5032 FrameTime: 0.199 ms
+[terrain] <default>: FPS: 654 FrameTime: 1.530 ms
+[shadow] <default>: FPS: 4914 FrameTime: 0.204 ms
+[refract] <default>: FPS: 1057 FrameTime: 0.947 ms
+[conditionals] fragment-steps=0:vertex-steps=0: FPS: 7514 FrameTime: 0.133 ms
+[conditionals] fragment-steps=5:vertex-steps=0: FPS: 5953 FrameTime: 0.168 ms
+[conditionals] fragment-steps=0:vertex-steps=5: FPS: 6482 FrameTime: 0.154 ms
+[function] fragment-complexity=low:fragment-steps=5: FPS: 6769 FrameTime: 0.148 ms
+[function] fragment-complexity=medium:fragment-steps=5: FPS: 5403 FrameTime: 0.185 ms
+[loop] fragment-loop=false:fragment-steps=5:vertex-steps=5: FPS: 3514 FrameTime: 0.285 ms
+[loop] fragment-steps=5:fragment-uniform=false:vertex-steps=5: FPS: 5204 FrameTime: 0.192 ms
+[loop] fragment-steps=5:fragment-uniform=true:vertex-steps=5: FPS: 6390 FrameTime: 0.157 ms
+=======================================================
+                                  glmark2 Score: 4536 
+=======================================================

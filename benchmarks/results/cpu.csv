@@ -1,0 +1,7 @@
+test,threads,label,events_per_second,note
+sysbench cpu,1,1 thread,2789.6,any core
+sysbench cpu,4,4 threads,11359.2,any core
+sysbench cpu,8,8 threads,21389.2,any core
+sysbench cpu,12,12 threads,22617.5,any core
+sysbench cpu,4,4x A520,4125.5,"4 Cortex-A520, pinned"
+sysbench cpu,8,8x A720,18856.9,"8 Cortex-A720, pinned"

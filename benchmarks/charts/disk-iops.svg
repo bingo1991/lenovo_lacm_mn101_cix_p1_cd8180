@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="374" viewBox="0 0 900 374" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="900" height="374" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="bold" fill="#222">NVMe operations, fio</text>
+<text x="238" y="81" font-size="15" text-anchor="end" fill="#333">mixreadwrite-70-30</text>
+<rect x="250" y="60" width="147.3" height="30" rx="3" fill="#9467bd"/>
+<text x="405" y="81" font-size="15" fill="#222">75,956 IOPS</text>
+<text x="238" y="125" font-size="15" text-anchor="end" fill="#333">randread-4k-qd1</text>
+<rect x="250" y="104" width="21.8" height="30" rx="3" fill="#9467bd"/>
+<text x="280" y="125" font-size="15" fill="#222">11,236 IOPS</text>
+<text x="238" y="169" font-size="15" text-anchor="end" fill="#333">randread-4k-qd32</text>
+<rect x="250" y="148" width="335.6" height="30" rx="3" fill="#9467bd"/>
+<text x="594" y="169" font-size="15" fill="#222">173,040 IOPS</text>
+<text x="238" y="213" font-size="15" text-anchor="end" fill="#333">randwrite-4k-qd32</text>
+<rect x="250" y="192" width="530.0" height="30" rx="3" fill="#9467bd"/>
+<text x="788" y="213" font-size="15" fill="#222">273,256 IOPS</text>
+<text x="238" y="257" font-size="15" text-anchor="end" fill="#333">seqread-1M-qd16</text>
+<rect x="250" y="236" width="3.7" height="30" rx="3" fill="#9467bd"/>
+<text x="262" y="257" font-size="15" fill="#222">1,929 IOPS</text>
+<text x="238" y="301" font-size="15" text-anchor="end" fill="#333">seqwrite-1M-qd16</text>
+<rect x="250" y="280" width="2.6" height="30" rx="3" fill="#9467bd"/>
+<text x="261" y="301" font-size="15" fill="#222">1,316 IOPS</text>
+<text x="24" y="358" font-size="13" fill="#666">Larger is better. Unit: IOPS.</text>
+</svg>

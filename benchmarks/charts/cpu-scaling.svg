@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="374" viewBox="0 0 900 374" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="900" height="374" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="bold" fill="#222">CPU throughput, sysbench cpu</text>
+<text x="238" y="81" font-size="15" text-anchor="end" fill="#333">1 thread</text>
+<rect x="250" y="60" width="65.4" height="30" rx="3" fill="#1f77b4"/>
+<text x="323" y="81" font-size="15" fill="#222">2,790 events/s</text>
+<text x="238" y="125" font-size="15" text-anchor="end" fill="#333">4 threads</text>
+<rect x="250" y="104" width="266.2" height="30" rx="3" fill="#1f77b4"/>
+<text x="524" y="125" font-size="15" fill="#222">11,359 events/s</text>
+<text x="238" y="169" font-size="15" text-anchor="end" fill="#333">8 threads</text>
+<rect x="250" y="148" width="501.2" height="30" rx="3" fill="#1f77b4"/>
+<text x="759" y="169" font-size="15" fill="#222">21,389 events/s</text>
+<text x="238" y="213" font-size="15" text-anchor="end" fill="#333">12 threads</text>
+<rect x="250" y="192" width="530.0" height="30" rx="3" fill="#1f77b4"/>
+<text x="788" y="213" font-size="15" fill="#222">22,618 events/s</text>
+<text x="238" y="257" font-size="15" text-anchor="end" fill="#333">4x A520</text>
+<rect x="250" y="236" width="96.7" height="30" rx="3" fill="#1f77b4"/>
+<text x="355" y="257" font-size="15" fill="#222">4,126 events/s</text>
+<text x="238" y="301" font-size="15" text-anchor="end" fill="#333">8x A720</text>
+<rect x="250" y="280" width="441.9" height="30" rx="3" fill="#1f77b4"/>
+<text x="700" y="301" font-size="15" fill="#222">18,857 events/s</text>
+<text x="24" y="358" font-size="13" fill="#666">Larger is better. Unit: events/s.</text>
+</svg>

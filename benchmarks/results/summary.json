@@ -1,0 +1,162 @@
+{
+  "cpu": {
+    "sysbench_cpu": [
+      {
+        "test": "sysbench cpu",
+        "threads": 1,
+        "label": "1 thread",
+        "events_per_second": 2789.6,
+        "note": "any core"
+      },
+      {
+        "test": "sysbench cpu",
+        "threads": 4,
+        "label": "4 threads",
+        "events_per_second": 11359.2,
+        "note": "any core"
+      },
+      {
+        "test": "sysbench cpu",
+        "threads": 8,
+        "label": "8 threads",
+        "events_per_second": 21389.2,
+        "note": "any core"
+      },
+      {
+        "test": "sysbench cpu",
+        "threads": 12,
+        "label": "12 threads",
+        "events_per_second": 22617.5,
+        "note": "any core"
+      },
+      {
+        "test": "sysbench cpu",
+        "threads": 4,
+        "label": "4x A520",
+        "events_per_second": 4125.5,
+        "note": "4 Cortex-A520, pinned"
+      },
+      {
+        "test": "sysbench cpu",
+        "threads": 8,
+        "label": "8x A720",
+        "events_per_second": 18856.9,
+        "note": "8 Cortex-A720, pinned"
+      }
+    ],
+    "sysbench_threads_12": {
+      "events_per_second": 10457.4,
+      "latency_avg_ms": 1.15,
+      "latency_p95_ms": 4.82
+    },
+    "seven_zip_single_mips": 5071,
+    "seven_zip_multi_mips": 40602
+  },
+  "memory": [
+    {
+      "benchmark": "sysbench",
+      "method": "1 thread",
+      "mib_per_second": 20535.8
+    },
+    {
+      "benchmark": "sysbench",
+      "method": "12 thread",
+      "mib_per_second": 112982.9
+    },
+    {
+      "benchmark": "sysbench",
+      "method": "4 Cortex-A520",
+      "mib_per_second": 26561.9
+    },
+    {
+      "benchmark": "mbw",
+      "method": "MEMCPY",
+      "mib_per_second": 14301.8
+    },
+    {
+      "benchmark": "mbw",
+      "method": "DUMB",
+      "mib_per_second": 15578.0
+    },
+    {
+      "benchmark": "mbw",
+      "method": "MCBLOCK",
+      "mib_per_second": 14728.2
+    }
+  ],
+  "disk": [
+    {
+      "read_iops": 75956.3,
+      "write_iops": 32655.6,
+      "read_mib_s": 296.7,
+      "write_mib_s": 127.6,
+      "lat_mean_ms": 1.606,
+      "lat_p99_ms": 3.391,
+      "test": "mixreadwrite-70-30"
+    },
+    {
+      "read_iops": 11235.9,
+      "write_iops": 0.0,
+      "read_mib_s": 43.9,
+      "write_mib_s": 0.0,
+      "lat_mean_ms": 0.079,
+      "lat_p99_ms": 0.092,
+      "test": "randread-4k-qd1"
+    },
+    {
+      "read_iops": 173039.8,
+      "write_iops": 0.0,
+      "read_mib_s": 676.0,
+      "write_mib_s": 0.0,
+      "lat_mean_ms": 0.73,
+      "lat_p99_ms": 2.441,
+      "test": "randread-4k-qd32"
+    },
+    {
+      "read_iops": 0.0,
+      "write_iops": 273256.5,
+      "read_mib_s": 0.0,
+      "write_mib_s": 1067.4,
+      "lat_mean_ms": 0.46,
+      "lat_p99_ms": 1.86,
+      "test": "randwrite-4k-qd32"
+    },
+    {
+      "read_iops": 1929.0,
+      "write_iops": 0.0,
+      "read_mib_s": 1932.0,
+      "write_mib_s": 0.0,
+      "lat_mean_ms": 32.944,
+      "lat_p99_ms": 50.594,
+      "test": "seqread-1M-qd16"
+    },
+    {
+      "read_iops": 0.0,
+      "write_iops": 1315.9,
+      "read_mib_s": 0.0,
+      "write_mib_s": 1318.9,
+      "lat_mean_ms": 48.081,
+      "lat_p99_ms": 79.167,
+      "test": "seqwrite-1M-qd16"
+    }
+  ],
+  "thermal": {
+    "peak_core_c": 56,
+    "peak_zone_c": 58.0,
+    "nvme_c": 37,
+    "stress_ng": {
+      "bogo_ops": 128309,
+      "real_time_s": 60.03,
+      "bogo_ops_per_second": 2137.28
+    }
+  },
+  "gpu": {
+    "vulkan": {
+      "deviceName": "Mali-G720-Immortalis",
+      "apiVersion": "1.4.305",
+      "driverInfo": "v1.r54p1-11eac0.87f6dcad146db63d011631d34565445c"
+    },
+    "glmark2_wayland": 4536,
+    "glmark2_x11": "not available, session authorisation refused"
+  }
+}

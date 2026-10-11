@@ -107,3 +107,34 @@ RTL5682 audio codec. This SKU does not enable it. No ALSA card is present.
 | GPIO | Seven Cadence GPIO controllers, 32 pins each. |
 | USB | Six USB controllers, 14 root hubs |
 | Sensors | Five thermal zones, NVMe temperature, MDIO |
+
+## Memory channels
+
+ACPI declares four DDR controllers, `DCT0` to `DCT3`, one per channel.
+Each controller reports its channel in `_DSD`. SMBIOS declares four memory
+devices of 2 GB, LPDDR5-6000, 32 bit, soldered.
+
+The bus is therefore 128 bit wide in four channels. 8 GB over four
+channels is two packages of two dies each, or four single dies. The
+firmware reports channels, not packages. Software alone cannot count the
+packages. Open the case and look at the board to settle it.
+
+## Board lineage
+
+The board looks like a cut down Orange Pi 6 board. Both use the same SoC
+and the same firmware OEM table ID, `SKY1EDK2`. The evidence found so far:
+
+1. The firmware declares two on-die Ethernet MACs, `MAC0` at 0x09320000
+   and `MAC1` at 0x09330000, each with a PHY child. Both are disabled with
+   `_STA` zero. The product ships one RJ45 port, on a PCIe RTL8125.
+2. The firmware declares five PCIe root ports. The machine uses three:
+   NVMe, Ethernet and WiFi. `pcie_x1_1_rc` is unused. A second 2.5GbE port
+   would fit there.
+3. The firmware declares five DP outputs, six USB controllers and the
+   camera connector. The user facing ports are fewer: HDMI, DP, one
+   Ethernet, four USB-A and two USB-C.
+4. Memory matches the same SoC design: 8 GB over four 32 bit LPDDR5
+   channels at 6000 MT/s.
+
+This list is consistent with a reduced Orange Pi 6 board. It is not proof.
+The board silkscreen or a photo of the PCB would settle it.

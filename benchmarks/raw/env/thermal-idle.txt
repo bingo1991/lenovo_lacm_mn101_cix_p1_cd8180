@@ -1,0 +1,5 @@
+thermal_zone0 TZB0 40000
+thermal_zone1 TZB1 39000
+thermal_zone2 TZM0 39000
+thermal_zone3 TZM1 39000
+thermal_zone4 TZGT 39000

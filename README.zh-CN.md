@@ -33,6 +33,7 @@ CIX Sky1（CD8180）芯片。
 | 路径 | 内容 |
 | --- | --- |
 | `acpi/` | ACPI 原始表、反编译源、文本转储 |
+| `benchmarks/` | 性能测试：原始日志、CSV/JSON 数据、图表 |
 | `hardware/` | 运行系统的命令输出 |
 | `dts/` | 设备树源、binding 头文件、Makefile |
 | `docs/` | 硬件、ACPI 与设备树文档 |
@@ -47,6 +48,14 @@ make
 
 需要 `cpp` 与 `dtc`，不需要内核源码。节点来源见
 [docs/acpi-to-dt-mapping.md](docs/acpi-to-dt-mapping.md)。
+
+## 性能
+
+sysbench cpu 单线程 2,790 events/s，12 线程 22,618 events/s。NVMe 顺序读
+1,932 MiB/s，4K 随机写 273,257 IOPS。整机满载时 SoC 峰值 58 °C，无降频。
+
+报告见 [docs/performance.md](docs/performance.md)，图表在
+[benchmarks/charts](benchmarks/charts)，原始日志在 [benchmarks/raw](benchmarks/raw)。
 
 ## 隐私
 

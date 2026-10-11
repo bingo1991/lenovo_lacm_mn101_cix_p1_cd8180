@@ -1,0 +1,7 @@
+benchmark,method,mib_per_second
+sysbench,1 thread,20535.8
+sysbench,12 thread,112982.9
+sysbench,4 Cortex-A520,26561.9
+mbw,MEMCPY,14301.8
+mbw,DUMB,15578.0
+mbw,MCBLOCK,14728.2

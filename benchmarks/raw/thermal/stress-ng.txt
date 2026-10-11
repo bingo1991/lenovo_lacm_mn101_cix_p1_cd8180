@@ -1,0 +1,11 @@
+stress-ng: info:  [42071] setting to a 1 min run per stressor
+stress-ng: info:  [42071] dispatching hogs: 12 cpu
+stress-ng: info:  [42071] note: boost is disabled and this may impact top performance; setting /sys/devices/system/cpu/cpufreq/boost to 1 may improve performance.
+stress-ng: metrc: [42071] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: metrc: [42071]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: metrc: [42071] cpu              128309     60.03    675.31      0.77      2137.28         189.79
+stress-ng: info:  [42071] skipped: 0
+stress-ng: info:  [42071] passed: 12: cpu (12)
+stress-ng: info:  [42071] failed: 0
+stress-ng: info:  [42071] metrics untrustworthy: 0
+stress-ng: info:  [42071] successful run completed in 1 min
