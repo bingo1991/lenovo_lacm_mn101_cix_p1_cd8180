@@ -24,6 +24,7 @@ It is not used by the factory firmware.
 | RAM | 8 GB LPDDR5-6000, 4x 2 GB on board, 32 bit |
 | Storage | AirDisk 256 GB NVMe, MAXIO MAP1202 controller |
 | Network | RTL8125 2.5GbE, RTL8852BE WiFi 6, Bluetooth 5.2 |
+| Audio | none in this image. HDMI and DP audio find no codec. Use Bluetooth or USB audio. |
 | Firmware | LENOVO BIOS-V1.03, 2026-06-12, 8 MB, UEFI, SMBIOS 3.6 |
 | OS in the dump | Ubuntu 26.04, kernel 7.0.0-38-cix |
 

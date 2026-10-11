@@ -1,0 +1,53 @@
+# Audio probe on the Lenovo LACM-MN101, 2026-10-11.
+# The HDA, HDMI codec and ASoC modules were loaded by hand for this test.
+# The display was connected during the test and was unplugged before this
+# snapshot. The codec result is the same in both states.
+#
+$ aplay -l
+aplay: device_list:279: no soundcards found...
+
+$ cat /proc/asound/cards
+--- no soundcards ---
+
+$ lsmod | grep -E "snd_hda|hdmi|sof"
+snd_hda_cix_ipbloq     24576  0
+snd_hda_codec_hdmi     57344  0
+snd_hda_codec         217088  2 snd_hda_codec_hdmi,snd_hda_cix_ipbloq
+snd_hwdep              24576  1 snd_hda_codec
+snd_hda_core          176128  3 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_cix_ipbloq
+snd_soc_hdmi_codec     24576  0
+snd_soc_core          430080  4 snd_soc_sky1_card,snd_soc_hdmi_codec,snd_soc_cdns_i2s_mc,snd_soc_rt5682s
+snd_pcm               200704  9 snd_hda_codec_hdmi,snd_hda_codec,snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_soc_cdns_i2s_mc,snd_hda_core,snd_soc_rt5682s,snd_pcm_dmaengine
+snd                   151552  14 snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_codec,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_hda_cix_ipbloq,snd_pcm,snd_rawmidi
+
+$ driver binding
+CIXH6020:00    cix-ipbloq-hda
+CIXH6070:00    driver
+CIXH6000:00    cix-dsp-rproc
+CIXH6060:00    driver
+CIXH6061:00    sky1-audss-clk
+CIXH6062:00    sky1-audss-reset
+
+$ remoteproc
+remoteproc0: name=cix-dsp-rproc state=offline
+
+$ dmesg | grep -iE "hda|codec|asoc|i2s"
+[ 1505.095363] sky1-asoc-card CIXH6070:00: I2S device CIXH6011:04 not present, skipping
+[ 1505.146578] sky1-pinctrl CIXHA016:00: does not have pin group pinctrl_substrate_i2s5_dbg
+[ 1505.147485] cdns-i2s-mc CIXH6011:02: I2S-MC driver probed
+[ 1505.147705] sky1-pinctrl CIXHA016:00: does not have pin group pinctrl_substrate_i2s6_dbg
+[ 1505.148269] cdns-i2s-mc CIXH6011:03: I2S-MC driver probed
+[ 1505.148436] sky1-pinctrl CIXHA016:00: does not have pin group pinctrl_substrate_i2s8_dbg
+[ 1505.148831] sky1-asoc-card CIXH6070:00: I2S device CIXH6011:04 not present, skipping
+[ 1505.149224] cdns-i2s-mc CIXH6011:05: I2S-MC driver probed
+[ 1505.149484] sky1-pinctrl CIXHA016:00: does not have pin group pinctrl_substrate_i2s9_dbg
+[ 1505.150251] sky1-asoc-card CIXH6070:00: I2S device CIXH6011:04 not present, skipping
+[ 1505.150254] cdns-i2s-mc CIXH6011:06: I2S-MC driver probed
+[ 1505.151808] sky1-asoc-card CIXH6070:00: I2S device CIXH6011:04 not present, skipping
+
+$ drm connectors
+card0-DP-1         disconnected
+card1-DP-2         disconnected
+card2-eDP-1        disconnected
+card3-DP-3         disconnected
+card4-DP-4         disconnected

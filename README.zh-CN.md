@@ -23,6 +23,7 @@ CIX Sky1（CD8180）芯片。
 | 内存 | 8 GB LPDDR5-6000，板载 4×2 GB，32 位 |
 | 存储 | AirDisk 256 GB NVMe，MAXIO MAP1202 |
 | 网络 | RTL8125 2.5GbE，RTL8852BE WiFi 6，蓝牙 5.2 |
+| 音频 | 本镜像无音频输出：HDMI/DP 都枚举不到 codec，可用蓝牙或 USB 声卡 |
 | 固件 | LENOVO BIOS-V1.03，2026-06-12，8 MB，UEFI，SMBIOS 3.6 |
 | 采集时系统 | Ubuntu 26.04，内核 7.0.0-38-cix |
 
