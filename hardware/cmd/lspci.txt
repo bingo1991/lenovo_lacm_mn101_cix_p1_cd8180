@@ -1,0 +1,7 @@
+$ lspci -nnn
+00:00.0 PCI bridge [0604]: CIX Technology Group Co., Ltd. CIX P1 CD8180 PCI Express Root Port [1f6c:0001]
+01:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. RTL8852BE PCIe 802.11ax Wireless Network Controller [10ec:b852]
+60:00.0 PCI bridge [0604]: CIX Technology Group Co., Ltd. CIX P1 CD8180 PCI Express Root Port [1f6c:0001]
+61:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller [10ec:8125] (rev 05)
+c0:00.0 PCI bridge [0604]: CIX Technology Group Co., Ltd. CIX P1 CD8180 PCI Express Root Port [1f6c:0001]
+c1:00.0 Non-Volatile memory controller [0108]: MAXIO Technology (Hangzhou) Ltd. NVMe SSD Controller MAP1202 (DRAM-less) [1e4b:1202] (rev 01)

@@ -1,0 +1,591 @@
+$ sudo -n journalctl -p warning -b
+Oct 11 09:43:54 cix-ubuntu kernel: CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x1001111010312122, CPU2: 0x1001111011312122
+Oct 11 09:43:54 cix-ubuntu kernel: CPU features: Unsupported CPU feature variation detected.
+Oct 11 09:43:54 cix-ubuntu kernel: CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x1001111010312122, CPU3: 0x1001111011312122
+Oct 11 09:43:54 cix-ubuntu kernel: CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x1001111010312122, CPU4: 0x1001111011312122
+Oct 11 09:43:54 cix-ubuntu kernel: CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x1001111010312122, CPU5: 0x1001111011312122
+Oct 11 09:43:54 cix-ubuntu kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^I2C0.UXC0 (20251212/dspkginit-438)
+Oct 11 09:43:54 cix-ubuntu kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^I2C0.UXC0 (20251212/dspkginit-438)
+Oct 11 09:43:54 cix-ubuntu kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^I2C0.UXC1 (20251212/dspkginit-438)
+Oct 11 09:43:54 cix-ubuntu kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^I2C0.UXC0 (20251212/dspkginit-438)
+Oct 11 09:43:54 cix-ubuntu kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^I2C0.UXC2 (20251212/dspkginit-438)
+Oct 11 09:43:54 cix-ubuntu kernel: ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - ^I2C0.UXC3 (20251212/dspkginit-438)
+Oct 11 09:43:54 cix-ubuntu kernel: gpio-pins: IC does not support requested over-current limits
+Oct 11 09:43:54 cix-ubuntu kernel: gpio-pins: IC does not support requested over voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: gpio-pins: IC does not support requested under voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: gpio-pins: IC does not support requested temperature limits
+Oct 11 09:43:54 cix-ubuntu kernel: mpam:mpam_msc_driver_init: No MSC devices found in firmware
+Oct 11 09:43:54 cix-ubuntu kernel: tpm_crb MSFT0101:00: [Firmware Bug]: failed to get TPM2 ACPI table
+Oct 11 09:43:54 cix-ubuntu kernel: tpm_crb MSFT0101:00: probe with driver tpm_crb failed with error -22
+Oct 11 09:43:54 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto: IDR0.HTTU features(0x600000) overridden by FW configuration (0x0)
+Oct 11 09:43:54 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto: 2-level strtab only covers 25/32 bits of SID
+Oct 11 09:43:54 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.1.auto: IDR0.HTTU features(0x600000) overridden by FW configuration (0x0)
+Oct 11 09:43:54 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.1.auto: 2-level strtab only covers 25/32 bits of SID
+Oct 11 09:43:54 cix-ubuntu kernel: Unsupported value for CONFIG_DRM_PANIC_SCREEN ('qr_code'), falling back to 'user'...
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to setup SCMI debugfs.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:0] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:8 / RES_ID:1] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:1] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:7 / RES_ID:1] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: multiplier for domain 2 rounded
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:2] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: multiplier for domain 3 rounded
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:3] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: multiplier for domain 4 rounded
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:4] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: multiplier for domain 5 rounded
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:5] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: multiplier for domain 6 rounded
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:6] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:8 / RES_ID:7] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:6 / RES_ID:7] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: arm-scmi arm-scmi.5.auto: Failed to get FC for protocol 13 [MSG_ID:7 / RES_ID:7] - ret:-95. Using regular messaging.
+Oct 11 09:43:54 cix-ubuntu kernel: sky1-pinctrl CIXHA017:00: does not have pin group pinctrl_pcie_x2_rc
+Oct 11 09:43:54 cix-ubuntu kernel: sky1-pinctrl CIXHA017:00: Pin group cannot be found
+Oct 11 09:43:54 cix-ubuntu kernel: cix-pcie-phy CIXH2023:02: Invalid Phy Config
+Oct 11 09:43:54 cix-ubuntu kernel: ssd1_power: IC does not support requested over-current limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd1_power: IC does not support requested over voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd1_power: IC does not support requested under voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd1_power: IC does not support requested temperature limits
+Oct 11 09:43:54 cix-ubuntu kernel: pcie_wifibt_power: IC does not support requested over-current limits
+Oct 11 09:43:54 cix-ubuntu kernel: pcie_wifibt_power: IC does not support requested over voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: pcie_wifibt_power: IC does not support requested under voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: pcie_wifibt_power: IC does not support requested temperature limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd2_power: IC does not support requested over-current limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd2_power: IC does not support requested over voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd2_power: IC does not support requested under voltage limits
+Oct 11 09:43:54 cix-ubuntu kernel: ssd2_power: IC does not support requested temperature limits
+Oct 11 09:43:54 cix-ubuntu kernel: rtc-rx8900 i2c-RX008900:00: Update was detected
+Oct 11 09:43:54 cix-ubuntu kernel: sky1-pinctrl CIXHA017:00: does not have pin group pinctrl_pcie_x8_rc
+Oct 11 09:43:54 cix-ubuntu kernel: sky1-pinctrl CIXHA017:00: Pin group cannot be found
+Oct 11 09:43:54 cix-ubuntu kernel: sky1-pinctrl CIXHA017:00: does not have pin group pinctrl_pcie_x1_0_rc
+Oct 11 09:43:54 cix-ubuntu kernel: sky1-pinctrl CIXHA017:00: Pin group cannot be found
+Oct 11 09:43:54 cix-ubuntu kernel: genirq: Flags mismatch irq 123. 00002008 (i2c-CIXH200D:01) vs. 00002008 (i2c-CIXH200D:00)
+Oct 11 09:43:54 cix-ubuntu kernel: clk: Not disabling unused clocks
+Oct 11 09:43:54 cix-ubuntu kernel: PCI: OF: of_root node is NULL, cannot create PCI host bridge node
+Oct 11 09:43:54 cix-ubuntu kernel: PCI: OF: of_root node is NULL, cannot create PCI host bridge node
+Oct 11 09:43:54 cix-ubuntu kernel: PCI: OF: of_root node is NULL, cannot create PCI host bridge node
+Oct 11 09:43:55 cix-ubuntu kernel: memory_group_manager: loading out-of-tree module taints kernel.
+Oct 11 09:43:55 cix-ubuntu kernel: cix-edp-panel CIXH5040:00: supply power not found, using dummy regulator
+Oct 11 09:43:55 cix-ubuntu kernel: cix-edp-panel CIXH5040:00: Specify missing bus_format
+Oct 11 09:43:55 cix-ubuntu kernel: cix-edp-panel CIXH5040:00: Expected bpc in {6,8} but got: 0
+Oct 11 09:43:55 cix-ubuntu kernel: ramoops: NULL platform data
+Oct 11 09:43:55 cix-ubuntu kernel: ramoops PRP0001:03: probe with driver ramoops failed with error -22
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: CSF_FIRMWARE_TIMEOUT is capped from 6000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: CSF_PM_TIMEOUT is capped from 5000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: CSF_GPU_RESET_TIMEOUT is capped from 62000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: CSF_GPU_SUSPEND_TIMEOUT is capped from 31000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: CSF_FIRMWARE_PING_TIMEOUT is capped from 6000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: KBASE_PRFCNT_ACTIVE_TIMEOUT is capped from 120000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: KBASE_AS_INACTIVE_TIMEOUT is capped from 120000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: IPA_INACTIVE_TIMEOUT is capped from 10000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: mali CIXH5000:00: CSF_FIRMWARE_STOP_TIMEOUT is capped from 120000ms to 4500ms
+Oct 11 09:43:55 cix-ubuntu kernel: genpd genpd:0:CIXH5000:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 72000000, volt: 0, enabled: 1. New: freq: 72000000, volt: 0, enabled: 1
+Oct 11 09:43:55 cix-ubuntu kernel: genpd genpd:0:CIXH5000:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 216000000, volt: 0, enabled: 1. New: freq: 216000000, volt: 0, enabled: 1
+Oct 11 09:43:55 cix-ubuntu kernel: genpd genpd:0:CIXH5000:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 350000000, volt: 0, enabled: 1. New: freq: 350000000, volt: 0, enabled: 1
+Oct 11 09:43:55 cix-ubuntu kernel: genpd genpd:0:CIXH5000:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 600000000, volt: 0, enabled: 1. New: freq: 600000000, volt: 0, enabled: 1
+Oct 11 09:43:55 cix-ubuntu kernel: genpd genpd:0:CIXH5000:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 800000000, volt: 0, enabled: 1. New: freq: 800000000, volt: 0, enabled: 1
+Oct 11 09:43:55 cix-ubuntu kernel: genpd genpd:0:CIXH5000:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 1000000000, volt: 0, enabled: 1. New: freq: 1000000000, volt: 0, enabled: 1
+Oct 11 09:43:55 cix-ubuntu kernel: trilin-dptx-cix CIXH502F:02: [drm:trilin_dp_register_phy][warn]no dp_phy
+Oct 11 09:43:56 cix-ubuntu kernel: [drm] Connect mmu without internal TBU!
+Oct 11 09:43:58 cix-ubuntu systemd-oomd[845]: No swap; memory pressure usage will be degraded
+Oct 11 09:43:58 cix-ubuntu systemd-udevd[854]: Configuration file /usr/lib/udev/rules.d/99-cma-device.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+Oct 11 09:44:00 cix-ubuntu kernel: CPPC Cpufreq:cppc_opp_init: cpu:0, too many performance levels: 131079
+Oct 11 09:44:00 cix-ubuntu kernel: processor cpu0: EM: only supports uW power values
+Oct 11 09:44:00 cix-ubuntu kernel: cpufreq_cooling: OF node not available for cpu0
+Oct 11 09:44:00 cix-ubuntu kernel: processor cpu2: EM: only supports uW power values
+Oct 11 09:44:00 cix-ubuntu kernel: cpufreq_cooling: OF node not available for cpu2
+Oct 11 09:44:00 cix-ubuntu kernel: CPPC Cpufreq:cppc_opp_init: cpu:6, too many performance levels: 131079
+Oct 11 09:44:00 cix-ubuntu kernel: processor cpu6: EM: only supports uW power values
+Oct 11 09:44:00 cix-ubuntu kernel: cpufreq_cooling: OF node not available for cpu6
+Oct 11 09:44:00 cix-ubuntu kernel: CPPC Cpufreq:cppc_opp_init: cpu:8, too many performance levels: 65543
+Oct 11 09:44:00 cix-ubuntu kernel: processor cpu8: EM: only supports uW power values
+Oct 11 09:44:00 cix-ubuntu kernel: cpufreq_cooling: OF node not available for cpu8
+Oct 11 09:44:00 cix-ubuntu kernel: CPPC Cpufreq:cppc_opp_init: cpu:10, too many performance levels: 131079
+Oct 11 09:44:00 cix-ubuntu kernel: processor cpu10: EM: only supports uW power values
+Oct 11 09:44:00 cix-ubuntu kernel: cpufreq_cooling: OF node not available for cpu10
+Oct 11 09:44:00 cix-ubuntu kernel: genpd genpd:0:CIXH3010:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 72000000, volt: 0, enabled: 1. New: freq: 72000000, volt: 0, enabled: 1
+Oct 11 09:44:00 cix-ubuntu kernel: genpd genpd:0:CIXH3010:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 216000000, volt: 0, enabled: 1. New: freq: 216000000, volt: 0, enabled: 1
+Oct 11 09:44:00 cix-ubuntu kernel: genpd genpd:0:CIXH3010:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 350000000, volt: 0, enabled: 1. New: freq: 350000000, volt: 0, enabled: 1
+Oct 11 09:44:00 cix-ubuntu kernel: genpd genpd:0:CIXH3010:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 600000000, volt: 0, enabled: 1. New: freq: 600000000, volt: 0, enabled: 1
+Oct 11 09:44:00 cix-ubuntu kernel: genpd genpd:0:CIXH3010:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 800000000, volt: 0, enabled: 1. New: freq: 800000000, volt: 0, enabled: 1
+Oct 11 09:44:00 cix-ubuntu kernel: genpd genpd:0:CIXH3010:00: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 1000000000, volt: 0, enabled: 1. New: freq: 1000000000, volt: 0, enabled: 1
+Oct 11 09:44:00 cix-ubuntu kernel: MVX dev: Linlon v5276 identified. cores=4, core_mask=0xf, nlsid=4, id=0. (mvx_dev.c:1038)
+Oct 11 09:44:00 cix-ubuntu systemd-udevd[854]: Configuration file /usr/lib/udev/rules.d/99-cma-device.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+Oct 11 09:44:01 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:44:01 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:44:01 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:44:01 cix-ubuntu (bluetoothd)[1880]: bluetooth.service: ConfigurationDirectory 'bluetooth' already exists but the mode is different. (File system: 755 ConfigurationDirectoryMode: 555)
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Dependency failed for sssd-nss.socket - SSSD NSS Service responder socket.
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Dependency failed for sssd-autofs.socket - SSSD AutoFS Service responder socket.
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Dependency failed for sssd-pac.socket - SSSD PAC Service responder socket.
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Dependency failed for sssd-pam.socket - SSSD PAM Service responder socket.
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Dependency failed for sssd-ssh.socket - SSSD SSH Service responder socket.
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Dependency failed for sssd-sudo.socket - SSSD Sudo Service responder socket.
+Oct 11 09:44:01 cix-ubuntu (cron)[1991]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Oct 11 09:44:01 cix-ubuntu systemd[1]: grub-initrd-fallback.service: Failed with result 'exit-code'.
+Oct 11 09:44:01 cix-ubuntu systemd[1]: Failed to start grub-initrd-fallback.service - GRUB failed boot detection.
+Oct 11 09:44:02 cix-ubuntu kernel: ACPI: \: failed to evaluate _DSM <UUID> rev:0 func:10 (0x1001)
+Oct 11 09:44:02 cix-ubuntu kernel: ACPI: \: failed to evaluate _DSM <UUID> rev:0 func:6 (0x1001)
+Oct 11 09:44:02 cix-ubuntu kernel: nvme nvme0: using unchecked data buffer
+Oct 11 09:44:02 cix-ubuntu ModemManager[2122]: <wrn> [plugin-manager] task 1: port context already scheduled
+Oct 11 09:44:02 cix-ubuntu NetworkManager[1844]: <warn>  [1791683042.4046] device (p2p-dev-wlp1s0): error setting IPv4 forwarding to '0': 成功
+Oct 11 09:44:02 cix-ubuntu systemd[2416]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'ca.desrt.dconf' in service file '/usr/share//dbus-1/services/ca.desrt.dconf.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'com.feralinteractive.GameMode' in service file '/usr/share//dbus-1/services/com.feralinteractive.GameMode.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'io.snapcraft.Launcher' in service file '/usr/share//dbus-1/services/io.snapcraft.Launcher.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'io.snapcraft.SessionAgent' in service file '/usr/share//dbus-1/services/io.snapcraft.SessionAgent.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'io.snapcraft.Settings' in service file '/usr/share//dbus-1/services/io.snapcraft.Settings.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.a11y.Bus' in service file '/usr/share//dbus-1/services/org.a11y.Bus.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.bluez.obex' in service file '/usr/share//dbus-1/services/org.bluez.obex.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.fedoraproject.Config.Printing' in service file '/usr/share//dbus-1/services/org.fedoraproject.Config.Printing.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.ColorHelper' in service file '/usr/share//dbus-1/services/org.freedesktop.ColorHelper.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.FileManager1' in service file '/usr/share//dbus-1/services/org.freedesktop.FileManager1.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.IBus' in service file '/usr/share//dbus-1/services/org.freedesktop.IBus.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.LocalSearch3.Control' in service file '/usr/share//dbus-1/services/org.freedesktop.LocalSearch3.Control.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.LocalSearch3.Writeback' in service file '/usr/share//dbus-1/services/org.freedesktop.LocalSearch3.Writeback.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.LocalSearch3' in service file '/usr/share//dbus-1/services/org.freedesktop.LocalSearch3.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.MalcontentControl' in service file '/usr/share//dbus-1/services/org.freedesktop.MalcontentControl.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.Tracker3.Miner.Files.Control' in service file '/usr/share//dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.Tracker3.Miner.Files' in service file '/usr/share//dbus-1/services/org.freedesktop.Tracker3.Miner.Files.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.Tracker3.Writeback' in service file '/usr/share//dbus-1/services/org.freedesktop.Tracker3.Writeback.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.impl.portal.PermissionStore' in service file '/usr/share//dbus-1/services/org.freedesktop.impl.portal.PermissionStore.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.impl.portal.Secret' in service file '/usr/share//dbus-1/services/org.freedesktop.impl.portal.Secret.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.impl.portal.desktop.gnome' in service file '/usr/share//dbus-1/services/org.freedesktop.impl.portal.desktop.gnome.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.impl.portal.desktop.gtk' in service file '/usr/share//dbus-1/services/org.freedesktop.impl.portal.desktop.gtk.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.portal.Desktop' in service file '/usr/share//dbus-1/services/org.freedesktop.portal.Desktop.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.portal.Documents' in service file '/usr/share//dbus-1/services/org.freedesktop.portal.Documents.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.portal.IBus' in service file '/usr/share//dbus-1/services/org.freedesktop.portal.IBus.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.portal.Tracker' in service file '/usr/share//dbus-1/services/org.freedesktop.portal.Tracker.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.secrets' in service file '/usr/share//dbus-1/services/org.freedesktop.secrets.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.freedesktop.systemd1' in service file '/usr/share//dbus-1/services/org.freedesktop.systemd1.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Calculator.SearchProvider' in service file '/usr/share//dbus-1/services/org.gnome.Calculator.SearchProvider.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Characters' in service file '/usr/share//dbus-1/services/org.gnome.Characters.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.DiskUtility' in service file '/usr/share//dbus-1/services/org.gnome.DiskUtility.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Extensions' in service file '/usr/share//dbus-1/services/org.gnome.Extensions.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Identity' in service file '/usr/share//dbus-1/services/org.gnome.Identity.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Logs' in service file '/usr/share//dbus-1/services/org.gnome.Logs.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Loupe' in service file '/usr/share//dbus-1/services/org.gnome.Loupe.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Nautilus' in service file '/usr/share//dbus-1/services/org.gnome.Nautilus.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.OnlineAccounts' in service file '/usr/share//dbus-1/services/org.gnome.OnlineAccounts.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Ptyxis' in service file '/usr/share//dbus-1/services/org.gnome.Ptyxis.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Rygel1' in service file '/usr/share//dbus-1/services/org.gnome.Rygel1.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.ScreenSaver' in service file '/usr/share//dbus-1/services/org.gnome.ScreenSaver.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Settings.GlobalShortcutsProvider' in service file '/usr/share//dbus-1/services/org.gnome.Settings.GlobalShortcutsProvider.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Settings.SearchProvider' in service file '/usr/share//dbus-1/services/org.gnome.Settings.SearchProvider.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Settings' in service file '/usr/share//dbus-1/services/org.gnome.Settings.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Shell.CalendarServer' in service file '/usr/share//dbus-1/services/org.gnome.Shell.CalendarServer.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Shell.Extensions' in service file '/usr/share//dbus-1/services/org.gnome.Shell.Extensions.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Shell.HotplugSniffer' in service file '/usr/share//dbus-1/services/org.gnome.Shell.HotplugSniffer.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Shell.Notifications' in service file '/usr/share//dbus-1/services/org.gnome.Shell.Notifications.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Shell.Screencast' in service file '/usr/share//dbus-1/services/org.gnome.Shell.Screencast.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.Sysprof' in service file '/usr/share//dbus-1/services/org.gnome.Sysprof.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.TextEditor' in service file '/usr/share//dbus-1/services/org.gnome.TextEditor.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.baobab' in service file '/usr/share//dbus-1/services/org.gnome.baobab.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.clocks' in service file '/usr/share//dbus-1/services/org.gnome.clocks.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.evolution.dataserver.AddressBook10' in service file '/usr/share//dbus-1/services/org.gnome.evolution.dataserver.AddressBook10.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.evolution.dataserver.Calendar8' in service file '/usr/share//dbus-1/services/org.gnome.evolution.dataserver.Calendar8.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.evolution.dataserver.Sources5' in service file '/usr/share//dbus-1/services/org.gnome.evolution.dataserver.Sources5.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.evolution.dataserver.UserPrompter0' in service file '/usr/share//dbus-1/services/org.gnome.evolution.dataserver.UserPrompter0.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.font-viewer' in service file '/usr/share//dbus-1/services/org.gnome.font-viewer.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.keyring.PrivatePrompter' in service file '/usr/share//dbus-1/services/org.gnome.keyring.PrivatePrompter.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.keyring.SystemPrompter' in service file '/usr/share//dbus-1/services/org.gnome.keyring.SystemPrompter.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.keyring' in service file '/usr/share//dbus-1/services/org.gnome.keyring.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gnome.seahorse.Application' in service file '/usr/share//dbus-1/services/org.gnome.seahorse.Application.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.GLib.PACRunner' in service file '/usr/share//dbus-1/services/org.gtk.GLib.PACRunner.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.AfcVolumeMonitor' in service file '/usr/share//dbus-1/services/org.gtk.vfs.AfcVolumeMonitor.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.Daemon' in service file '/usr/share//dbus-1/services/org.gtk.vfs.Daemon.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.GPhoto2VolumeMonitor' in service file '/usr/share//dbus-1/services/org.gtk.vfs.GPhoto2VolumeMonitor.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.GoaVolumeMonitor' in service file '/usr/share//dbus-1/services/org.gtk.vfs.GoaVolumeMonitor.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.MTPVolumeMonitor' in service file '/usr/share//dbus-1/services/org.gtk.vfs.MTPVolumeMonitor.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.Metadata' in service file '/usr/share//dbus-1/services/org.gtk.vfs.Metadata.service'
+Oct 11 09:44:02 cix-ubuntu dbus-broker-launch[2630]: Ignoring duplicate name 'org.gtk.vfs.UDisks2VolumeMonitor' in service file '/usr/share//dbus-1/services/org.gtk.vfs.UDisks2VolumeMonitor.service'
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:02 cix-ubuntu wireplumber[2656]: default: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:02 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:03 cix-ubuntu systemd[2416]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Failed with result 'exit-code'.
+Oct 11 09:44:03 cix-ubuntu gnome-shell[2818]: Unknown experimental feature 'scale-monitor-framebuffer'
+Oct 11 09:44:03 cix-ubuntu gnome-shell[2818]: Unknown experimental feature 'xwayland-native-scaling'
+Oct 11 09:44:03 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:03 cix-ubuntu gnome-shell[2818]: Failed to make thread 'KMS thread' high priority scheduled: Operation not permitted
+Oct 11 09:44:03 cix-ubuntu kernel: mali CIXH5000:00: CSF_SCHED_PROTM_PROGRESS_TIMEOUT is capped from 36408ms to 4500ms
+Oct 11 09:44:03 cix-ubuntu gnome-shell[2818]: Failed to make thread 'KMS thread' high priority scheduled: Operation not permitted
+Oct 11 09:44:03 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:44:03 cix-ubuntu kernel: mali CIXH5000:00: Clearing BASE_MEM_UNCACHED_GPU flag to avoid MMA violation
+Oct 11 09:44:04 cix-ubuntu gnome-shell[2818]: Couldn't find suitable cursor plane format for /dev/dri/card0, disabling HW cursor
+Oct 11 09:44:04 cix-ubuntu gnome-shell[2818]: Couldn't find suitable cursor plane format for /dev/dri/card1, disabling HW cursor
+Oct 11 09:44:04 cix-ubuntu gnome-shell[2818]: Couldn't find suitable cursor plane format for /dev/dri/card2, disabling HW cursor
+Oct 11 09:44:04 cix-ubuntu gnome-shell[2818]: Couldn't find suitable cursor plane format for /dev/dri/card3, disabling HW cursor
+Oct 11 09:44:04 cix-ubuntu gnome-shell[2818]: Couldn't find suitable cursor plane format for /dev/dri/card4, disabling HW cursor
+Oct 11 09:44:04 cix-ubuntu dbus-broker[1842]: A security policy denied :1.43 to send method call /:org.freedesktop.DBus.Peer.Ping to org.freedesktop.Avahi.
+Oct 11 09:44:04 cix-ubuntu dbus-broker[1842]: A security policy denied :1.47 to send method call /:org.freedesktop.DBus.Peer.Ping to org.freedesktop.Avahi.
+Oct 11 09:44:05 cix-ubuntu gsd-sharing[2942]: Failed to stop gnome-user-share-webdav.service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.
+Oct 11 09:44:05 cix-ubuntu gsd-usb-protection[2944]: Failed to fetch USBGuard parameters: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+Oct 11 09:44:05 cix-ubuntu gsd-media-keys[2931]: Failed to grab accelerator for keybinding settings:playback-repeat
+Oct 11 09:44:05 cix-ubuntu gsd-media-keys[2931]: Failed to grab accelerator for keybinding settings:hibernate
+Oct 11 09:44:05 cix-ubuntu gnome-shell[2818]: Type GITypeInfo of property NM.Object::client does not match return type GITypeInfo of getter get_client. Falling back to slow path
+Oct 11 09:44:10 cix-ubuntu kernel: kauditd_printk_skb: 268 callbacks suppressed
+Oct 11 09:44:10 cix-ubuntu systemd-udevd[854]: Configuration file /usr/lib/udev/rules.d/99-cma-device.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+Oct 11 09:47:41 cix-ubuntu gdm-password][3846]: gkr-pam: unable to locate daemon control file
+Oct 11 09:47:41 cix-ubuntu systemd[4399]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 09:47:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:42 cix-ubuntu gnome-session-service[5122]: App gnome-keyring-pkcs11.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services
+Oct 11 09:47:42 cix-ubuntu gnome-session-service[5122]: App gnome-keyring-secrets.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services
+Oct 11 09:47:42 cix-ubuntu gnome-session-service[5122]: App xdg-user-dirs.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services
+Oct 11 09:47:42 cix-ubuntu gnome-session-service[5122]: App spice-vdagent.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services
+Oct 11 09:47:42 cix-ubuntu gnome-session-service[5122]: App at-spi-dbus-bus.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services
+Oct 11 09:47:42 cix-ubuntu gnome-shell[5138]: Unknown experimental feature 'scale-monitor-framebuffer'
+Oct 11 09:47:42 cix-ubuntu gnome-shell[5138]: Unknown experimental feature 'xwayland-native-scaling'
+Oct 11 09:47:42 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:42 cix-ubuntu gnome-shell[5138]: Failed to make thread 'KMS thread' high priority scheduled: Operation not permitted
+Oct 11 09:47:42 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:42 cix-ubuntu gnome-shell[5138]: Failed to make thread 'KMS thread' high priority scheduled: Operation not permitted
+Oct 11 09:47:43 cix-ubuntu gnome-shell[5138]: Couldn't find suitable cursor plane format for /dev/dri/card0, disabling HW cursor
+Oct 11 09:47:43 cix-ubuntu gnome-shell[5138]: Couldn't find suitable cursor plane format for /dev/dri/card1, disabling HW cursor
+Oct 11 09:47:43 cix-ubuntu gnome-shell[5138]: Couldn't find suitable cursor plane format for /dev/dri/card2, disabling HW cursor
+Oct 11 09:47:43 cix-ubuntu gnome-shell[5138]: Couldn't find suitable cursor plane format for /dev/dri/card3, disabling HW cursor
+Oct 11 09:47:43 cix-ubuntu gnome-shell[5138]: Couldn't find suitable cursor plane format for /dev/dri/card4, disabling HW cursor
+Oct 11 09:47:44 cix-ubuntu gnome-session-service[5122]: Could not create transient scope for PID 5250: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Oct 11 09:47:44 cix-ubuntu gsd-keyboard[5241]: g_variant_unref: assertion 'value != NULL' failed
+Oct 11 09:47:44 cix-ubuntu gnome-session-service[5122]: Could not create transient scope for PID 5263: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Oct 11 09:47:44 cix-ubuntu gnome-session-service[5122]: Could not create transient scope for PID 5334: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Oct 11 09:47:44 cix-ubuntu gnome-session-service[5122]: Could not create transient scope for PID 5348: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Oct 11 09:47:44 cix-ubuntu gsd-sharing[5262]: Failed to stop gnome-user-share-webdav.service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.
+Oct 11 09:47:44 cix-ubuntu gsd-usb-protection[5272]: Failed to fetch USBGuard parameters: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+Oct 11 09:47:44 cix-ubuntu gsd-media-keys[5243]: Failed to grab accelerator for keybinding settings:playback-repeat
+Oct 11 09:47:44 cix-ubuntu gsd-media-keys[5243]: Failed to grab accelerator for keybinding settings:hibernate
+Oct 11 09:47:44 cix-ubuntu gnome-shell[5138]: Type GITypeInfo of property NM.Object::client does not match return type GITypeInfo of getter get_client. Falling back to slow path
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea3540 StWidget.dash-background:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9e270 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9e270 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9f4e0 StBin:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9e270 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9f4e0 StBin:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea1390 StIcon.show-apps-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae92870 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae92870 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae93a50 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae8a680 StScrollBar] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae8a680 StScrollBar] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae8aed0 StBin "trough"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae8a680 StScrollBar] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae8e300 StWidget.vhandle] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae92870 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae92870 StBoxLayout.left:insensitive "dashtodockBoxContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae93a50 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9e270 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9e270 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9f4e0 StBin:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9d1f0 Gjs_ui_iconGrid_BaseIcon.overview-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9e270 StBoxLayout:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9f4e0 StBin:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea1390 StIcon.show-apps-icon:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae826a0 StScrollView "dashtodockDashScrollview"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae7eba0 Gjs_ubuntu-dock_ubuntu_com_docking_DashToDock.left fixed:insensitive "dashtodockContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea6d20 Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer:insensitive] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eaea7f70 StBoxLayout "dashtodockBox"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae80460 Gjs_ubuntu-dock_ubuntu_com_dash_DockDash:insensitive "dash"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae81680 StBoxLayout:insensitive "dashtodockDashContainer"] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae95010 Gjs_ubuntu-dock_ubuntu_com_appIcons_DockShowAppsIcon.dash-item-container] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu gnome-shell[5138]: st_widget_get_theme_node called on the widget [0xb397eae9bd10 StButton.show-apps] which is not in the stage.
+Oct 11 09:47:45 cix-ubuntu systemd[2416]: xdg-document-portal.service: Failed to kill control group /user.slice/user-60578.slice/user@60578.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+Oct 11 09:47:45 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:47:45 cix-ubuntu gnome-shell[2818]: Failed to make thread 'KMS thread' high priority scheduled: Operation not permitted
+Oct 11 09:47:45 cix-ubuntu systemd[2416]: mpris-proxy.service: Failed with result 'exit-code'.
+Oct 11 09:47:46 cix-ubuntu update-notifier[5305]: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+Oct 11 09:47:46 cix-ubuntu update-notifier[5305]: There is no graphical application installed to manage Livepatch. The livepatch status icon will not be displayed.
+Oct 11 09:47:46 cix-ubuntu update-notifier[5305]: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.
+Oct 11 09:48:53 cix-ubuntu systemd[4399]: ubuntu-insights-collect.service: unit configures an IP firewall, but not running as root.
+Oct 11 09:48:53 cix-ubuntu systemd[4399]: ubuntu-insights-collect.service: (This warning is only shown for the first unit using IP firewalling.)
+Oct 11 09:49:19 cix-ubuntu systemd-udevd[854]: Configuration file /usr/lib/udev/rules.d/99-cma-device.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+Oct 11 09:49:20 cix-ubuntu gsd-sharing[5262]: Failed to stop gnome-user-share-webdav.service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.
+Oct 11 09:49:20 cix-ubuntu geoclue[5671]: Failed to query location: No WiFi networks found
+Oct 11 09:49:28 cix-ubuntu chronyd[2135]: System clock wrong by -12.022443 seconds
+Oct 11 09:49:16 cix-ubuntu chronyd[2135]: System clock was stepped by -12.022443 seconds
+Oct 11 09:53:40 cix-ubuntu gsd-xsettings[10974]: Failed to get current UI scaling factor: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Destination does not exist
+Oct 11 09:53:41 cix-ubuntu rtkit-daemon[2679]: Failed to make ourselves RT: Operation not permitted
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto: event 0x10 received:
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto:         0x0000c10000000010
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto:         0x0000020000000000
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto:         0x0000000000000000
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto:         0x0000000000000000
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto: event: F_TRANSLATION client: 0000:c1:00.0 sid: 0xc100 ssid: 0x0 iova: 0x0 ipa: 0x0
+Oct 11 09:54:01 cix-ubuntu kernel: arm-smmu-v3 arm-smmu-v3.0.auto: unpriv data write s1 "Input address caused fault" stag: 0x0
+Oct 11 09:54:11 cix-ubuntu kernel: kauditd_printk_skb: 4 callbacks suppressed
+Oct 11 09:56:49 cix-ubuntu gnome-control-center[12705]: The resource style-dark.css is deprecated and shouldn't be used anymore. Use style.css with media queries instead.
+Oct 11 09:56:49 cix-ubuntu gnome-control-center[12705]: The resource style-hc.css is deprecated and shouldn't be used anymore. Use style.css with media queries instead.
+Oct 11 09:57:09 cix-ubuntu kernel: trilin-dptx-cix CIXH502F:04: [drm:trilin_dp_link_process_link_status_update][warn]link status:[1] but ignore now
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:28 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:31 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:31 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:31 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:32 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:32 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:32 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:36 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:37 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:37 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:37 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:38 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:40 cix-ubuntu systemd[4399]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 09:59:43 cix-ubuntu systemd-udevd[15958]: Configuration file /usr/lib/udev/rules.d/99-cma-device.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+Oct 11 09:59:44 cix-ubuntu systemd-oomd[16131]: No swap; memory pressure usage will be degraded
+Oct 11 09:59:45 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:45 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:45 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 09:59:48 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 09:59:48 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 09:59:48 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:00:50 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:00:50 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:00:50 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:01:15 cix-ubuntu kernel: kauditd_printk_skb: 4 callbacks suppressed
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:01:20 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:01:22 cix-ubuntu gsd-sharing[5262]: Failed to stop gnome-user-share-webdav.service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.
+Oct 11 10:01:22 cix-ubuntu chronyd[2135]: Can't synchronise: no selectable sources (5 unreachable sources)
+Oct 11 10:01:23 cix-ubuntu NetworkManager[25224]: <warn>  [1791684083.3328] device (p2p-dev-wlp1s0): error setting IPv4 forwarding to '1': 成功
+Oct 11 10:01:27 cix-ubuntu gsd-sharing[5262]: Failed to stop gnome-user-share-webdav.service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.
+Oct 11 10:01:27 cix-ubuntu geoclue[5671]: Failed to query location: No WiFi networks found
+Oct 11 10:01:29 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:01:29 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:01:29 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:01:29 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timer-ext-agent' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.ExtensionAgent.service'
+Oct 11 10:01:29 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-timerd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentTimer1.service'
+Oct 11 10:01:29 cix-ubuntu dbus-broker-launch[1830]: Invalid user name 'malcontent-webd' in service file '/usr/share/dbus-1/system-services/org.freedesktop.MalcontentWeb1.service'
+Oct 11 10:04:01 cix-ubuntu systemd[4399]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 10:04:09 cix-ubuntu kernel: set_capacity_and_notify: 6 callbacks suppressed
+Oct 11 10:04:09 cix-ubuntu systemd-udevd[15958]: Configuration file /usr/lib/udev/rules.d/99-cma-device.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+Oct 11 10:04:10 cix-ubuntu systemd[4399]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 10:04:10 cix-ubuntu systemd[4399]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 10:04:12 cix-ubuntu systemd[4399]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 11 10:04:28 cix-ubuntu dbus-broker-launch[4446]: Ignoring duplicate name 'org.freedesktop.PackageKit' in service file '/var/lib/snapd/dbus-1/services//org.freedesktop.PackageKit.service'
+Oct 11 10:04:56 cix-ubuntu gvfsd-recent[31687]: Unable to load /home/user/.local/share/recently-used.xbel: 打开文件“/home/user/.local/share/recently-used.xbel”失败：没有那个文件或目录
+Oct 11 10:04:56 cix-ubuntu kernel: kauditd_printk_skb: 3 callbacks suppressed

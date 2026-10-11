@@ -1,0 +1,15 @@
+$ cd /tmp/cix-hwinfo/acpi && for f in *; do [ -f $f ] && printf '%s %s\n' "$(md5sum $f | cut -d' ' -f1)" "$f"; done
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+b29aca7377e8d66c48abdcc505042a40 APIC
+6cfe5a781662f7af28d97a7f4eaf2568 CSRT
+2977977dbd9ac0cf436b85d9a7d02487 DBG2
+c0a097533169fc4d1f200fbce7e0ebc9 DSDT
+330507a33f13fdc5f963152774cc3068 FACP
+b216ecfab04ab1080cd6ce5f49fa80a4 GTDT
+080cdb51344bb4ee7ac4414569a3cffa IORT
+10308bb1a3344eec1cd3b2098994dc33 MCFG
+5377d37505c9890b5678f3cedecea973 PCCT
+10736bf4954e7d42c0ce7358e468b91f PPTT
+413618c4bd732094ae580a5a6de4f4fc SDEI
+2503ba7116f8a03a527d3871742a0553 SSDT1
+e5ee7488eecb44191d39bf0404566560 SSDT2

@@ -1,0 +1,19 @@
+$ sfdisk -l
+sfdisk: cannot open /dev/nvme0n1: Permission denied
+sfdisk: cannot open /dev/loop0: Permission denied
+sfdisk: cannot open /dev/loop1: Permission denied
+sfdisk: cannot open /dev/loop2: Permission denied
+sfdisk: cannot open /dev/loop3: Permission denied
+sfdisk: cannot open /dev/loop4: Permission denied
+sfdisk: cannot open /dev/loop5: Permission denied
+sfdisk: cannot open /dev/loop6: Permission denied
+sfdisk: cannot open /dev/loop9: Permission denied
+sfdisk: cannot open /dev/loop8: Permission denied
+sfdisk: cannot open /dev/loop10: Permission denied
+sfdisk: cannot open /dev/loop7: Permission denied
+sfdisk: cannot open /dev/loop11: Permission denied
+sfdisk: cannot open /dev/loop12: Permission denied
+sfdisk: cannot open /dev/loop13: Permission denied
+sfdisk: cannot open /dev/loop14: Permission denied
+sfdisk: cannot open /dev/loop15: Permission denied
+sfdisk: cannot open /dev/loop16: Permission denied

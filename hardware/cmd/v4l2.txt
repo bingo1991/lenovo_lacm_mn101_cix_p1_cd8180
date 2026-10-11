@@ -1,0 +1,5 @@
+$ sh -c ls -l /dev/video* /dev/media* 2>/dev/null
+crw-rw----+    1 root video 81, 0 Oct 11 09:47 /dev/video0
+crw-rw----+    1 root video 81, 1 Oct 11 09:47 /dev/video1
+crw-rw----+    1 root video 81, 2 Oct 11 09:47 /dev/video2
+crw-rw----+    1 root video 81, 3 Oct 11 09:47 /dev/video3

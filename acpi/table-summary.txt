@@ -1,0 +1,14 @@
+SIG       LEN  REV OEMID   OEMTABLEID  OEMREV    CREATOR CREV      CKSUM VALID FILE
+MCFG       92  1   CIXTEK  SKY1EDK2    16777473  CIX     1         0x6B   yes   MCFG
+GTDT      132  3   CIXTEK  SKY1EDK2    16777473  CIX     1         0xC7   yes   GTDT
+APIC     1064  5   CIXTEK  SKY1EDK2    16777473  CIX     1         0x1A   yes   APIC
+PCCT      138  2   CIXTEK  SKY1EDK2    16777473  CIX     1         0x4F   yes   PCCT
+SSDT    12500  2   CIXTEK  SKY1EDK2    1         INTL    539099953 0xF8   yes   SSDT1
+IORT     2776  5   CIXTEK  SKY1EDK2    16777473  CIX     1         0x7E   yes   IORT
+SDEI       36  1   CIXTEK  SKY1EDK2    16777473  CIX     1         0xB8   yes   SDEI
+DSDT    81257  2   CIXTEK  SKY1EDK2    1         INTL    539099953 0x7B   yes   DSDT
+DBG2       92  0   CIXTEK  SKY1EDK2    16777473  CIX     1         0x8B   yes   DBG2
+FACP      276  6   CIXTEK  SKY1EDK2    16777473  CIX     1         0x91   yes   FACP
+SSDT     5120  2   CIXTEK  SKY1EDK2    16777473  CIX     1         0x6C   yes   SSDT2
+CSRT      140  0   CIXTEK  SKY1EDK2    16777473  CIX     1         0x65   yes   CSRT
+PPTT      396  2   CIXTEK  SKY1EDK2    16777473  CIX     1         0x6D   yes   PPTT

@@ -1,0 +1,17 @@
+$ sh -c ls /sys/class/gpio/ 2>/dev/null; cat /sys/kernel/debug/gpio 2>/dev/null
+chip0
+chip1
+chip2
+chip3
+chip4
+chip5
+chip6
+export
+gpiochip512
+gpiochip544
+gpiochip576
+gpiochip608
+gpiochip625
+gpiochip657
+gpiochip667
+unexport

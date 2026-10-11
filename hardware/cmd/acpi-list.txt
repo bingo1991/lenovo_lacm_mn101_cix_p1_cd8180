@@ -1,0 +1,19 @@
+$ sh -c ls -la /tmp/cix-hwinfo/acpi/
+total 144
+drwxr-xr-x 4 user user   340 Oct 11 10:10 .
+drwxrwxr-x 7 user user   140 Oct 11 10:11 ..
+-r-------- 1 user user  1064 Oct 11 10:10 APIC
+-r-------- 1 user user   140 Oct 11 10:10 CSRT
+-r-------- 1 user user    92 Oct 11 10:10 DBG2
+-r-------- 1 user user 81257 Oct 11 10:10 DSDT
+-r-------- 1 user user   276 Oct 11 10:10 FACP
+-r-------- 1 user user   132 Oct 11 10:10 GTDT
+-r-------- 1 user user  2776 Oct 11 10:10 IORT
+-r-------- 1 user user    92 Oct 11 10:10 MCFG
+-r-------- 1 user user   138 Oct 11 10:10 PCCT
+-r-------- 1 user user   396 Oct 11 10:10 PPTT
+-r-------- 1 user user    36 Oct 11 10:10 SDEI
+-r-------- 1 user user 12500 Oct 11 10:10 SSDT1
+-r-------- 1 user user  5120 Oct 11 10:10 SSDT2
+drwxr-xr-x 2 user user    40 Oct 11 10:10 data
+drwxr-xr-x 2 user user    40 Oct 11 10:10 dynamic

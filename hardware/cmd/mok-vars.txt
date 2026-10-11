@@ -1,0 +1,8 @@
+$ sh -c sudo -n ls -la /sys/firmware/efi/mok-variables/ 2>/dev/null
+total 0
+drwxr-xr-x 2 root root    0 Oct 11 09:46 .
+drwxr-xr-x 5 root root    0 Oct 11 09:43 ..
+-r-------- 1 root root 1124 Oct 11 10:11 MokListRT
+-r-------- 1 root root    1 Oct 11 10:11 MokListTrustedRT
+-r-------- 1 root root   76 Oct 11 10:11 MokListXRT
+-r-------- 1 root root   18 Oct 11 10:11 SbatLevelRT

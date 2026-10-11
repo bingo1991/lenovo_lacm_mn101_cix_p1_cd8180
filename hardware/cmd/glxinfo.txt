@@ -1,0 +1,4 @@
+$ sh -c DISPLAY=:0 glxinfo -B
+Authorization required, but no authorization protocol specified
+
+Error: unable to open display :0

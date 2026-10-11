@@ -1,0 +1,32 @@
+$ for f in /tmp/cix-hwinfo/acpi/*; do printf '%-10s %s\n' "$(basename $f)" "$(dd if=$f bs=1 count=8 status=none)"; done
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+bash: line 1: warning: command substitution: ignored null byte in input
+APIC       APIC(
+bash: line 1: warning: command substitution: ignored null byte in input
+CSRT       CSRTŒ
+bash: line 1: warning: command substitution: ignored null byte in input
+DBG2       DBG2\
+bash: line 1: warning: command substitution: ignored null byte in input
+DSDT       DSDTi=
+bash: line 1: warning: command substitution: ignored null byte in input
+FACP       FACP
+bash: line 1: warning: command substitution: ignored null byte in input
+GTDT       GTDT„
+bash: line 1: warning: command substitution: ignored null byte in input
+IORT       IORTØ
+bash: line 1: warning: command substitution: ignored null byte in input
+MCFG       MCFG\
+bash: line 1: warning: command substitution: ignored null byte in input
+PCCT       PCCTŠ
+bash: line 1: warning: command substitution: ignored null byte in input
+PPTT       PPTTŒ
+bash: line 1: warning: command substitution: ignored null byte in input
+SDEI       SDEI$
+bash: line 1: warning: command substitution: ignored null byte in input
+SSDT1      SSDTÔ0
+bash: line 1: warning: command substitution: ignored null byte in input
+SSDT2      SSDT
+dd: IO error: Is a directory
+data       
+dd: IO error: Is a directory
+dynamic    

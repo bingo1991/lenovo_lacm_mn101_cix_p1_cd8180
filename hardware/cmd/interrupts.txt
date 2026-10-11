@@ -1,0 +1,94 @@
+$ cat /proc/interrupts
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       CPU8       CPU9       CPU10      CPU11      
+  9:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3  25 Level     vgic
+ 10:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3  30 Level     kvm guest ptimer
+ 11:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3  27 Level     kvm guest vtimer
+ 12:    1627651     498415     408136     353838     318338     465128     371857     334722     349963     306609     355419     322692    GICv3  26 Level     arch_timer
+ 13:          1          0          0          0          0          0          0          0          0          0          0          0    GICv3 107 Edge      arm-smmu-v3-evtq
+ 14:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 116 Edge      arm-smmu-v3-priq
+ 15:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 112 Edge      arm-smmu-v3-gerror
+ 17:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 141 Edge      arm-smmu-v3-evtq
+ 18:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 150 Edge      arm-smmu-v3-priq
+ 19:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 146 Edge      arm-smmu-v3-gerror
+ 33:      21329          0          0          0          0          0          0          0          0          0          0          0    GICv3 395 Level     CIXHA001:06
+ 34:          3          0          0          0          0          0          0          0          0          0          0          0    GICv3 391 Level     CIXHA001:07
+ 42:        664       7437       7709       7374       6418       5312       6182       7312       9583       9318       7907       8505    GICv3 502 Level     sky1_timer
+ 44:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 261 Level     CIXH6000:00
+ 47:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 318 Level     cdns-i2c
+ 48:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 319 Level     cdns-i2c
+ 49:         13          0          0          0          0          0          0          0          0          0          0          0    GICv3 321 Level     cdns-i2c
+ 50:          4          0          0          0          0          0          0          0          0          0          0          0    GICv3 325 Level     cdns-i2c
+ 51:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 434 Level     pcie-aer-c
+ 52:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 435 Level     pcie-aer-f
+ 53:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 436 Level     pcie-aer-nf
+ 54:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 437 Level     pcie-local
+ 57:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 454 Level     pcie-aer-c
+ 58:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 455 Level     pcie-aer-f
+ 59:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 456 Level     pcie-aer-nf
+ 60:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 457 Level     pcie-local
+ 63:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 463 Level     pcie-aer-c
+ 64:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 464 Level     pcie-aer-f
+ 65:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 465 Level     pcie-aer-nf
+ 66:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 466 Level     pcie-local
+ 69:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 358 Level     CIXH3010:00
+ 70:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 364 Level     CIXH502F:00
+ 71:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 365 Level     CIXH502F:01
+ 72:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 366 Level     CIXH502F:02
+ 73:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 367 Level     CIXH502F:03
+ 74:          4          0          0          0          0          0          0          0          0          0          0          0    GICv3 368 Level     CIXH502F:04
+ 75:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 348 Level     CIXH5010:00
+ 76:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 350 Level     CIXH5010:01
+ 77:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 352 Level     CIXH5010:02
+ 78:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3 354 Level     CIXH5010:03
+ 79:      98154          0          0          0          0          0          0          0          0          0          0          0    GICv3 356 Level     CIXH5010:04
+ 80:    1932287          0          0          0          0          0          0          0          0          0          0          0    GICv3 269 Level     CIXH5000:00
+ 81:          1          0          0          0          0          0          0          0          0          0          0          0    GICv3 270 Level     CIXH5000:00
+ 82:      96286          0          0          0          0          0          0          0          0          0          0          0    GICv3 271 Level     CIXH5000:00
+ 99:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 294 Level     CIXH2031:00
+100:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 295 Level     CIXH2031:00
+101:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 300 Level     CIXH2031:01, xhci-hcd:usb13
+102:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 301 Level     CIXH2031:01
+103:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 306 Level     CIXH2031:02, xhci-hcd:usb1
+104:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 307 Level     CIXH2031:02
+105:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 312 Level     CIXH2031:03, xhci-hcd:usb3
+106:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 313 Level     CIXH2031:03
+107:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 284 Level     CIXH2031:04, xhci-hcd:usb5
+108:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 285 Level     CIXH2031:04
+109:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 289 Level     CIXH2031:05, xhci-hcd:usb7
+110:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 290 Level     CIXH2031:05
+111:    1635834          0          0          0          0          0          0          0          0          0          0          0    PDCv1 272 Level     CIXH2031:06, xhci-hcd:usb9
+112:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 273 Level     CIXH2031:06
+113:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 275 Level     CIXH2031:07, xhci-hcd:usb10
+114:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 276 Level     CIXH2031:07
+115:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 278 Level     CIXH2031:08, xhci-hcd:usb11
+116:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 279 Level     CIXH2031:08
+117:        999          0          0          0          0          0          0          0          0          0          0          0    PDCv1 281 Level     CIXH2031:09, xhci-hcd:usb12
+118:          0          0          0          0          0          0          0          0          0          0          0          0    PDCv1 282 Level     CIXH2031:09
+120:          0          0          0          0          0          0          0          0          0          0          0          0    GICv3  23 Level     arm-pmu
+121:          0          0          0          0          0          0          0          0          0          0          0          0 cdns-gpio   1 Edge      ACPI:Event
+122:          0          0          0          0          0          0          0          0          0          0          0          0 cdns-gpio  10 Level     rx8900
+123:          0          0          0          0          0          0          0          0          0          0          0          0 cdns-gpio   7 Level     i2c-CIXH200D:00
+125:          0          0          0          0          0          0          0          0          0          0          0          0 ITS-PCI-MSI-0000:60:00.0   0 Edge      PCIe PME, aerdrv
+127:          0          0          0          0          0          0          0          0          0          0          0          0 ITS-PCI-MSI-0000:00:00.0   0 Edge      PCIe PME, aerdrv
+129:          0          0          0          0          0          0          0          0          0          0          0          0 ITS-PCI-MSI-0000:c0:00.0   0 Edge      PCIe PME, aerdrv
+130:          0          0          0          0          0          0          0          0          0          0          0          0 cdns-gpio   1 Edge      GPIO Power Key
+131:          0          0          0         45          0          0          0          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   0 Edge      nvme0q0
+132:          0          0          0          0          0          0          0          0      34386          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   1 Edge      nvme0q1
+133:      50467          0          0          0          0          0          0          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   2 Edge      nvme0q2
+134:          0          0          0          0          0          0          0          0          0          0      41847          0 ITS-PCI-MSIX-0000:c1:00.0   3 Edge      nvme0q3
+135:          0          0          0          0          0          0      54294          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   4 Edge      nvme0q4
+136:          0          0      10032          0          0          0          0          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   5 Edge      nvme0q5
+137:          0          0          0      11292          0          0          0          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   6 Edge      nvme0q6
+138:          0          0          0          0       9199          0          0          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   7 Edge      nvme0q7
+139:          0          0          0          0          0       6968          0          0          0          0          0          0 ITS-PCI-MSIX-0000:c1:00.0   8 Edge      nvme0q8
+140:          0          0          0          0          0          0          0          0          0          0          0          0 ITS-PCI-MSIX-0000:61:00.0   0 Edge      enp97s0
+141:          0          0          0          0          0     333339          0          0          0          0          0          0 ITS-PCI-MSI-0000:01:00.0   0 Edge      rtw89_pci
+IPI0:      1689       1647       9342       8410      11525      10689       3470       2705       2815       2194       2973       2633       Rescheduling interrupts
+IPI1:    383345    1121215     440338     349477     253823     120171     585251     625444     610480     519004     542579     601402       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0          0          0          0          0       CPU stop NMIs
+IPI4:         0        251        258        246        460        329        363        216        416        318        391        532       Timer broadcast interrupts
+IPI5:       127        394        205        205        135         92        234        197        217        215        128        173       IRQ work interrupts
+IPI6:         0          0          0          0          0          0          0          0          0          0          0          0       CPU backtrace interrupts
+IPI7:         0          0          0          0          0          0          0          0          0          0          0          0       KGDB roundup interrupts
+Err:          0

@@ -1,0 +1,5 @@
+$ sudo -n dmidecode -t 43
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+

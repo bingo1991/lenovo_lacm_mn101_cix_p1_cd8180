@@ -1,0 +1,16 @@
+$ sh -c for z in /sys/class/thermal/thermal_zone*; do echo "== $z =="; cat $z/type $z/temp; done
+== /sys/class/thermal/thermal_zone0 ==
+TZB0
+48000
+== /sys/class/thermal/thermal_zone1 ==
+TZB1
+46000
+== /sys/class/thermal/thermal_zone2 ==
+TZM0
+47000
+== /sys/class/thermal/thermal_zone3 ==
+TZM1
+46000
+== /sys/class/thermal/thermal_zone4 ==
+TZGT
+46000

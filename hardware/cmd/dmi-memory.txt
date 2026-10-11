@@ -1,0 +1,154 @@
+$ sudo -n dmidecode -t memory
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+
+Handle 0x0800, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x0005, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0800
+	Error Information Handle: Not Provided
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: Top - on board
+	Bank Locator: BANK 0
+	Type: LPDDR5
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 6000 MT/s
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: 1
+	Configured Memory Speed: 6000 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0006, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0800
+	Error Information Handle: Not Provided
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: Top - on board
+	Bank Locator: BANK 1
+	Type: LPDDR5
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 6000 MT/s
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: 1
+	Configured Memory Speed: 6000 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0007, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0800
+	Error Information Handle: Not Provided
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: Top - on board
+	Bank Locator: BANK 2
+	Type: LPDDR5
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 6000 MT/s
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: 1
+	Configured Memory Speed: 6000 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0008, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0800
+	Error Information Handle: Not Provided
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: Top - on board
+	Bank Locator: BANK 3
+	Type: LPDDR5
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 6000 MT/s
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: 1
+	Configured Memory Speed: 6000 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+

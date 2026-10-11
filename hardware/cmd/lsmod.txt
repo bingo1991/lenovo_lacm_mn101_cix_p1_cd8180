@@ -1,0 +1,117 @@
+$ lsmod
+Module                  Size  Used by
+aes_ce_ccm             12288  2
+sd_mod                 77824  0
+xt_conntrack           12288  1
+xt_MASQUERADE          16384  1
+xfrm_user              65536  1
+xfrm_algo              20480  1 xfrm_user
+xt_set                 20480  0
+ip_set                 65536  1 xt_set
+nft_chain_nat          12288  5
+nf_nat                 69632  2 nft_chain_nat,xt_MASQUERADE
+nf_conntrack          208896  3 xt_conntrack,nf_nat,xt_MASQUERADE
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+xt_addrtype            12288  4
+nft_compat             24576  6
+x_tables               69632  5 xt_conntrack,nft_compat,xt_addrtype,xt_set,xt_MASQUERADE
+nf_tables             364544  57 nft_compat,nft_chain_nat
+rfcomm                106496  16
+snd_seq_dummy          12288  0
+snd_hrtimer            12288  1
+overlay               204800  0
+qrtr                   49152  2
+rtw89_8852be           12288  0
+rtw89_8852b           360448  1 rtw89_8852be
+dm_mod                221184  0
+algif_hash             16384  1
+rtw89_8852b_common     77824  1 rtw89_8852b
+algif_skcipher         12288  1
+rtw89_pci             102400  1 rtw89_8852be
+af_alg                 32768  6 algif_hash,algif_skcipher
+rtw89_core           1196032  3 rtw89_8852b,rtw89_pci,rtw89_8852b_common
+r8169                 151552  0
+bnep                   36864  2
+mac80211             1757184  2 rtw89_core,rtw89_pci
+cfg80211             1421312  3 rtw89_core,mac80211,rtw89_8852b_common
+realtek                57344  1
+libarc4                12288  1 mac80211
+btusb                  81920  0
+binfmt_misc            28672  1
+btmtk                  36864  1 btusb
+btrtl                  36864  1 btusb
+btbcm                  24576  1 btusb
+btintel                73728  1 btusb
+bluetooth            1052672  44 btrtl,btmtk,btintel,btbcm,bnep,btusb,rfcomm
+snd_soc_rt5682s        98304  0
+snd_soc_hdmi_codec     24576  0
+snd_soc_core          430080  2 snd_soc_hdmi_codec,snd_soc_rt5682s
+rfkill                 40960  8 rtw89_core,bluetooth,cfg80211
+snd_compress           36864  1 snd_soc_core
+ac97_bus               12288  1 snd_soc_core
+snd_pcm_dmaengine      16384  1 snd_soc_core
+snd_pcm               200704  5 snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_soc_rt5682s,snd_pcm_dmaengine
+snd_seq_midi           24576  0
+snd_seq_midi_event     20480  1 snd_seq_midi
+amvx                  405504  0
+leds_gpio              12288  0
+snd_rawmidi            53248  1 snd_seq_midi
+snd_seq               126976  9 snd_seq_midi,snd_seq_midi_event,snd_seq_dummy
+videobuf2_dma_sg       20480  1 amvx
+videobuf2_memops       16384  1 videobuf2_dma_sg
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+videobuf2_v4l2         36864  1 amvx
+snd_timer              53248  3 snd_seq,snd_hrtimer,snd_pcm
+videobuf2_common       86016  4 videobuf2_v4l2,videobuf2_dma_sg,amvx,videobuf2_memops
+videodev              393216  2 videobuf2_v4l2,amvx
+snd                   151552  10 snd_seq,snd_seq_device,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_pcm,snd_rawmidi
+mc                     98304  3 videodev,videobuf2_v4l2,videobuf2_common
+cppc_cpufreq           24576  0
+soundcore              16384  1 snd
+squashfs               86016  17
+nls_ascii              12288  1
+nls_cp437              16384  1
+vfat                   24576  1
+fat                   110592  1 vfat
+loop                   40960  34
+input_leds             12288  0
+joydev                 36864  0
+evdev                  32768  11
+efi_pstore             12288  0
+nfnetlink              20480  4 nft_compat,nf_tables,ip_set
+hid_generic            12288  0
+ghash_ce               20480  0
+usbhid                 86016  0
+hid                   286720  2 usbhid,hid_generic
+sm4_ce_gcm             16384  0
+sm4_ce_ccm             16384  0
+nvme                   73728  3
+sm4_ce                 32768  2 sm4_ce_gcm,sm4_ce_ccm
+sm4_ce_cipher          12288  0
+sm4                    12288  4 sm4_ce,sm4_ce_cipher,sm4_ce_gcm,sm4_ce_ccm
+sm3_ce                 12288  0
+nvme_core             237568  4 nvme
+sbsa_gwdt              20480  0
+nvme_keyring           20480  1 nvme_core
+nvme_auth              28672  1 nvme_core
+hkdf                   12288  1 nvme_auth
+ramoops                32768  0
+reed_solomon           28672  1 ramoops
+gpio_keys              24576  0
+mali_kbase           1421312  37
+trilin_dpsub          167936  0
+drm_display_helper    327680  1 trilin_dpsub
+cec                    86016  1 drm_display_helper
+protected_memory_allocator    20480  1
+pwm_bl                 20480  0
+memory_group_manager    24576  1
+rc_core                73728  1 cec
+linlon_dp             184320  9
+drm_dma_helper         28672  1 linlon_dp
+arm_dma350             40960  0
+i2c_dev                28672  0
+autofs4                57344  2
+aes_neon_bs            24576  0
+aes_neon_blk           24576  1 aes_neon_bs
+aes_ce_blk             36864  5 aes_ce_ccm

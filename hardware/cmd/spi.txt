@@ -1,0 +1,2 @@
+$ sh -c ls -l /sys/bus/spi/devices/
+total 0

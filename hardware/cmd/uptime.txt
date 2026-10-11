@@ -1,0 +1,2 @@
+$ uptime
+ 10:11:00 up 27 min,  2 users,  load average: 2.09, 1.47, 1.15

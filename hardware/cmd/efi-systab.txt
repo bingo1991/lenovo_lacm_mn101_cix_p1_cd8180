@@ -1,0 +1,2 @@
+$ cat /sys/firmware/efi/systab
+cat: /sys/firmware/efi/systab: Permission denied

@@ -1,0 +1,37 @@
+$ lsusb -tv
+/:  Bus 001.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 002.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 003.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 004.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 005.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 006.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 007.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 008.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 009.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 001: Dev 002, If 0, Class=Human Interface Device, Driver=usbhid, 12M
+        ID 1997:2535 Shenzhen Riitek Technology Co., Ltd 
+    |__ Port 001: Dev 002, If 1, Class=Human Interface Device, Driver=usbhid, 12M
+        ID 1997:2535 Shenzhen Riitek Technology Co., Ltd 
+/:  Bus 010.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 011.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 012.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 001: Dev 002, If 0, Class=Wireless, Driver=btusb, 12M
+        ID 13d3:3570 IMC Networks 
+    |__ Port 001: Dev 002, If 1, Class=Wireless, Driver=btusb, 12M
+        ID 13d3:3570 IMC Networks 
+/:  Bus 013.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 014.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub

@@ -1,0 +1,2 @@
+$ cat /proc/mtd
+cat: /proc/mtd: No such file or directory

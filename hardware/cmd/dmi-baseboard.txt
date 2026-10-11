@@ -1,0 +1,20 @@
+$ sudo -n dmidecode -t baseboard
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+
+Handle 0x1000, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: LENOVO
+	Product Name: Base Board
+	Version: 1.0
+	Serial Number: Base Board Serial Number
+	Asset Tag: Base Board Asset Tag
+	Features:
+		Board is a hosting board
+	Location In Chassis: Part Component
+	Chassis Handle: 0x1001
+	Type: Motherboard
+	Contained Object Handles: 1
+		0x0004
+

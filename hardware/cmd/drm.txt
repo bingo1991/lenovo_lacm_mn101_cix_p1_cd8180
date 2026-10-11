@@ -1,0 +1,42 @@
+$ sh -c for d in /sys/class/drm/*; do echo "== $d =="; cat $d/status 2>/dev/null; done
+== /sys/class/drm/card0 ==
+== /sys/class/drm/card0-DP-1 ==
+disconnected
+== /sys/class/drm/card0-Writeback-1 ==
+unknown
+== /sys/class/drm/card0-Writeback-2 ==
+unknown
+== /sys/class/drm/card1 ==
+== /sys/class/drm/card1-DP-2 ==
+disconnected
+== /sys/class/drm/card1-Writeback-3 ==
+unknown
+== /sys/class/drm/card1-Writeback-4 ==
+unknown
+== /sys/class/drm/card2 ==
+== /sys/class/drm/card2-Writeback-5 ==
+unknown
+== /sys/class/drm/card2-Writeback-6 ==
+unknown
+== /sys/class/drm/card2-eDP-1 ==
+disconnected
+== /sys/class/drm/card3 ==
+== /sys/class/drm/card3-DP-3 ==
+disconnected
+== /sys/class/drm/card3-Writeback-7 ==
+unknown
+== /sys/class/drm/card3-Writeback-8 ==
+unknown
+== /sys/class/drm/card4 ==
+== /sys/class/drm/card4-DP-4 ==
+connected
+== /sys/class/drm/card4-Writeback-10 ==
+unknown
+== /sys/class/drm/card4-Writeback-9 ==
+unknown
+== /sys/class/drm/renderD128 ==
+== /sys/class/drm/renderD129 ==
+== /sys/class/drm/renderD130 ==
+== /sys/class/drm/renderD131 ==
+== /sys/class/drm/renderD132 ==
+== /sys/class/drm/version ==

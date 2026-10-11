@@ -1,0 +1,26 @@
+$ sh -c ls /sys/devices/system/cpu/cpufreq/ 2>/dev/null; cat /sys/devices/system/cpu/cpufreq/policy0/* 2>/dev/null
+boost
+policy0
+policy10
+policy2
+policy6
+policy8
+schedutil
+0 1
+<unsupported>
+<unsupported>
+0
+799804
+2600000
+800000
+0
+<unsupported>
+0 1
+0 1
+ondemand performance schedutil 
+800000
+cppc_cpufreq
+schedutil
+2600000
+800000
+<unsupported>

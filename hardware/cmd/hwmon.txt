@@ -1,0 +1,17 @@
+$ sh -c for h in /sys/class/hwmon/*; do echo "== $h =="; cat $h/name 2>/dev/null; done
+== /sys/class/hwmon/hwmon0 ==
+AC
+== /sys/class/hwmon/hwmon1 ==
+TZB0
+== /sys/class/hwmon/hwmon2 ==
+TZB1
+== /sys/class/hwmon/hwmon3 ==
+TZM0
+== /sys/class/hwmon/hwmon4 ==
+TZM1
+== /sys/class/hwmon/hwmon5 ==
+TZGT
+== /sys/class/hwmon/hwmon6 ==
+nvme
+== /sys/class/hwmon/hwmon7 ==
+r8169_0_6100:00

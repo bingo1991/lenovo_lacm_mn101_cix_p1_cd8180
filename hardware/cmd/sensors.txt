@@ -1,0 +1,49 @@
+$ sensors -u
+nvme-pci-c100
+Adapter: PCI adapter
+Composite:
+  temp1_input: 36.850
+  temp1_max: 89.850
+  temp1_min: -273.150
+  temp1_crit: 94.850
+  temp1_alarm: 0.000
+Sensor 1:
+  temp2_input: 37.850
+  temp2_max: 65261.850
+  temp2_min: -273.150
+Sensor 2:
+  temp3_input: 35.850
+  temp3_max: 65261.850
+  temp3_min: -273.150
+
+TZM1-acpi-0
+Adapter: ACPI interface
+temp1:
+  temp1_input: 46.000
+
+TZB1-acpi-0
+Adapter: ACPI interface
+temp1:
+  temp1_input: 47.000
+
+r8169_0_6100:00-mdio-0
+Adapter: MDIO adapter
+temp1:
+  temp1_input: 49.000
+  temp1_max: 120.000
+
+TZGT-acpi-0
+Adapter: ACPI interface
+temp1:
+  temp1_input: 46.000
+
+TZM0-acpi-0
+Adapter: ACPI interface
+temp1:
+  temp1_input: 47.000
+
+TZB0-acpi-0
+Adapter: ACPI interface
+temp1:
+  temp1_input: 48.000
+

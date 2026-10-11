@@ -1,0 +1,19 @@
+$ lsusb -t
+/:  Bus 001.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 002.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+/:  Bus 003.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 004.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+/:  Bus 005.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 006.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+/:  Bus 007.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 008.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M
+/:  Bus 009.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    |__ Port 001: Dev 002, If 0, Class=Human Interface Device, Driver=usbhid, 12M
+    |__ Port 001: Dev 002, If 1, Class=Human Interface Device, Driver=usbhid, 12M
+/:  Bus 010.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 011.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 012.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+    |__ Port 001: Dev 002, If 0, Class=Wireless, Driver=btusb, 12M
+    |__ Port 001: Dev 002, If 1, Class=Wireless, Driver=btusb, 12M
+/:  Bus 013.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 480M
+/:  Bus 014.Port 001: Dev 001, Class=root_hub, Driver=xhci-hcd/1p, 10000M

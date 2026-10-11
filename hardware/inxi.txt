@@ -1,0 +1,189 @@
+System:
+  Kernel: 7.0.0-38-cix arch: aarch64 bits: 64 compiler: gcc v: 15.2.0 clocksource: arch_sys_counter
+    avail: sky1_counter parameters: BOOT_IMAGE=/boot/vmlinuz-7.0.0-38-cix
+    root=UUID=<ROOT-PARTUUID> ro clk_ignore_unused quiet splash console=tty0
+    iomem=relaxed linlon_dp.enable_render=1 cpuidle.governor=teo
+    initcall_blacklist=simpledrm_platform_driver_init modprobe.blacklist=armchina_npu
+    crashkernel=2G-4G:320M,4G-32G:128M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
+  Console: pty pts/0 DM: GDM3 v: 50.0 Distro: Ubuntu 26.04 LTS (Resolute Raccoon)
+Machine:
+  Type: Unknown System: LENOVO product: LACM-MN101 v: AI Center MINI serial: <superuser required>
+  Mobo: LENOVO model: N/A v: 1.0 serial: <superuser required> part-nu: Default Firmware: UEFI
+    vendor: LENOVO v: -V1.03 date: 06/12/2026
+Memory:
+  System RAM: total: 8 GiB available: 7.39 GiB used: 4.65 GiB (62.9%)
+  Message: For most reliable report, use superuser + dmidecode.
+  Array-1: capacity: 64 GiB note: check slots: 4 modules: 4 EC: None max-module-size: 16 GiB
+    note: est.
+  Device-1: Top - on board type: LPDDR5 detail: unbuffered (unregistered) size: 2 GiB
+    speed: 6000 MT/s volts: N/A width (bits): data: 32 total: 32 manufacturer: N/A part-no: N/A
+    serial: N/A
+  Device-2: Top - on board type: LPDDR5 detail: unbuffered (unregistered) size: 2 GiB
+    speed: 6000 MT/s volts: N/A width (bits): data: 32 total: 32 manufacturer: N/A part-no: N/A
+    serial: N/A
+  Device-3: Top - on board type: LPDDR5 detail: unbuffered (unregistered) size: 2 GiB
+    speed: 6000 MT/s volts: N/A width (bits): data: 32 total: 32 manufacturer: N/A part-no: N/A
+    serial: N/A
+  Device-4: Top - on board type: LPDDR5 detail: unbuffered (unregistered) size: 2 GiB
+    speed: 6000 MT/s volts: N/A width (bits): data: 32 total: 32 manufacturer: N/A part-no: N/A
+    serial: N/A
+PCI Slots:
+  Message: No ARM data found for this feature.
+CPU:
+  Info: model: CIX P1 CD8180 bits: 64 type: MCP arch: ARMv8 family: 8 model-id: 0 stepping: 1
+  Topology: cpus: 1x clusters: 5 cores: 12 smt: <unsupported> cache: N/A
+  Speed (MHz): avg: 800 min/max: 800/2600:1800:2300:2200:2500 boost: disabled scaling:
+    driver: cppc_cpufreq governor: schedutil cores: 1: 800 2: 800 3: 800 4: 800 5: 800 6: 800 7: 800
+    8: 800 9: 800 10: 800 11: 800 12: 800 bogomips: 24000
+  Features: aes afp asimd asimddp asimdfhm asimdhp asimdrdm atomics bf16 bti cpuid crc32 dcpodp
+    dcpop dgh dit ecv evtstrm fcma flagm flagm2 fp fphp frint i8mm ilrcpc jscvt lrcpc mte mte3
+    paca pacg pmull sb sha1 sha2 sha3 sha512 sm3 sm4 sve sve2 sveaes svebf16 svebitperm svei8mm
+    svepmull svesha3 svesm4 uscat wfxt
+  Vulnerabilities:
+  Type: gather_data_sampling status: Not affected
+  Type: ghostwrite status: Not affected
+  Type: indirect_target_selection status: Not affected
+  Type: itlb_multihit status: Not affected
+  Type: l1tf status: Not affected
+  Type: mds status: Not affected
+  Type: meltdown status: Not affected
+  Type: mmio_stale_data status: Not affected
+  Type: old_microcode status: Not affected
+  Type: reg_file_data_sampling status: Not affected
+  Type: retbleed status: Not affected
+  Type: spec_rstack_overflow status: Not affected
+  Type: spec_store_bypass mitigation: Speculative Store Bypass disabled via prctl
+  Type: spectre_v1 mitigation: __user pointer sanitization
+  Type: spectre_v2 mitigation: CSV2, BHB
+  Type: srbds status: Not affected
+  Type: tsa status: Not affected
+  Type: tsx_async_abort status: Not affected
+  Type: vmscape status: Not affected
+Graphics:
+  Message: No PCI device data found.
+  Display: server: Xwayland v: 24.1.10 compositor: gnome-shell driver: N/A tty: 80x40
+  API: EGL v: 1.5 platforms: device: 0 drv: zink device: 1 drv: zink gbm: drv: arm surfaceless:
+    drv: zink wayland: drv: arm inactive: x11
+  API: OpenGL v: 4.6 vendor: mesa v: 25.1.5 note: console (EGL sourced) renderer: zink Vulkan
+    1.4(Mali-G720-Immortalis (ARM_PROPRIETARY))
+  Info: Tools: api: eglinfo,glxinfo x11: xdriinfo, xdpyinfo, xprop, xrandr
+Audio:
+  Message: No device data found.
+  API: ALSA v: k7.0.0-38-cix status: kernel-api tools: alsactl,alsamixer,amixer
+  Server-1: PipeWire v: 1.6.2 status: active with: 1: pipewire-pulse status: active
+    2: wireplumber status: active 3: pipewire-alsa type: plugin tools: pw-cat,pw-cli,wpctl
+Network:
+  Device-1: Realtek RTL8852BE PCIe 802.11ax Wireless Network vendor: AzureWave driver: rtw89_8852be
+    v: kernel pcie: gen: 1 speed: 2.5 GT/s lanes: 1 port: 200000 bus-ID: 01:00.0 chip-ID: 10ec:b852
+    class-ID: 0280
+  IF: wlp1s0 state: up mac: <filter>
+  IP v4: <filter> type: dynamic noprefixroute scope: global broadcast: <filter>
+  IP v6: <filter> type: dynamic mngtmpaddr noprefixroute scope: global
+  IP v6: <filter> type: temporary dynamic scope: global
+  IP v6: <filter> type: dynamic noprefixroute scope: global
+  IP v6: <filter> type: noprefixroute scope: link
+  Device-2: Realtek RTL8125 2.5GbE driver: r8169 v: kernel pcie: gen: 2 speed: 5 GT/s lanes: 1
+    port: 1000 bus-ID: 61:00.0 chip-ID: 10ec:8125 class-ID: 0200
+  IF: enp97s0 state: down mac: <filter>
+  IF-ID-1: docker0 state: down mac: <filter>
+  IP v4: <filter> scope: global broadcast: <filter>
+  Info: services: NetworkManager, sshd, wpa_supplicant
+  WAN IP: <filter>
+Bluetooth:
+  Device-1: IMC Networks Bluetooth Radio driver: btusb v: 0.8 type: USB rev: 1.0 speed: 12 Mb/s
+    lanes: 1 mode: 1.1 bus-ID: 12-1:2 chip-ID: 13d3:3570 class-ID: e001 serial: <filter>
+  Report: hciconfig ID: hci0 rfk-id: 0 state: up address: <filter> bt-v: 5.2 lmp-v: 11
+    sub-v: 4e04 hci-v: 11 rev: 42d3 class-ID: 7c010c
+  Info: acl-mtu: 1021:6 sco-mtu: 255:12 link-policy: rswitch hold sniff park
+    link-mode: peripheral accept service-classes: rendering, capturing, object transfer, audio,
+    telephony
+Logical:
+  Message: No logical block device data found.
+RAID:
+  Message: No RAID data found.
+Drives:
+  Local Storage: total: 238.47 GiB used: 9.37 GiB (3.9%)
+  SMART Message: Required tool smartctl not installed. Check --recommends
+  ID-1: /dev/nvme0n1 maj-min: 259:0 vendor: AirDisk model: 256GB SSD size: 238.47 GiB block-size:
+    physical: 512 B logical: 512 B speed: 31.6 Gb/s lanes: 4 tech: SSD serial: <filter>
+    fw-rev: SN29416 temp: 37.9 C scheme: GPT
+  Message: No optical or floppy data found.
+Partition:
+  ID-1: / raw-size: 131 GiB size: 128.82 GiB (98.34%) used: 8.76 GiB (6.8%) fs: ext4
+    dev: /dev/nvme0n1p3 maj-min: 259:3 label: CIXROOT uuid: <ROOT-PARTUUID>
+  ID-2: /boot/efi raw-size: 1.05 GiB size: 1.05 GiB (99.80%) used: 6.5 MiB (0.6%) fs: vfat
+    dev: /dev/nvme0n1p1 maj-min: 259:1 label: CIXESP uuid: D037-380D
+  ID-3: /data raw-size: 98.42 GiB size: 96.32 GiB (97.86%) used: 619.1 MiB (0.6%) fs: ext4
+    dev: /dev/nvme0n1p4 maj-min: 259:4 label: CIXDATA uuid: <UUID>
+Swap:
+  Alert: No swap data was found.
+Unmounted:
+  ID-1: /dev/nvme0n1p2 maj-min: 259:2 size: 8 GiB fs: vfat label: CIXRECOVERY uuid: D086-9B1D
+USB:
+  Hub-1: 1-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-2: 2-0:1 info: super-speed hub ports: 1 rev: 3.1 speed: 10 Gb/s (1.16 GiB/s) lanes: 1
+    mode: 3.2 gen-2x1 chip-ID: 1d6b:0003 class-ID: 0900
+  Hub-3: 3-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-4: 4-0:1 info: super-speed hub ports: 1 rev: 3.1 speed: 10 Gb/s (1.16 GiB/s) lanes: 1
+    mode: 3.2 gen-2x1 chip-ID: 1d6b:0003 class-ID: 0900
+  Hub-5: 5-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-6: 6-0:1 info: super-speed hub ports: 1 rev: 3.1 speed: 10 Gb/s (1.16 GiB/s) lanes: 1
+    mode: 3.2 gen-2x1 chip-ID: 1d6b:0003 class-ID: 0900
+  Hub-7: 7-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-8: 8-0:1 info: super-speed hub ports: 1 rev: 3.1 speed: 10 Gb/s (1.16 GiB/s) lanes: 1
+    mode: 3.2 gen-2x1 chip-ID: 1d6b:0003 class-ID: 0900
+  Hub-9: 9-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Device-1: 9-1:2 info: Shenzhen Riitek mini keyboard type: keyboard,mouse
+    driver: hid-generic,usbhid interfaces: 2 rev: 2.0 speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1
+    power: 100mA chip-ID: 1997:2535 class-ID: 0301
+  Hub-10: 10-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-11: 11-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-12: 12-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Device-1: 12-1:2 info: IMC Networks Bluetooth Radio type: bluetooth driver: btusb interfaces: 2
+    rev: 1.0 speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 power: 500mA chip-ID: 13d3:3570
+    class-ID: e001 serial: <filter>
+  Hub-13: 13-0:1 info: hi-speed hub with single TT ports: 1 rev: 2.0 speed: 480 Mb/s (57.2 MiB/s)
+    lanes: 1 mode: 2.0 chip-ID: 1d6b:0002 class-ID: 0900
+  Hub-14: 14-0:1 info: super-speed hub ports: 1 rev: 3.1 speed: 10 Gb/s (1.16 GiB/s) lanes: 1
+    mode: 3.2 gen-2x1 chip-ID: 1d6b:0003 class-ID: 0900
+Sensors:
+  System Temperatures: cpu: 46.5 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Repos:
+  Packages: 2080 pm: dpkg pkgs: 2065 libs: 880 tools: apt,apt-get,gnome-software pm: snap pkgs: 15
+  No active apt repos in: /etc/apt/sources.list
+  Active apt repos in: /etc/apt/sources.list.d/cixee-team-cixee.list
+    1: deb [signed-by=/etc/apt/keyrings/cixee-team-cixee.asc] https: //ppa.launchpadcontent.net/cixee-team/cixee/ubuntu resolute main
+    2: deb-src [signed-by=/etc/apt/keyrings/cixee-team-cixee.asc] https: //ppa.launchpadcontent.net/cixee-team/cixee/ubuntu resolute main
+  Active apt repos in: /etc/apt/sources.list.d/extra-ppas.list
+    1: deb https: //ppa.launchpadcontent.net/ubuntu-concept/cix/ubuntu resolute main
+    2: deb-src https: //ppa.launchpadcontent.net/ubuntu-concept/cix/ubuntu resolute main
+  Active apt repos in: /etc/apt/sources.list.d/ubuntu.sources
+    1: deb https: //mirrors.tuna.tsinghua.edu.cn/ubuntu/ resolute resolute-updates resolute-backports main restricted universe multiverse
+    2: deb http: //security.ubuntu.com/ubuntu/ resolute-security main restricted universe multiverse
+Processes:
+  CPU top: 5 of 376
+  1: cpu: 300% command: ps pid: 37543 mem: 3.56 MiB (0.0%)
+  2: cpu: 14.9% command: gnome-shell pid: 5138 mem: 1023.7 MiB (13.5%)
+  3: cpu: 9.6% command: sshd-session: pid: 37501 mem: 12.2 MiB (0.1%)
+  4: cpu: 4.8% command: firefox pid: 10719 mem: 721.4 MiB (9.5%)
+  5: cpu: 3.6% command: ptyxis pid: 8344 mem: 456.4 MiB (6.0%)
+  Memory top: 5 of 376
+  1: mem: 1023.7 MiB (13.5%) command: gnome-shell pid: 5138 cpu: 14.9%
+  2: mem: 721.4 MiB (9.5%) command: firefox pid: 10719 cpu: 4.8%
+  3: mem: 456.4 MiB (6.0%) command: ptyxis pid: 8344 cpu: 3.6%
+  4: mem: 284.5 MiB (3.7%) command: resources pid: 7042 cpu: 0.7%
+  5: mem: 196.6 MiB (2.5%) command: firefox pid: 11509 cpu: 0.8%
+Info:
+  Processes: 376 Power: uptime: 41m states: freeze,mem,disk suspend: deep avail: s2idle wakeups: 0
+    hibernate: shutdown avail: reboot,suspend,test_resume image: 2.91 GiB services: gsd-power,
+    power-profiles-daemon, upowerd Init: systemd v: 259 default: graphical tool: systemctl
+  Compilers: gcc: 15.2.0 Client: shell wrapper v: 5.3.9-release inxi: 3.3.40

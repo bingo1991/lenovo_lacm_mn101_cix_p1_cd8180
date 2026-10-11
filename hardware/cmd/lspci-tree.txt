@@ -1,0 +1,4 @@
+$ lspci -tv
+-+-[0000:00]---00.0-[01-2f]----00.0  Realtek Semiconductor Co., Ltd. RTL8852BE PCIe 802.11ax Wireless Network Controller
+ +-[0000:60]---00.0-[61-8f]----00.0  Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller
+ \-[0000:c0]---00.0-[c1-ff]----00.0  MAXIO Technology (Hangzhou) Ltd. NVMe SSD Controller MAP1202 (DRAM-less)

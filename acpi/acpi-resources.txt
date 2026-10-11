@@ -1,0 +1,233 @@
+_SB//UCRU                      CIXHA018  mem=0x0416009C                                        
+_SB//COM0                      ARMH0011  mem=0x040B0000                                       spi=[296] 
+_SB//COM1                      ARMH0011  mem=0x040C0000                                       spi=[297] 
+_SB//COM2                      ARMH0011  mem=0x040D0000                                       spi=[298] 
+_SB//COM3                      ARMH0011  mem=0x040E0000                                       spi=[299] 
+_SB//DSTD                      PRP0001   mem=0x83000000                                        cix,dst
+_SB//DSTD/EXTR                 PRP0001   mem=-                                                 rdr,exceptiontrace
+_SB//DSTD/APAD                 PRP0001   mem=0x83DE0000                                        rdr,rdr_ap_adapter
+_SB//RAOP                      PRP0001   mem=0x83D00000                                        ramoops
+_SB//DCT0                      PRP0001   mem=0x0C010000, 0x83C00000                           spi=[207] cadence,ddr_ctrl
+_SB//DCT1                      PRP0001   mem=0x0C030000, 0x83C00000                           spi=[210] cadence,ddr_ctrl
+_SB//DCT2                      PRP0001   mem=0x0C050000, 0x83C00000                           spi=[213] cadence,ddr_ctrl
+_SB//DCT3                      PRP0001   mem=0x0C070000, 0x83C00000                           spi=[216] cadence,ddr_ctrl
+_SB//SEPM                      PRP0001   mem=-                                                 cix,se_pm_crash
+_SB//DSMC                      PRP0001   mem=-                                                 cix,cix_se2ap_mbox
+_SB//PDC0                      CIXHA019  mem=0x16000000                                        
+_SB//MBX0                      CIXHA001  mem=0x05060000                                       spi=[378] 
+_SB//MBX1                      CIXHA001  mem=0x05070000                                       spi=[379] 
+_SB//MBX2                      CIXHA001  mem=0x080A0000                                       spi=[392] 
+_SB//MBX3                      CIXHA001  mem=0x08090000                                       spi=[391] 
+_SB//MBX4                      CIXHA001  mem=0x07100000                                       spi=[233] 
+_SB//MBX5                      CIXHA001  mem=0x070F0000                                       spi=[232] 
+_SB//MBX6                      CIXHA001  mem=0x06590000                                       spi=[363] 
+_SB//MBX7                      CIXHA001  mem=0x065A0000                                       spi=[359] 
+_SB//CCLK                      CIXHA010  mem=-                                                 
+_SB//REST                      CIXA1019  mem=-                                                 
+_SB//RST0                      CIXHA020  mem=0x16000000                                        
+_SB//RST1                      CIXHA021  mem=0x04160000                                        
+_SB//CRU0                      CIXHA018  mem=0x16000000                                        
+_SB//GCRU                      CIXHA018  mem=0x09310000                                        
+_SB//MAC0                      CIXH7020  mem=0x09320000                                       spi=[343] 
+_SB//MAC0/PHY0                           mem=-                                                 ethernet-phy-ieee802.3-c22
+_SB//MAC1                      CIXH7020  mem=0x09330000                                       spi=[351] 
+_SB//MAC1/PHY1                           mem=-                                                 ethernet-phy-ieee802.3-c22
+_SB//SHM0                      CIXHA004  mem=0x06590000                                        arm,scmi-shmem
+_SB//SHM1                      CIXHA005  mem=0x065A0000                                        arm,scmi-shmem
+_SB//SCMI                      CIXHA006  mem=-                                                 
+_SB//SCMI/DVFS                 CIXHA008  mem=-                                                 
+_SB//SCMI/CLKS                 CIXHA009  mem=-                                                 
+_SB//PMMX                      CIXHA000  mem=-                                                 
+_SB//ADSS                      CIXH6060  mem=0x07110000                                        
+_SB//ADSS/ACLK                 CIXH6061  mem=-                                                 
+_SB//ADSS/ARST                 CIXH6062  mem=-                                                 
+_SB//ACRU                      CIXHA018  mem=0x07110000                                        
+_SB//GPI0                      CIXH1002  mem=0x04120000                                       spi=[304] 
+_SB//GPI1                      CIXH1003  mem=0x04130000                                       spi=[305] 
+_SB//GPI2                      CIXH1003  mem=0x04140000                                       spi=[306] 
+_SB//GPI3                      CIXH1003  mem=0x04150000                                       spi=[307] 
+_SB//GPI4                      CIXH1003  mem=0x16004000                                       spi=[372] 
+_SB//GPI5                      CIXH1003  mem=0x16005000                                       spi=[373] 
+_SB//GPI6                      CIXH1003  mem=0x16006000                                       spi=[374] 
+_SB//PWM0                      CIXH2011  mem=0x04110000                                        
+_SB//PWM1                      CIXH2011  mem=0x04112000                                        
+_SB//PWM2                      CIXH2011  mem=0x04112000                                        
+_SB//PWM3                      CIXH2011  mem=0x04113000                                        
+_SB//PWM5                      CIXH2011  mem=0x04115000                                        
+_SB//TMR0                      CIXH1007  mem=0x04116000                                       spi=[470] 
+_SB//HDA                       CIXH6020  mem=0x070C0000                                       spi=[234] 
+_SB//DCRU                      CIXHA018  mem=0x07110000                                        
+_SB//DSP                       CIXH6000  mem=0x07000000                                       spi=[229] 
+_SB//DMA0                      CIXHA014  mem=0x04190000                                       spi=[303] 
+_SB//DMA1                      CIXH1006  mem=0x07010000                                       spi=[230] 
+_SB//XSPI                      CIXH2002  mem=0x04180000, 0x00010000                           spi=[302] 
+_SB//I2C0                      CIXH200B  mem=0x04010000                                       spi=[286] 
+_SB//I2C1                      CIXH200B  mem=0x04020000                                       spi=[287] 
+_SB//I2C2                      CIXH200B  mem=0x04030000                                       spi=[288] 
+_SB//I2C3                      CIXH200B  mem=0x04040000                                       spi=[289] 
+_SB//I2C4                      CIXH200B  mem=0x04050000                                       spi=[290] 
+_SB//I2C5                      CIXH200B  mem=0x04060000                                       spi=[291] 
+_SB//I2C6                      CIXH200B  mem=0x04070000                                       spi=[292] 
+_SB//I2C7                      CIXH200B  mem=0x04080000                                       spi=[293] 
+_SB//SPI0                      CIXH2001  mem=0x04090000                                       spi=[294] 
+_SB//SPI1                      CIXH2001  mem=0x040A0000                                       spi=[295] 
+_SB//I3C0                      CIXH200C  mem=0x040F0000                                       spi=[300] 
+_SB//I3C1                      CIXH200C  mem=0x04100000                                       spi=[301] 
+_SB//PCI0                      PNP0A08   mem=-                                                 
+_SB//PCI1                      PNP0A08   mem=-                                                 
+_SB//PCI2                      PNP0A08   mem=-                                                 
+_SB//PCI3                      PNP0A08   mem=-                                                 
+_SB//PCI4                      PNP0A08   mem=-                                                 
+_SB//RES0                      PNP0C02   mem=-                                                 
+_SB//PRC0                      CIXH2020  mem=0x0A010000, 0x0A000000, 0x2C000000, 0x60000000   spi=[402, 403, 404, 405, 406, 411] 
+_SB//PCP0                      CIXH2023  mem=0x0A020000                                        
+_SB//PRC1                      CIXH2020  mem=0x0A070000, 0x0A060000, 0x29000000, 0x50000000   spi=[412, 413, 414, 415, 416, 421] 
+_SB//PCP1                      CIXH2023  mem=0x0A080000                                        
+_SB//PRC2                      CIXH2020  mem=0x0A0C0000, 0x0A060000, 0x26000000, 0x40000000   spi=[422, 423, 424, 425, 426, 451] 
+_SB//PRC3                      CIXH2020  mem=0x0A0E0000, 0x0A060000, 0x23000000, 0x38000000   spi=[440, 441, 442, 443, 444, 450] 
+_SB//PRC4                      CIXH2020  mem=0x0A0D0000, 0x0A060000, 0x20000000, 0x30000000   spi=[431, 432, 433, 434, 435, 449] 
+_SB//PCP2                      CIXH2023  mem=0x0A0F0000                                        
+_SB//VPU0                      CIXH3010  mem=0x14230000, 0x14240000                           spi=[326] 
+_SB//VDP0                      CIXH503F  mem=-                                                 
+_SB//VDP1                      CIXH503F  mem=-                                                 
+_SB//VDP2                      CIXH503F  mem=-                                                 
+_SB//VDP3                      CIXH503F  mem=-                                                 
+_SB//VDP4                      CIXH503F  mem=-                                                 
+_SB//VDP5                      CIXH503F  mem=-                                                 
+_SB//VDP6                      CIXH503F  mem=-                                                 
+_SB//VDP7                      CIXH503F  mem=-                                                 
+_SB//VDP8                      CIXH503F  mem=-                                                 
+_SB//VDP9                      CIXH503F  mem=-                                                 
+_SB//DP00                      CIXH502F  mem=0x14064000, 0x14068000, 0x1406FF00, 0x14050000   spi=[332] 
+_SB//DP01                      CIXH502F  mem=0x140D4000, 0x140D8000, 0x140DFF00, 0x140C0000   spi=[333] 
+_SB//DP02                      CIXH502F  mem=0x14144000, 0x14148000, 0x1414C000, 0x14130000   spi=[334] 
+_SB//DP03                      CIXH502F  mem=0x141B4000, 0x141B8000, 0x141BFF00, 0x141A0000   spi=[335] 
+_SB//DP04                      CIXH502F  mem=0x14224000, 0x14228000, 0x1422FF00, 0x14210000   spi=[336] 
+_SB//DPU0                      CIXH5010  mem=0x14010000                                       spi=[316] 
+_SB//DPU1                      CIXH5010  mem=0x14080000                                       spi=[318] 
+_SB//DPU2                      CIXH5010  mem=0x140F0000                                       spi=[320] 
+_SB//DPU3                      CIXH5010  mem=0x14160000                                       spi=[322] 
+_SB//DPU4                      CIXH5010  mem=0x141D0000                                       spi=[324] 
+_SB//AEU0                      CIXH5011  mem=0x14030000                                       spi=[317] 
+_SB//AEU1                      CIXH5011  mem=0x140A0000                                       spi=[319] 
+_SB//AEU2                      CIXH5011  mem=0x14110000                                       spi=[321] 
+_SB//AEU3                      CIXH5011  mem=0x14180000                                       spi=[323] 
+_SB//AEU4                      CIXH5011  mem=0x141F0000                                       spi=[325] 
+_SB//DPBL                      CIXH5041  mem=-                                                 
+_SB//EDP0                      CIXH5040  mem=-                                                 
+_SB//CGFX                      CIXH5050  mem=0x14010000, 0x14080000, 0x140F0000, 0x14160000, 0x141D0000 spi=[316, 318, 320, 322, 324] 
+_SB//PMA                       CIXHA012  mem=0xBCE00000                                        
+_SB//PMGM                      CIXHA013  mem=-                                                 
+_SB//GPUP                      CIXH5001  mem=-                                                 
+_SB//GPU                       CIXH5000  mem=0x15000000, 0x15010000                           spi=[237, 238, 239] 
+_SB//NPU0                      CIXH4000  mem=0x14260000                                       spi=[327] 
+_SB//NPU0/CRE0                 CIXH4010  mem=-                                                 
+_SB//NPU0/CRE1                 CIXH4010  mem=-                                                 
+_SB//NPU0/CRE2                 CIXH4010  mem=-                                                 
+_SB//I2S0                      CIXH6010  mem=0x07020000                                       spi=[219] 
+_SB//I2S1                      CIXH6010  mem=0x07030000                                       spi=[220] 
+_SB//I2S2                      CIXH6010  mem=0x07040000                                       spi=[221] 
+_SB//I2S3                      CIXH6011  mem=0x07050000                                       spi=[222] 
+_SB//I2S4                      CIXH6011  mem=0x07060000                                       spi=[223] 
+_SB//I2S5                      CIXH6011  mem=0x07070000                                       spi=[224] 
+_SB//I2S6                      CIXH6011  mem=0x07080000                                       spi=[225] 
+_SB//I2S7                      CIXH6011  mem=0x07090000                                       spi=[226] 
+_SB//I2S8                      CIXH6011  mem=0x070A0000                                       spi=[227] 
+_SB//I2S9                      CIXH6011  mem=0x070B0000                                       spi=[228] 
+_SB//XHC0                      PNP0D10   mem=0x09018000                                       spi=[262] 
+_SB//XHC1                      PNP0D10   mem=0x09088000                                       spi=[268] 
+_SB//XHC2                      PNP0D10   mem=0x090F8000                                       spi=[274] 
+_SB//XHC3                      PNP0D10   mem=0x09168000                                       spi=[280] 
+_SB//XHC4                      PNP0D10   mem=0x091D8000                                       spi=[252] 
+_SB//XHC5                      PNP0D10   mem=0x091E8000                                       spi=[257] 
+_SB//USB0                      PNP0D10   mem=0x09268000                                       spi=[240] 
+_SB//USB1                      PNP0D10   mem=0x09298000                                       spi=[243] 
+_SB//USB2                      PNP0D10   mem=0x092C8000                                       spi=[246] 
+_SB//USB3                      PNP0D10   mem=0x092F8000                                       spi=[249] 
+_SB//SUB0                      CIXH2030  mem=0x09000310, 0x09000400                            
+_SB//SUB0/CUB0                 CIXH2031  mem=0x09010000, 0x09014000, 0x09018000               spi=[262, 262, 263, 262] 
+_SB//U2P4                      CIXH2032  mem=-                                                 
+_SB//UCP0                      CIXH2033  mem=0x09030000                                        
+_SB//SUB1                      CIXH2030  mem=0x09070310, 0x09070400                            
+_SB//SUB1/CUB1                 CIXH2031  mem=0x09080000, 0x09084000, 0x09088000               spi=[268, 268, 269, 268] 
+_SB//U2P5                      CIXH2032  mem=-                                                 
+_SB//UCP1                      CIXH2033  mem=0x090A0000                                        
+_SB//SUB2                      CIXH2030  mem=0x090E0310, 0x090E0400                            
+_SB//SUB2/CUB2                 CIXH2031  mem=0x090F0000, 0x090F4000, 0x090F8000               spi=[274, 274, 275, 274] 
+_SB//U2P8                      CIXH2032  mem=-                                                 
+_SB//UCP2                      CIXH2033  mem=0x09110000                                        
+_SB//SUB3                      CIXH2030  mem=0x09150310, 0x09150400                            
+_SB//SUB3/CUB3                 CIXH2031  mem=0x09160000, 0x09164000, 0x09168000               spi=[280, 280, 281, 280] 
+_SB//U2P9                      CIXH2032  mem=-                                                 
+_SB//UCP3                      CIXH2033  mem=0x09180000                                        
+_SB//SUB4                      CIXH2030  mem=0x091C0314, 0x091C0400                            
+_SB//SUB4/CUB4                 CIXH2031  mem=0x091D0000, 0x091D4000, 0x091D8000               spi=[252, 252, 253, 252] 
+_SB//SUB5                      CIXH2030  mem=0x091C0324, 0x091C0410                            
+_SB//SUB5/CUB5                 CIXH2031  mem=0x091E0000, 0x091E4000, 0x091E8000               spi=[257, 257, 258, 257] 
+_SB//U2P6                      CIXH2032  mem=-                                                 
+_SB//U2P7                      CIXH2032  mem=-                                                 
+_SB//U3P4                      CIXH2034  mem=0x09210000                                        
+_SB//HUB0                      CIXH2030  mem=0x09250310, 0x09250400                            
+_SB//HUB0/CUB0                 CIXH2031  mem=0x09260000, 0x09264000, 0x09268000               spi=[240, 240, 241, 240] 
+_SB//HUB1                      CIXH2030  mem=0x09280310, 0x09280400                            
+_SB//HUB1/CUB1                 CIXH2031  mem=0x09290000, 0x09294000, 0x09298000               spi=[243, 243, 244, 243] 
+_SB//U2P0                      CIXH2032  mem=-                                                 
+_SB//U2P1                      CIXH2032  mem=-                                                 
+_SB//HUB2                      CIXH2030  mem=0x092B0310, 0x092B0400                            
+_SB//HUB2/CUB2                 CIXH2031  mem=0x092C0000, 0x092C4000, 0x092C8000               spi=[246, 246, 247, 246] 
+_SB//U2P2                      CIXH2032  mem=-                                                 
+_SB//HUB3                      CIXH2030  mem=0x092E0310, 0x092E0400                            
+_SB//HUB3/CUB3                 CIXH2031  mem=0x092F0000, 0x092F4000, 0x092F8000               spi=[249, 249, 250, 249] 
+_SB//U2P3                      CIXH2032  mem=-                                                 
+_SB//V4L2                      CIXH3020  mem=-                                                spi=[328, 329] 
+_SB//ISP0                      CIXH3021  mem=0x14340000, 0x14360000                            
+_SB//ISP1                      CIXH3022  mem=-                                                 
+_SB//ISP2                      CIXH3022  mem=-                                                 
+_SB//ISP3                      CIXH3022  mem=-                                                 
+_SB//ISPM                      CIXH3025  mem=-                                                 
+_SB//VIHW                      CIXH3026  mem=-                                                spi=[452, 453, 454, 455, 456, 457, 458, 459] 
+_SB//CSI0                      CIXH3027  mem=0x14270000                                        
+_SB//CSI1                      CIXH3027  mem=0x142D0000                                        
+_SB//CBD0                      CIXH3028  mem=0x142B0000                                       spi=[460] 
+_SB//CBD1                      CIXH3028  mem=0x142C0000                                       spi=[461] 
+_SB//CBD2                      CIXH3028  mem=0x14310000                                       spi=[462] 
+_SB//CBD3                      CIXH3028  mem=0x14320000                                       spi=[463] 
+_SB//MPC0                      CIXH3029  mem=0x14280000                                       spi=[452, 453] 
+_SB//MPC1                      CIXH3029  mem=0x14290000                                       spi=[454, 455] 
+_SB//MPC2                      CIXH3029  mem=0x142E0000                                       spi=[456, 457] 
+_SB//MPC3                      CIXH3029  mem=0x142F0000                                       spi=[458, 459] 
+_SB//DPH0                      CIXH302A  mem=0x142A0000                                        
+_SB//DPH1                      CIXH302A  mem=0x14300000                                        
+_SB//DPR0                      CIXH302B  mem=-                                                 
+_SB//DPR1                      CIXH302B  mem=-                                                 
+_SB//DPR2                      CIXH302B  mem=-                                                 
+_SB//DPR3                      CIXH302B  mem=-                                                 
+_SB//DPR4                      CIXH302B  mem=-                                                 
+_SB//DPR5                      CIXH302B  mem=-                                                 
+_SB//TEE0                      CIXHA022  mem=-                                                 linaro,optee-tz
+_SB//DTPM                      MSFT0101  mem=-                                                 
+_SB//TREE                      CIXHA023  mem=-                                                 
+_SB//PEP0                      CIXHA026  mem=-                                                 
+_SB//I2C2//RTL5                RTL5682   mem=-                                                 
+_SB//SNDC                      CIXH6070  mem=-                                                 
+_SB//I2C3//RTC0                RX008900  mem=-                                                 
+_SB//I2C0//IIS0                CIXH3024  mem=-                                                 
+_SB//I2C0//MTR0                CIXH3023  mem=-                                                 
+_SB//I2C1//IIS2                CIXH3024  mem=-                                                 
+_SB//I2C1//IIS1                CIXH3024  mem=-                                                 
+_SB//EC0                       CIXHA015  mem=-                                                 
+_SB//AC                        ACPI0003  mem=-                                                 
+_SB//PWRB                      PNP0C0C   mem=-                                                 
+_SB//SPI0//TP3                 SPT0002   mem=-                                                 
+_SB//SPI0//TP4                 SPT0002   mem=-                                                 
+_SB//I2C7//PD00                CIXH200D  mem=-                                                 
+_SB//I2C7//PD01                CIXH200D  mem=-                                                 
+_SB//MUX0                      CIXHA016  mem=0x04170000                                        
+_SB//MUX1                      CIXHA017  mem=0x16007000                                        
+_SB//HWMN                      CIXHA024  mem=-                                                 
+_SB//PVC0                      PRP0001   mem=-                                                 regulator-fixed
+_SB//PVC1                      PRP0001   mem=-                                                 regulator-fixed
+_SB//PVC4                      PRP0001   mem=-                                                 regulator-fixed
+_SB//PVC5                      PRP0001   mem=-                                                 regulator-fixed
+_SB//LED1                      PRP0001   mem=-                                                 gpio-leds
+_SB//PKEY                      PRP0001   mem=-                                                 gpio-keys

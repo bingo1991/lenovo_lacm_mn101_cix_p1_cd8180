@@ -1,0 +1,11 @@
+# Extra redaction rules.  One <extended regex><TAB><replacement> per line.
+#
+# Copy this file, put the real values of your machine in it, and pass it
+# with "sanitize.sh -l".  Do not commit the filled file.
+#
+# Example only.  The values below are placeholders.
+SERIALNUMBER123456<TAB><SYSTEM-SERIAL>
+AA11BB22CC33DD44<TAB><CPU-SERIAL>
+NVME-SERIAL-0000<TAB><NVME-SERIAL>
+PANEL-SERIAL-0000<TAB><PANEL-SERIAL>
+[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}<TAB><UUID>

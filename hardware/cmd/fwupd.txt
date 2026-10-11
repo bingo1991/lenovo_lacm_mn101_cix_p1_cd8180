@@ -1,0 +1,98 @@
+$ fwupdmgr get-devices
+Idle…: 0%
+LENOVO LACM-MN101
+│
+├─Unknown Device:
+│     Device ID:          f917390132fc64b8f93d023a919d4fc534de9d06
+│     Vendor:             PNP:IPS
+│     Serial Number:      <PANEL-SERIAL>
+│     GUID:               <UUID> ← DRM\VEN_IPS&DEV_2700
+│   
+├─AirDisk 256GB SSD:
+│     Device ID:          83eba1fa14bdefee1f6b4bcf06069b298e1c338f
+│     Summary:            NVM Express solid state drive
+│     Current version:    29416
+│     Vendor:             MAXIO (PCI:0x1E4B)
+│     Serial Number:      <NVME-SERIAL>
+│     GUIDs:              <UUID> ← NVME\VEN_1E4B&DEV_1202
+│                         <UUID> ← NVME\VEN_1E4B&DEV_1202&SUBSYS_1E4B1202
+│                         <UUID> ← NVME\VEN_1E4B&DEV_1202&SNSUFFIX_P1129
+│                         <UUID> ← NVME\VEN_1E4B&DEV_1202&SNSUFFIX_P1129&NAME_AirDisk-256GB-SSD
+│                         <UUID> ← AirDisk 256GB SSD
+│     Device Flags:       • Internal device
+│                         • Updatable
+│                         • System requires external power source
+│                         • Device is usable for the duration of the update
+│                         • Can tag for emulation
+│   
+└─System Firmware:
+  │   Device ID:          6a2035c07f28e746772c9190dca78d0124d54232
+  │   Summary:            UEFI System Resource Table device (updated via NVRAM)
+  │   Current version:    5
+  │   Minimum Version:    3
+  │   Vendor:             LENOVO (DMI:LENOVO)
+  │   Update State:       Success
+  │   GUID:               <UUID>
+  │   Device Flags:       • Internal device
+  │                       • Updatable
+  │                       • System requires external power source
+  │                       • Needs a reboot after installation
+  │                       • Device is usable for the duration of the update
+  │   Device Requests:    • Message
+  │ 
+  ├─UEFI Key Exchange Key:
+  │ │   Device ID:        2a4c23bfb79b5dabe474cb7b1b3e604645d6f9c6
+  │ │   Device Flags:     • Internal device
+  │ │ 
+  │ └─tech.com:
+  │       Device ID:      54149958632adc4872e5361e97e7019206d94edf
+  │       Current version: 2024
+  │       Vendor:         Cix (UEFI:Cix)
+  │       GUIDs:          <UUID> ← UEFI\VENDOR_Cix&NAME_cixtech.com
+  │                       <UUID> ← UEFI\CRT_3CA9E803375ECB26B474DC75087E4E5343AD1EAC
+  │       Device Flags:   • Internal device
+  │                       • Updatable
+  │                       • Needs a reboot after installation
+  │                       • Device is usable for the duration of the update
+  │                       • Signed Payload
+  │                       • Can tag for emulation
+  │     
+  ├─UEFI Signature Database:
+  │ │   Device ID:        0352a8acc949c7df21fec16e566ba9a74e797a97
+  │ │   Device Flags:     • Internal device
+  │ │ 
+  │ └─tech.com:
+  │       Device ID:      a4f3203fb3ae4ad86d304c23228185abedad9e0f
+  │       Current version: 2024
+  │       Vendor:         Cix (UEFI:Cix)
+  │       GUIDs:          <UUID> ← UEFI\VENDOR_Cix&NAME_cixtech.com
+  │                       <UUID> ← UEFI\CRT_3CA9E803375ECB26B474DC75087E4E5343AD1EAC
+  │       Device Flags:   • Internal device
+  │                       • Updatable
+  │                       • Needs a reboot after installation
+  │                       • Signed Payload
+  │                       • Can tag for emulation
+  │     
+  ├─UEFI dbx:
+  │     Device ID:        362301da643102b9f38477387e2193e57abaa590
+  │     Summary:          UEFI revocation database
+  │     Install Duration: 1 second
+  │     Update Error:     No vendor ID set
+  │     GUID:             <UUID> ← UEFI\CRT_A224AE6ED616D485BC65933683780C0AB14DB79478343390EE2AE6A0020CBA8B&ARCH_AA64
+  │     Device Flags:     • Internal device
+  │                       • Needs a reboot after installation
+  │                       • Device is usable for the duration of the update
+  │                       • Updatable
+  │                       • Only version upgrades are allowed
+  │                       • Signed Payload
+  │                       • Can tag for emulation
+  │   
+  └─tech.com:
+        Device ID:        6924110cde4fa051bfdc600a60620dc7aa9d3c6a
+        Summary:          UEFI Platform Key
+        Current version:  2024
+        Vendor:           Cix
+        GUIDs:            <UUID> ← UEFI\VENDOR_Cix&NAME_cixtech.com
+                          <UUID> ← UEFI\CRT_3CA9E803375ECB26B474DC75087E4E5343AD1EAC
+        Device Flags:     • Internal device
+      

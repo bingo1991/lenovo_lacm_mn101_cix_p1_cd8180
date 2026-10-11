@@ -1,0 +1,36 @@
+$ sh -c for i in $(ls /sys/class/net); do echo "== $i =="; sudo -n ethtool -i $i; done
+== docker0 ==
+driver: bridge
+version: 2.3
+firmware-version: N/A
+expansion-rom-version: 
+bus-info: N/A
+supports-statistics: no
+supports-test: no
+supports-eeprom-access: no
+supports-register-dump: no
+supports-priv-flags: no
+== enp97s0 ==
+driver: r8169
+version: 7.0.0-38-cix
+firmware-version: rtl8125b-2_0.0.2 07/13/20
+expansion-rom-version: 
+bus-info: 0000:61:00.0
+supports-statistics: yes
+supports-test: no
+supports-eeprom-access: no
+supports-register-dump: yes
+supports-priv-flags: no
+== lo ==
+Cannot get driver information: Operation not supported
+== wlp1s0 ==
+driver: rtw89_8852be
+version: 7.0.0-38-cix
+firmware-version: N/A
+expansion-rom-version: 
+bus-info: 0000:01:00.0
+supports-statistics: yes
+supports-test: no
+supports-eeprom-access: no
+supports-register-dump: no
+supports-priv-flags: no

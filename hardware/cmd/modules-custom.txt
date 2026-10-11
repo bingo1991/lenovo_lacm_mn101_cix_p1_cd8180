@@ -1,0 +1,2 @@
+$ sh -c ls /lib/modules/$(uname -r)/updates/ 2>/dev/null
+dkms

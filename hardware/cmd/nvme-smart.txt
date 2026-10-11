@@ -1,0 +1,2 @@
+$ sudo -n nvme smart-log /dev/nvme0
+sudo: 'nvme': command not found

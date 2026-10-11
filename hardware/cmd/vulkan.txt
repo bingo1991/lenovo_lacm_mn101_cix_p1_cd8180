@@ -1,0 +1,2 @@
+$ vulkaninfo --summary
+/tmp/collect.sh: line 17: vulkaninfo: command not found

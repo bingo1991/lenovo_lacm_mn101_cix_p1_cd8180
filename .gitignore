@@ -1,0 +1,12 @@
+# Build output of the device tree
+dts/*.pre.dts
+dts/*.decompiled.dts
+
+# Local redaction values
+redact.list
+tools/redact.list
+
+# Editor and OS files
+*.swp
+*~
+.DS_Store

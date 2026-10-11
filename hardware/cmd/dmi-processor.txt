@@ -1,0 +1,35 @@
+$ sudo -n dmidecode -t processor
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+
+Handle 0x0004, DMI type 4, 50 bytes
+Processor Information
+	Socket Designation: CPU01
+	Type: Central Processor
+	Family: ARMv9
+	Manufacturer: Cix Technology Group Co., Ltd.
+	ID: 11 D8 0F 41 00 00 00 00
+	Signature: Implementor 0x41, Variant 0x0, Architecture 15, Part 0xd81, Revision 1
+	Version: CIX P1 CD8180
+	Voltage: Unknown
+	External Clock: 1000 MHz
+	Max Speed: 2600 MHz
+	Current Speed: 1500 MHz
+	Status: Populated, Enabled
+	Upgrade: Unknown
+	L1 Cache Handle: 0x0001
+	L2 Cache Handle: 0x0002
+	L3 Cache Handle: 0x0003
+	Serial Number: <CPU-SERIAL>
+	Asset Tag:  
+	Part Number:  
+	Core Count: 12
+	Core Enabled: 12
+	Thread Count: 12
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Execute Protection
+		Power/Performance Control
+

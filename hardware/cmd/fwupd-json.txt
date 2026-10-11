@@ -1,0 +1,258 @@
+$ fwupdmgr get-devices --json
+{
+  "Devices": [
+    {
+      "DeviceId": "f917390132fc64b8f93d023a919d4fc534de9d06",
+      "InstanceIds": [
+        "DRM\\VEN_IPS&DEV_2700"
+      ],
+      "Guid": [
+        "<UUID>"
+      ],
+      "Serial": "<PANEL-SERIAL>",
+      "Plugin": "linux_display",
+      "VendorIds": [
+        "PNP:IPS"
+      ],
+      "Created": 1791683215
+    },
+    {
+      "Name": "AirDisk 256GB SSD",
+      "DeviceId": "83eba1fa14bdefee1f6b4bcf06069b298e1c338f",
+      "InstanceIds": [
+        "NVME\\VEN_1E4B&DEV_1202",
+        "NVME\\VEN_1E4B&DEV_1202&SUBSYS_1E4B1202",
+        "NVME\\VEN_1E4B&DEV_1202&SNSUFFIX_P1129",
+        "NVME\\VEN_1E4B&DEV_1202&SNSUFFIX_P1129&NAME_AirDisk-256GB-SSD",
+        "AirDisk 256GB SSD"
+      ],
+      "Guid": [
+        "<UUID>",
+        "<UUID>",
+        "<UUID>",
+        "<UUID>",
+        "<UUID>"
+      ],
+      "Serial": "<NVME-SERIAL>",
+      "Summary": "NVM Express solid state drive",
+      "Plugin": "nvme",
+      "Protocols": [
+        "org.nvmexpress"
+      ],
+      "Flags": [
+        "internal",
+        "updatable",
+        "require-ac",
+        "usable-during-update",
+        "can-emulation-tag"
+      ],
+      "Vendor": "MAXIO",
+      "VendorIds": [
+        "PCI:0x1E4B"
+      ],
+      "Version": "29416",
+      "VersionFormat": "plain",
+      "Icons": [
+        "drive-harddisk"
+      ],
+      "Created": 1791683215
+    },
+    {
+      "Name": "System Firmware",
+      "DeviceId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "Guid": [
+        "<UUID>"
+      ],
+      "Summary": "UEFI System Resource Table device (updated via NVRAM)",
+      "Plugin": "uefi_capsule",
+      "Protocols": [
+        "org.uefi.capsule"
+      ],
+      "Flags": [
+        "internal",
+        "updatable",
+        "require-ac",
+        "needs-reboot",
+        "usable-during-update"
+      ],
+      "RequestFlags": [
+        "allow-generic-message"
+      ],
+      "Vendor": "LENOVO",
+      "VendorIds": [
+        "DMI:LENOVO"
+      ],
+      "Version": "5",
+      "VersionLowest": "3",
+      "VersionFormat": "number",
+      "VersionRaw": 5,
+      "VersionLowestRaw": 3,
+      "Icons": [
+        "computer"
+      ],
+      "Created": 1791683215,
+      "UpdateState": 2
+    },
+    {
+      "Name": "UEFI Key Exchange Key",
+      "DeviceId": "2a4c23bfb79b5dabe474cb7b1b3e604645d6f9c6",
+      "ParentDeviceId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "CompositeId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "Plugin": "uefi_kek",
+      "Flags": [
+        "internal"
+      ],
+      "Icons": [
+        "application-certificate"
+      ],
+      "Created": 1791683215
+    },
+    {
+      "Name": "UEFI Signature Database",
+      "DeviceId": "0352a8acc949c7df21fec16e566ba9a74e797a97",
+      "ParentDeviceId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "CompositeId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "Plugin": "uefi_db",
+      "Flags": [
+        "internal"
+      ],
+      "Icons": [
+        "application-certificate"
+      ],
+      "Created": 1791683215
+    },
+    {
+      "Name": "UEFI dbx",
+      "DeviceId": "362301da643102b9f38477387e2193e57abaa590",
+      "ParentDeviceId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "CompositeId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "InstanceIds": [
+        "UEFI\\CRT_A224AE6ED616D485BC65933683780C0AB14DB79478343390EE2AE6A0020CBA8B&ARCH_AA64"
+      ],
+      "Guid": [
+        "<UUID>"
+      ],
+      "Summary": "UEFI revocation database",
+      "Plugin": "uefi_dbx",
+      "Protocols": [
+        "org.uefi.dbx2"
+      ],
+      "Flags": [
+        "internal",
+        "needs-reboot",
+        "usable-during-update",
+        "updatable-hidden",
+        "only-version-upgrade",
+        "signed-payload",
+        "can-emulation-tag"
+      ],
+      "VersionFormat": "number",
+      "Icons": [
+        "application-certificate"
+      ],
+      "InstallDuration": 1,
+      "Created": 1791683215,
+      "UpdateError": "No vendor ID set"
+    },
+    {
+      "Name": "tech.com",
+      "DeviceId": "54149958632adc4872e5361e97e7019206d94edf",
+      "ParentDeviceId": "2a4c23bfb79b5dabe474cb7b1b3e604645d6f9c6",
+      "CompositeId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "InstanceIds": [
+        "UEFI\\VENDOR_Cix&NAME_cixtech.com",
+        "UEFI\\CRT_3CA9E803375ECB26B474DC75087E4E5343AD1EAC"
+      ],
+      "Guid": [
+        "<UUID>",
+        "<UUID>"
+      ],
+      "Plugin": "uefi_kek",
+      "Protocols": [
+        "org.uefi.dbx2"
+      ],
+      "Flags": [
+        "internal",
+        "updatable",
+        "needs-reboot",
+        "usable-during-update",
+        "signed-payload",
+        "can-emulation-tag"
+      ],
+      "Vendor": "Cix",
+      "VendorIds": [
+        "UEFI:Cix"
+      ],
+      "Version": "2024",
+      "VersionFormat": "number",
+      "VersionRaw": 2024,
+      "Icons": [
+        "application-certificate"
+      ],
+      "Created": 1791683215
+    },
+    {
+      "Name": "tech.com",
+      "DeviceId": "6924110cde4fa051bfdc600a60620dc7aa9d3c6a",
+      "ParentDeviceId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "CompositeId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "InstanceIds": [
+        "UEFI\\VENDOR_Cix&NAME_cixtech.com",
+        "UEFI\\CRT_3CA9E803375ECB26B474DC75087E4E5343AD1EAC"
+      ],
+      "Guid": [
+        "<UUID>",
+        "<UUID>"
+      ],
+      "Summary": "UEFI Platform Key",
+      "Plugin": "uefi_pk",
+      "Flags": [
+        "internal"
+      ],
+      "Vendor": "Cix",
+      "Version": "2024",
+      "VersionFormat": "number",
+      "VersionRaw": 2024,
+      "Icons": [
+        "application-certificate"
+      ],
+      "Created": 1791683215
+    },
+    {
+      "Name": "tech.com",
+      "DeviceId": "a4f3203fb3ae4ad86d304c23228185abedad9e0f",
+      "ParentDeviceId": "0352a8acc949c7df21fec16e566ba9a74e797a97",
+      "CompositeId": "6a2035c07f28e746772c9190dca78d0124d54232",
+      "InstanceIds": [
+        "UEFI\\VENDOR_Cix&NAME_cixtech.com",
+        "UEFI\\CRT_3CA9E803375ECB26B474DC75087E4E5343AD1EAC"
+      ],
+      "Guid": [
+        "<UUID>",
+        "<UUID>"
+      ],
+      "Plugin": "uefi_db",
+      "Protocols": [
+        "org.uefi.dbx2"
+      ],
+      "Flags": [
+        "internal",
+        "updatable",
+        "needs-reboot",
+        "signed-payload",
+        "can-emulation-tag"
+      ],
+      "Vendor": "Cix",
+      "VendorIds": [
+        "UEFI:Cix"
+      ],
+      "Version": "2024",
+      "VersionFormat": "number",
+      "VersionRaw": 2024,
+      "Icons": [
+        "application-certificate"
+      ],
+      "Created": 1791683215
+    }
+  ]
+}

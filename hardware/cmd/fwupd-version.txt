@@ -1,0 +1,11 @@
+$ fwupdmgr --version
+Idle…: 0%
+compile   info.libusb                   1.0.29
+compile   com.hughsie.libxmlb           0.3.24
+compile   com.hughsie.libjcat           0.2.5
+compile   org.freedesktop.fwupd         2.1.1
+runtime   com.hughsie.libxmlb           0.3.24
+runtime   com.hughsie.libjcat           0.2.5
+runtime   org.kernel                    7.0.0-38-cix
+runtime   org.freedesktop.fwupd         2.1.1
+

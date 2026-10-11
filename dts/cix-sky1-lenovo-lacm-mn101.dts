@@ -1,0 +1,360 @@
+// SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
+/*
+ * Lenovo LACM-MN101 "AI Center MINI" - CIX Sky1 (CD8180)
+ *
+ * Reconstructed from the firmware ACPI tables (DSDT, SSDT1, SSDT2) and from
+ * the running system.  See ../acpi-to-dt-mapping.md for the source of every
+ * node.  The ACPI HID of each device is given in a comment.
+ */
+
+/dts-v1/;
+
+#include "sky1.dtsi"
+#include "sky1-pinfunc.h"
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/input/linux-event-codes.h>
+
+/ {
+	model = "Lenovo LACM-MN101 (AI Center MINI)";
+	compatible = "lenovo,lacm-mn101", "cix,sky1";
+
+	aliases {
+		serial2 = &uart2;
+	};
+
+	chosen {
+		stdout-path = &uart2;
+	};
+
+	/*
+	 * Ranges as reported by /proc/iomem.  Firmware reserves 2 GB of the
+	 * LPDDR5, so MemTotal is smaller than the address space below.
+	 */
+	memory@100000000 {
+		device_type = "memory";
+		reg = <0x0 0x84400000 0x0 0x00200000>,
+		      <0x0 0x85000000 0x0 0x01000000>,
+		      <0x0 0x86000000 0x0 0x1a000000>,
+		      <0x0 0xa8000000 0x0 0x58000000>,
+		      <0x1 0x00000000 0x1 0x7e910000>;
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		/* ACPI RAOP, _HID PRP0001, compatible "ramoops". */
+		ramoops@83d00000 {
+			compatible = "ramoops";
+			reg = <0x0 0x83d00000 0x0 0x000a0000>;
+			record-size = <0x00040000>;
+			console-size = <0x00040000>;
+			pmsg-size = <0x1000>;
+		};
+
+		linux,cma {
+			compatible = "shared-dma-pool";
+			reusable;
+			size = <0x0 0x28000000>;
+			linux,cma-default;
+		};
+	};
+
+	/* ACPI LED1, _HID PRP0001, compatible "gpio-leds". */
+	leds {
+		compatible = "gpio-leds";
+
+		led-status {
+			label = "status-leds";
+			gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "heartbeat";
+		};
+	};
+
+	/* ACPI PKEY, _HID PRP0001, compatible "gpio-keys". */
+	keys {
+		compatible = "gpio-keys";
+
+		key-power {
+			label = "GPIO Power Key";
+			gpios = <&gpio6 1 GPIO_ACTIVE_LOW>;
+			linux,code = <KEY_POWER>;
+		};
+	};
+
+	/* ACPI PVC0/PVC1/PVC4, _HID PRP0001, compatible "regulator-fixed". */
+	reg_ssd1: regulator-ssd1 {
+		compatible = "regulator-fixed";
+		regulator-name = "ssd1_power";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		gpios = <&gpio4 11 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		regulator-pull-down;
+		off-on-delay-us = <15000>;
+	};
+
+	reg_ssd2: regulator-ssd2 {
+		compatible = "regulator-fixed";
+		regulator-name = "ssd2_power";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		gpios = <&gpio4 8 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		regulator-pull-down;
+		off-on-delay-us = <15000>;
+	};
+
+	reg_wifi: regulator-wifi {
+		compatible = "regulator-fixed";
+		regulator-name = "wifi_vbat";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		gpios = <&gpio4 12 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+	};
+};
+
+/* SoC nodes that are not described by sky1.dtsi yet. */
+
+&pcie_x1_0_rc {
+	/* ACPI PCI4, MMIO 0x30000000.  Bus 00-2f: RTL8852BE WiFi at 01:00.0. */
+	status = "okay";
+};
+
+&pcie_x2_rc {
+	/* ACPI PCI2, MMIO 0x40000000.  Bus 60-8f: RTL8125 2.5GbE at 61:00.0. */
+	status = "okay";
+};
+
+&pcie_x8_rc {
+	/* ACPI PCI0, MMIO 0x60000000.  Bus c0-ff: MAXIO MAP1202 NVMe at c1:00.0. */
+	status = "okay";
+};
+
+/* ACPI I2C0, _HID CIXH200B, _UID 0.  Camera connector. */
+&i2c0 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+
+	/* DSDT/SSDT1 _HID CIXH3024, camera sensor.  No sensor answers. */
+	camera@34 {
+		reg = <0x34>;
+		status = "disabled";
+	};
+
+	/* DSDT/SSDT1 _HID CIXH3023, VCM actuator. */
+	vcm@40 {
+		reg = <0x40>;
+		status = "disabled";
+	};
+};
+
+/* ACPI I2C1, _HID CIXH200B, _UID 1.  Camera connector. */
+&i2c1 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+
+	camera@36 {
+		reg = <0x36>;
+		status = "disabled";
+	};
+
+	camera@38 {
+		reg = <0x38>;
+		status = "disabled";
+	};
+};
+
+/*
+ * ACPI I2C2, _HID CIXH200B, _UID 2.  The firmware describes a Realtek
+ * RTL5682 audio codec here, but the controller is disabled on this SKU:
+ * no I2C bus is created at 0x04030000 and no ALSA card is present.
+ */
+&i2c2 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "disabled";
+
+	codec@1a {
+		compatible = "realtek,rt5682i";
+		reg = <0x1a>;
+		interrupt-parent = <&gpio3>;
+		interrupts = <10 IRQ_TYPE_LEVEL_LOW>;
+		realtek,dmic1-data-pin = <1>;
+		realtek,dmic-clk-pin = <1>;
+		realtek,dmic-clk-rate-hz = <2048000>;
+		realtek,jd-src = <1>;
+		status = "disabled";
+	};
+};
+
+/* ACPI I2C3, _HID CIXH200B, _UID 3.  Epson RTC. */
+&i2c3 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+
+	/* SSDT1 RTC0, _HID RX008900. */
+	rtc@32 {
+		compatible = "epson,ra8900ce", "rtc,rx8900";
+		reg = <0x32>;
+		interrupt-parent = <&gpio4>;
+		interrupts = <10 IRQ_TYPE_LEVEL_LOW>;
+	};
+};
+
+/* ACPI I2C7, _HID CIXH200B, _UID 7.  Two USB Type-C PD controllers. */
+&i2c7 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+
+	/* SSDT1 PD00/PD01, _HID CIXH200D, Realtek RTS5453H. */
+	typec@30 {
+		compatible = "realtek,rts5453h";
+		reg = <0x30>;
+		interrupt-parent = <&gpio4>;
+		interrupts = <7 IRQ_TYPE_LEVEL_LOW>;
+		connector {
+			compatible = "usb-c-connector";
+			data-role = "host";
+			power-role = "source";
+			try-power-role = "source";
+		};
+	};
+
+	typec@31 {
+		compatible = "realtek,rts5453h";
+		reg = <0x31>;
+		interrupt-parent = <&gpio4>;
+		interrupts = <7 IRQ_TYPE_LEVEL_LOW>;
+		connector {
+			compatible = "usb-c-connector";
+			data-role = "host";
+			power-role = "source";
+			try-power-role = "source";
+		};
+	};
+};
+
+/*
+ * ACPI SPI0, _HID CIXH2001.  The firmware declares two SPT0002 touch
+ * panels.  No spidev node exists on this SKU, so the bus stays disabled.
+ */
+&spi0 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "disabled";
+
+	touchpanel@0 {
+		reg = <0>;
+		status = "disabled";
+	};
+};
+
+/* UART2 is the debug port from ACPI DBG2 and the firmware console. */
+&uart2 {
+	status = "okay";
+};
+
+/*
+ * MUX0/MUX1 in ACPI are the two pin controllers, _HID CIXHA016/CIXHA017.
+ * sky1.dtsi names them "cix,sky1-pinctrl"; the CIX vendor kernel uses
+ * "cix,sky1-iomuxc".  List both so either driver probes.
+ */
+&iomuxc {
+	compatible = "cix,sky1-iomuxc", "cix,sky1-pinctrl";
+};
+
+&iomuxc_s5 {
+	compatible = "cix,sky1-iomuxc-s5", "cix,sky1-pinctrl-s5";
+};
+
+/*
+ * GPIO controllers.  Addresses, interrupt lines and pin counts come from
+ * DSDT (GPI0 _HID CIXH1002, GPI1-GPI6 _HID CIXH1003).  sky1.dtsi does not
+ * describe them yet.  The "cix,sky1-gpio" binding is the vendor one.
+ */
+&{/soc@0} {
+	gpio0: gpio@4120000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x04120000 0x0 0x10000>;
+		interrupts = <GIC_SPI 304 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+
+	gpio1: gpio@4130000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x04130000 0x0 0x10000>;
+		interrupts = <GIC_SPI 305 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+
+	gpio2: gpio@4140000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x04140000 0x0 0x10000>;
+		interrupts = <GIC_SPI 306 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+
+	gpio3: gpio@4150000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x04150000 0x0 0x10000>;
+		interrupts = <GIC_SPI 307 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+
+	/* Always-on domain (ACPI "s5" pads). */
+	gpio4: gpio@16004000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x16004000 0x0 0x1000>;
+		interrupts = <GIC_SPI 372 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+
+	gpio5: gpio@16005000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x16005000 0x0 0x1000>;
+		interrupts = <GIC_SPI 373 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+
+	gpio6: gpio@16006000 {
+		compatible = "cix,sky1-gpio";
+		reg = <0x0 0x16006000 0x0 0x1000>;
+		interrupts = <GIC_SPI 374 IRQ_TYPE_LEVEL_HIGH 0>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		interrupt-controller;
+		#interrupt-cells = <2>;
+		ngpios = <32>;
+	};
+};

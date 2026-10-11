@@ -1,0 +1,13 @@
+$ sh -c sudo -n efibootmgr -v
+BootCurrent: 0002
+Timeout: 5 seconds
+BootOrder: 0002,0000,0001,0003
+Boot0000* UiApp	FvVol(<UUID>)/FvFile(<UUID>)
+      dp: 04 07 14 00 37 aa 15 9a 55 d5 4e 4a b5 41 86 39 1f f6 81 64 / 04 06 14 00 21 aa 2c 46 14 76 03 45 83 6e 8a b6 f4 66 23 31 / 7f ff 04 00
+Boot0001  UEFI Shell	FvVol(<UUID>)/FvFile(<UUID>)
+      dp: 04 07 14 00 37 aa 15 9a 55 d5 4e 4a b5 41 86 39 1f f6 81 64 / 04 06 14 00 83 a5 04 7c 3e 9e 1c 4f ad 65 e0 52 68 d0 b4 d1 / 7f ff 04 00
+Boot0002* Ubuntu	HD(1,GPT,<ESP-PARTUUID>,0x800,0x219800)/\EFI\ubuntu\shimaa64.efi
+      dp: 04 01 2a 00 01 00 00 00 00 08 00 00 00 00 00 00 00 98 21 00 00 00 00 00 de d9 37 1f 20 1d e6 48 ba 7a 75 a6 b5 48 f3 ef 02 02 / 04 04 36 00 5c 00 45 00 46 00 49 00 5c 00 75 00 62 00 75 00 6e 00 74 00 75 00 5c 00 73 00 68 00 69 00 6d 00 61 00 61 00 36 00 34 00 2e 00 65 00 66 00 69 00 00 00 / 7f ff 04 00
+Boot0003* UEFI AirDisk 256GB SSD <NVME-SERIAL> 1	PciRoot(0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/NVMe(0x1,3A-5A-27-00-00-00-00-4C){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 00 00 00 00 / 01 01 06 00 00 00 / 01 01 06 00 00 00 / 03 17 10 00 01 00 00 00 3a 5a 27 00 00 00 00 4c / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2

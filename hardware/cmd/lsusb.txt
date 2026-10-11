@@ -1,0 +1,17 @@
+$ lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 009 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 009 Device 002: ID 1997:2535 Shenzhen Riitek Technology Co., Ltd mini keyboard
+Bus 010 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 011 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 012 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 012 Device 002: ID 13d3:3570 IMC Networks Bluetooth Radio
+Bus 013 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 014 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub

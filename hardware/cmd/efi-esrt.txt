@@ -1,0 +1,6 @@
+$ sudo -n hexdump -C /sys/firmware/efi/esrt/entries/entry0/capsule_flags /sys/firmware/efi/esrt/entries/entry0/fw_class /sys/firmware/efi/esrt/entries/entry0/fw_type /sys/firmware/efi/esrt/entries/entry0/fw_version /sys/firmware/efi/esrt/entries/entry0/last_attempt_status /sys/firmware/efi/esrt/entries/entry0/last_attempt_version /sys/firmware/efi/esrt/entries/entry0/lowest_supported_fw_version
+00000000  30 78 31 0a 33 35 31 63  39 38 30 38 2d 34 62 35  |0x1.351c9808-4b5|
+00000010  33 2d 34 33 36 33 2d 39  33 31 34 2d 64 33 33 39  |3-4363-9314-d339|
+00000020  33 38 36 65 35 36 38 35  0a 31 0a 35 0a 30 0a 30  |386e5685.1.5.0.0|
+00000030  0a 33 0a                                          |.3.|
+00000033

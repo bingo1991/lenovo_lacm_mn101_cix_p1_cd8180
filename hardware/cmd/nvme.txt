@@ -1,0 +1,2 @@
+$ sudo -n nvme list
+sudo: 'nvme': command not found

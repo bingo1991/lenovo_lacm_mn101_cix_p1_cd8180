@@ -1,0 +1,2 @@
+$ bluetoothctl list
+Controller <MAC> LACM-MN101 [default]

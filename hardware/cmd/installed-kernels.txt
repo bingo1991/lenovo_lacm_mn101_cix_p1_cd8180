@@ -1,0 +1,6 @@
+$ sh -c dpkg -l | grep -E "linux-image|linux-headers|armbian-firmware|armbian-bsp"
+ii  linux-headers-7.0.0-38-cix                       7.0.0-38.38+cix                            arm64        Linux kernel headers for version 7.0.0
+ii  linux-headers-cix                                7.0.0-38.38+cix                            arm64        CIX P1 Linux kernel headers
+ii  linux-image-cix                                  7.0.0-38.38+cix                            arm64        CIX P1 Linux kernel image
+rc  linux-image-unsigned-7.0.0-31-cix                7.0.0-31.31                                arm64        Linux kernel image for version 7.0.0
+ii  linux-image-unsigned-7.0.0-38-cix                7.0.0-38.38+cix                            arm64        Linux kernel image for version 7.0.0

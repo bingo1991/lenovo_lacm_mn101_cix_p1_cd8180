@@ -1,0 +1,2 @@
+$ /proc/version
+/tmp/collect.sh: line 17: /proc/version: Permission denied

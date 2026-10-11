@@ -1,0 +1,24 @@
+$ lsblk -o NAME,MAJ:MIN,SIZE,TYPE,FSTYPE,MOUNTPOINT,MODEL,SERIAL,TRAN,ROTA
+NAME        MAJ:MIN   SIZE TYPE FSTYPE   MOUNTPOINT                          MODEL             SERIAL             TRAN   ROTA
+loop0         7:0   234.8M loop squashfs /snap/firefox/8305                                                                 0
+loop1         7:1    47.9M loop squashfs /snap/cups/x1                                                                      0
+loop2         7:2    19.9M loop squashfs /snap/desktop-security-center/152                                                  0
+loop3         7:3    91.7M loop squashfs /snap/gtk-common-themes/1535                                                       0
+loop4         7:4   552.9M loop squashfs /snap/gnome-46-2404/154                                                            0
+loop5         7:5       4K loop squashfs /snap/bare/5                                                                       0
+loop6         7:6   174.6M loop squashfs /snap/mesa-2404/1166                                                               0
+loop7         7:7    17.5M loop squashfs /snap/prompting-client/221                                                         0
+loop8         7:8    61.9M loop squashfs /snap/core24/x1                                                                    0
+loop9         7:9     187M loop squashfs /snap/chromium/x1                                                                  0
+loop10        7:10     69M loop squashfs /snap/core22/x1                                                                    0
+loop11        7:11   61.9M loop squashfs /snap/core24/1588                                                                  0
+loop12        7:12   14.9M loop squashfs /snap/snap-store/1368                                                              0
+loop13        7:13   42.6M loop squashfs /snap/snapd/26869                                                                  0
+loop14        7:14    560K loop squashfs /snap/snapd-desktop-integration/363                                                0
+loop15        7:15   79.9M loop squashfs /snap/prompting-client/229                                                         0
+loop16        7:16   90.7M loop squashfs /snap/desktop-security-center/207                                                  0
+nvme0n1     259:0   238.5G disk                                              AirDisk 256GB SSD <NVME-SERIAL> nvme      0
+|-nvme0n1p1 259:1       1G part vfat     /boot/efi                                                                nvme      0
+|-nvme0n1p2 259:2       8G part vfat                                                                              nvme      0
+|-nvme0n1p3 259:3     131G part ext4     /                                                                        nvme      0
+`-nvme0n1p4 259:4    98.4G part ext4     /data                                                                    nvme      0
