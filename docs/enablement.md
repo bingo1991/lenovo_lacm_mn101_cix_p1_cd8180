@@ -122,6 +122,42 @@ machine that resets.
 Apply environment changes one at a time and re-login. Keep the changes in
 `/etc/environment.d/` so a package upgrade does not remove them.
 
+## 7b. HDMI and DP audio: not available
+
+Tested with the display connected. The display side works: the connector
+`card4-DP-4` is `connected` and `enabled` at 3840x2160.
+
+The audio side finds no endpoint:
+
+| Step | Result |
+| --- | --- |
+| `modprobe snd_hda_cix_ipbloq` | Binds to `CIXH6020:00`. Log: `chipset global capabilities = 0x4403`, then `no codecs found` |
+| `modprobe snd_hda_codec_hdmi` | Loads. Still no codec |
+| `modprobe snd_soc_sky1_card` | Binds to `CIXH6070:00`. Log: `I2S device CIXH6011:04 not present, skipping` |
+| `/proc/asound/cards` | `--- no soundcards ---` in every case |
+
+Reasons found:
+
+1. The HD audio controller enumerates no codec at any address. The display
+   audio endpoint never appears.
+2. The ASoC machine driver needs an I2S device that this firmware does not
+   expose.
+3. The codec in the ACPI tables, an RT5682S on I2C2 at address 0x1A, sits on
+   a controller the firmware disables. No bus exists at 0x04030000.
+4. The audio DSP is the remaining path, and it resets the machine
+   (section 6).
+
+Conclusion: this Linux image cannot play audio, on HDMI, on DP, or through an
+internal codec. The modules above were loaded for the test only. They create
+no card, and they do not survive a reboot.
+
+Working alternatives:
+
+| Option | State |
+| --- | --- |
+| Bluetooth audio | Adapter up. `bluetoothctl` shows controller `00:3C:B7:11:CD:7F`. Pair a speaker or a headset and PipeWire adds a sink. |
+| USB audio | `snd-usb-audio` is present. A USB sound card should appear as a card. |
+
 ## 8. If the machine stops answering
 
 1. The DSP and the NPU do not survive a reset. Power cycle the machine.
@@ -140,3 +176,7 @@ Apply environment changes one at a time and re-login. Keep the changes in
 4. 拿不到的：VA-API 驱动依赖未公开的 BSP 库 libdrm_cix；超分元件 cixsr 未发布。
 5. **绝对不要启动音频 DSP**：`echo start > /sys/class/remoteproc/remoteproc0/state`
    会让整机重启并亮故障灯，只能强制断电恢复。NPU 继续保持 blacklist。
+6. 音频在本镜像上不可用：显示器接在 DP-4 上能正常出图（3840x2160），但 HDA 控制器
+   报 `no codecs found`，ASoC 机器驱动报 `I2S device CIXH6011:04 not present`，
+   codec 所在的 I2C2 被固件关闭。临时方案：蓝牙音箱/耳机（蓝牙控制器正常）、
+   USB 声卡（`snd-usb-audio` 已就绪）。
