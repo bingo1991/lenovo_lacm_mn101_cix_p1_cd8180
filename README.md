@@ -76,6 +76,12 @@ Report: [docs/media.md](docs/media.md). Data and charts:
 [media](media). A step by step guide for playback, decode and encode is in
 [docs/media-tutorial.md](docs/media-tutorial.md).
 
+## Enablement
+
+[docs/enablement.md](docs/enablement.md) lists which vendor packages can be
+installed and which blocks must stay off. Two blocks reset this machine:
+the NPU and the audio DSP. Keep the NPU blacklisted. Do not start the DSP.
+
 ## How the data was collected
 
 1. `tools/collect.sh` gathers the hardware inventory over SSH.

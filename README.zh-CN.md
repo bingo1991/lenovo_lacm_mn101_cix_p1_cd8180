@@ -68,6 +68,11 @@ Mali-G720，支持 OpenCL 3.0 与 Vulkan 1.4。
 播放、解码、编码的操作步骤见
 [docs/media-tutorial.zh-CN.md](docs/media-tutorial.zh-CN.md)。
 
+## 使能情况
+
+[docs/enablement.md](docs/enablement.md) 记录哪些厂商包可以安装、哪些必须保持关闭。
+NPU 与音频 DSP 都会让本机重启：NPU 保持 blacklist，DSP 不要启动。
+
 ## 隐私
 
 公开文件中不含序列号、MAC 地址、UUID、公网 IPv6 地址与用户名。
