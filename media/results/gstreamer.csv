@@ -1,0 +1,4 @@
+test,wall_s,cpu_percent
+gst-v4l2h264dec,1.11,104.0
+gst-avdec-h264,1.07,584.0
+gst-v4l2h265dec,0.78,169.0

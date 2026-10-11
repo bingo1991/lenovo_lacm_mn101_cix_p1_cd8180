@@ -36,6 +36,7 @@ The full table is in [docs/hardware.md](docs/hardware.md).
 | `acpi/` | ACPI tables. Raw, decompiled, and a text dump. |
 | `benchmarks/` | Performance run: raw logs, CSV, JSON and charts. |
 | `hardware/` | Command output from the running system. |
+| `media/` | Video and image decode data, plus the graphics stack. |
 | `dts/` | Device tree source, bindings, and `make` support. |
 | `docs/` | Hardware, ACPI and device tree documents. |
 | `tools/` | Collection and redaction scripts. |
@@ -63,6 +64,16 @@ was 58 degC, with no throttling.
 Full report: [docs/performance.md](docs/performance.md). The charts are
 in [benchmarks/charts](benchmarks/charts), the raw logs in
 [benchmarks/raw](benchmarks/raw).
+
+## Media
+
+The VPU decodes H.264, HEVC, VP9, AV1, VP8, MPEG-2, MPEG-4, H.263 and JPEG
+in hardware. Hardware H.264 decode of a 1080p clip is 2.2 times faster than
+software decode and uses 0.6 cores against 7.7 cores. The GPU is a
+Mali-G720 with OpenCL 3.0 and Vulkan 1.4.
+
+Report: [docs/media.md](docs/media.md). Data and charts:
+[media](media).
 
 ## How the data was collected
 

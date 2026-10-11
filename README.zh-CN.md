@@ -35,6 +35,7 @@ CIX Sky1（CD8180）芯片。
 | `acpi/` | ACPI 原始表、反编译源、文本转储 |
 | `benchmarks/` | 性能测试：原始日志、CSV/JSON 数据、图表 |
 | `hardware/` | 运行系统的命令输出 |
+| `media/` | 视频与图片编解码数据、图形栈信息 |
 | `dts/` | 设备树源、binding 头文件、Makefile |
 | `docs/` | 硬件、ACPI 与设备树文档 |
 | `tools/` | 采集与脱敏脚本 |
@@ -56,6 +57,14 @@ sysbench cpu 单线程 2,790 events/s，12 线程 22,618 events/s。NVMe 顺序�
 
 报告见 [docs/performance.md](docs/performance.md)，图表在
 [benchmarks/charts](benchmarks/charts)，原始日志在 [benchmarks/raw](benchmarks/raw)。
+
+## 多媒体
+
+VPU 支持 H.264、HEVC、VP9、AV1、VP8、MPEG-2、MPEG-4、H.263 与 JPEG 硬件
+解码。1080p H.264 硬解比软解快 2.2 倍，CPU 占用 0.6 核对 7.7 核。GPU 为
+Mali-G720，支持 OpenCL 3.0 与 Vulkan 1.4。
+
+报告见 [docs/media.md](docs/media.md)，数据与图表在 [media](media)。
 
 ## 隐私
 

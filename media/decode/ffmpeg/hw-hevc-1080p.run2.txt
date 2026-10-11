@@ -1,0 +1,19 @@
+Input #0, hevc, from '/tmp/cix-media2/clips/h265-1080p60.h265':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: hevc (Main), yuv420p(tv), 1920x1080, 25 fps, 60 tbr, 1200k tbn
+[hevc_v4l2m2m @ 0xba4482b01370] Using device /dev/video0
+[hevc_v4l2m2m @ 0xba4482b01370] driver 'mvx' on card 'Linlon Video device' in mplane mode
+[hevc_v4l2m2m @ 0xba4482b01370] requesting formats: output=HEVC/none capture=YU12/yuv420p
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (hevc_v4l2m2m) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 1920x1080, q=2-31, 200 kb/s, 60 fps, 60 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 wrapped_avframe
+[out#0/null @ 0xba4482d76d80] video:244KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  600 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.01 bitrate=N/A speed=0.036x elapsed=0:00:00.46    
+bench: utime=0.091s stime=0.172s rtime=0.463s
+bench: maxrss=171048KiB

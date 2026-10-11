@@ -1,0 +1,9 @@
+== hw v4l2jpegdec, single image, 30 s timeout
+wall=0.21 cpu=90%
+rc=0
+== hw v4l2jpegdec with videoconvert
+wall=0.21 cpu=76%
+rc=0
+== sw jpegdec
+wall=0.11 cpu=92%
+rc=0

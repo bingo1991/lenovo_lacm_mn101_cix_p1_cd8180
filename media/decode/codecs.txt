@@ -1,0 +1,25 @@
+== av1 hw decode
+wall=0.31 cpu=100%
+rc=0
+== vp9 hw decode
+ERROR: from element /GstPipeline:pipeline0/GstMatroskaDemux:matroskademux0: Internal data stream error.
+Additional debug info:
+../gst/matroska/matroska-demux.c(6394): gst_matroska_demux_loop (): /GstPipeline:pipeline0/GstMatroskaDemux:matroskademux0:
+streaming stopped, reason not-linked (-1)
+Details:
+details, flow-return=(int)-1;
+ERROR: pipeline doesn't want to preroll.
+Command exited with non-zero status 1
+wall=0.11 cpu=68%
+rc=1
+== vp8 hw decode
+WARNING: erroneous pipeline: no element "vp8parse"
+Command exited with non-zero status 1
+wall=0.11 cpu=61%
+rc=1
+== jpeg hw encode 1080p x30
+wall=0.61 cpu=112%
+rc=0
+== h264 hw encode 1080p x300
+wall=1.32 cpu=152%
+rc=0

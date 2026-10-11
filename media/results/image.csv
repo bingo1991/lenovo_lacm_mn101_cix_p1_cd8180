@@ -1,0 +1,3 @@
+test,label,wall_s,cpu_percent,images_per_second
+"hw v4l2jpegdec, single image","4K JPEG, hardware v4l2jpegdec",0.21,90.0,4.8
+sw jpegdec,"4K JPEG, software jpegdec",0.11,92.0,9.1

@@ -1,0 +1,16 @@
+Input #0, hevc, from '/tmp/cix-media2/clips/h265-1080p60.h265':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: hevc (Main), yuv420p(tv), 1920x1080, 25 fps, 60 tbr, 1200k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 1920x1080, q=2-31, 200 kb/s, 60 fps, 60 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 wrapped_avframe
+frame=   71 fps=0.0 q=-0.0 size=N/A time=00:00:01.18 bitrate=N/A speed=2.37x elapsed=0:00:00.50    frame=  146 fps=146 q=-0.0 size=N/A time=00:00:02.43 bitrate=N/A speed=2.43x elapsed=0:00:01.00    frame=  220 fps=147 q=-0.0 size=N/A time=00:00:03.68 bitrate=N/A speed=2.45x elapsed=0:00:01.50    frame=  299 fps=149 q=-0.0 size=N/A time=00:00:04.98 bitrate=N/A speed=2.49x elapsed=0:00:02.00    frame=  383 fps=153 q=-0.0 size=N/A time=00:00:06.38 bitrate=N/A speed=2.55x elapsed=0:00:02.50    frame=  459 fps=153 q=-0.0 size=N/A time=00:00:07.65 bitrate=N/A speed=2.55x elapsed=0:00:03.00    frame=  536 fps=153 q=-0.0 size=N/A time=00:00:08.93 bitrate=N/A speed=2.55x elapsed=0:00:03.50    [out#0/null @ 0xb0d88ade9170] video:244KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  600 fps=152 q=-0.0 Lsize=N/A time=00:00:10.00 bitrate=N/A speed=2.54x elapsed=0:00:03.93    
+bench: utime=13.229s stime=0.460s rtime=3.940s
+bench: maxrss=194272KiB

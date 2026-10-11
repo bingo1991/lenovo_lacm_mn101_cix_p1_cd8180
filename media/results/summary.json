@@ -1,0 +1,128 @@
+{
+  "decode": [
+    {
+      "test": "h264-1080p-hw",
+      "label": "H.264 1080p, hardware",
+      "frames": 600,
+      "wall_s": 0.544,
+      "cpu_s": 0.219,
+      "fps": 1102.9,
+      "cores": 0.4
+    },
+    {
+      "test": "h264-1080p-sw",
+      "label": "H.264 1080p, software",
+      "frames": 600,
+      "wall_s": 0.907,
+      "cpu_s": 5.995,
+      "fps": 661.5,
+      "cores": 6.61
+    },
+    {
+      "test": "hevc-1080p-hw",
+      "label": "HEVC 1080p, hardware",
+      "frames": 600,
+      "wall_s": 0.463,
+      "cpu_s": 0.34,
+      "fps": 1295.9,
+      "cores": 0.73
+    },
+    {
+      "test": "hevc-1080p-sw",
+      "label": "HEVC 1080p, software",
+      "frames": 600,
+      "wall_s": 3.94,
+      "cpu_s": 13.689,
+      "fps": 152.3,
+      "cores": 3.47
+    },
+    {
+      "test": "h264-4k-hw",
+      "label": "H.264 2160p, hardware",
+      "frames": 300,
+      "wall_s": 1.043,
+      "cpu_s": 0.446,
+      "fps": 287.6,
+      "cores": 0.43
+    },
+    {
+      "test": "vp9-360p-hw",
+      "label": "VP9 360p, hardware",
+      "frames": 60,
+      "wall_s": 0.03,
+      "cpu_s": 0.039,
+      "fps": 2000.0,
+      "cores": 1.3
+    },
+    {
+      "test": "h264-real-hw",
+      "label": "H.264 1080p real clip, hardware",
+      "frames": 300,
+      "wall_s": 0.297,
+      "cpu_s": 0.178,
+      "fps": 1010.1,
+      "cores": 0.6
+    },
+    {
+      "test": "h264-real-sw",
+      "label": "H.264 1080p real clip, software",
+      "frames": 300,
+      "wall_s": 0.649,
+      "cpu_s": 5.012,
+      "fps": 462.2,
+      "cores": 7.72
+    }
+  ],
+  "gstreamer": [
+    {
+      "test": "gst-v4l2h264dec",
+      "wall_s": 1.11,
+      "cpu_percent": 104.0
+    },
+    {
+      "test": "gst-avdec-h264",
+      "wall_s": 1.07,
+      "cpu_percent": 584.0
+    },
+    {
+      "test": "gst-v4l2h265dec",
+      "wall_s": 0.78,
+      "cpu_percent": 169.0
+    }
+  ],
+  "image": [
+    {
+      "test": "hw v4l2jpegdec, single image",
+      "label": "4K JPEG, hardware v4l2jpegdec",
+      "wall_s": 0.21,
+      "cpu_percent": 90.0,
+      "images_per_second": 4.8
+    },
+    {
+      "test": "sw jpegdec",
+      "label": "4K JPEG, software jpegdec",
+      "wall_s": 0.11,
+      "cpu_percent": 92.0,
+      "images_per_second": 9.1
+    }
+  ],
+  "encode": [
+    {
+      "test": "h264 hw encode 1080p x300",
+      "label": "H.264 1080p, hardware encoder",
+      "wall_s": 1.32,
+      "cpu_percent": 152.0
+    },
+    {
+      "test": "jpeg hw encode 1080p x30",
+      "label": "JPEG 1080p, hardware encoder",
+      "wall_s": 0.61,
+      "cpu_percent": 112.0
+    }
+  ],
+  "gpu": {
+    "from_clinfo": "OpenCL 3.0 v1.r54p1-11eac0.87f6dcad146db63d011631d34565445c",
+    "compute_units": "10"
+  },
+  "vaapi": "driver missing"
+}

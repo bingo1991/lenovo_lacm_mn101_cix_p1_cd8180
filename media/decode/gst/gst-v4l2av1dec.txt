@@ -1,0 +1,4 @@
+ERROR: from element /GstPipeline:pipeline0/GstAV1Parse:av1parse0: No valid frames found before end of stream
+Additional debug info:
+../libs/gst/base/gstbaseparse.c(3763): gst_base_parse_loop (): /GstPipeline:pipeline0/GstAV1Parse:av1parse0
+ERROR: pipeline doesn't want to preroll.

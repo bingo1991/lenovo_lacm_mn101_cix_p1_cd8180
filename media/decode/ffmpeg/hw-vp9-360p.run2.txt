@@ -1,0 +1,25 @@
+Input #0, matroska,webm, from '/tmp/cix-media2/clips/vp9-360p30.webm':
+  Metadata:
+    ENCODER         : Lavf62.3.100
+  Duration: 00:00:02.00, start: 0.000000, bitrate: 1183 kb/s
+  Stream #0:0: Video: vp9 (Profile 0), yuv420p(tv, progressive), 640x360, SAR 1:1 DAR 16:9, 30 fps, 30 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc62.11.100 libvpx-vp9
+      DURATION        : 00:00:02.000000000
+[vp9_v4l2m2m @ 0xc78e0048b7c0] Using device /dev/video0
+[vp9_v4l2m2m @ 0xc78e0048b7c0] driver 'mvx' on card 'Linlon Video device' in mplane mode
+[vp9_v4l2m2m @ 0xc78e0048b7c0] requesting formats: output=VP90/none capture=YU12/yuv420p
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp9 (vp9_v4l2m2m) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 wrapped_avframe
+      DURATION        : 00:00:02.000000000
+[out#0/null @ 0xc78e00489820] video:24KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   60 fps=0.0 q=-0.0 Lsize=N/A time=00:00:02.00 bitrate=N/A speed=66.6x elapsed=0:00:00.03    
+bench: utime=0.010s stime=0.027s rtime=0.030s
+bench: maxrss=90944KiB

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="462" viewBox="0 0 960 462" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="960" height="462" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="bold" fill="#222">Video decode throughput</text>
+<text x="288" y="81" font-size="15" text-anchor="end" fill="#333">H.264 1080p, hardware</text>
+<rect x="300" y="60" width="286.8" height="30" rx="3" fill="#1f77b4"/>
+<text x="595" y="81" font-size="15" fill="#222">1,103 fps</text>
+<text x="288" y="125" font-size="15" text-anchor="end" fill="#333">H.264 1080p, software</text>
+<rect x="300" y="104" width="172.0" height="30" rx="3" fill="#1f77b4"/>
+<text x="480" y="125" font-size="15" fill="#222">662 fps</text>
+<text x="288" y="169" font-size="15" text-anchor="end" fill="#333">HEVC 1080p, hardware</text>
+<rect x="300" y="148" width="336.9" height="30" rx="3" fill="#1f77b4"/>
+<text x="645" y="169" font-size="15" fill="#222">1,296 fps</text>
+<text x="288" y="213" font-size="15" text-anchor="end" fill="#333">HEVC 1080p, software</text>
+<rect x="300" y="192" width="39.6" height="30" rx="3" fill="#1f77b4"/>
+<text x="348" y="213" font-size="15" fill="#222">152 fps</text>
+<text x="288" y="257" font-size="15" text-anchor="end" fill="#333">H.264 2160p, hardware</text>
+<rect x="300" y="236" width="74.8" height="30" rx="3" fill="#1f77b4"/>
+<text x="383" y="257" font-size="15" fill="#222">288 fps</text>
+<text x="288" y="301" font-size="15" text-anchor="end" fill="#333">VP9 360p, hardware</text>
+<rect x="300" y="280" width="520.0" height="30" rx="3" fill="#1f77b4"/>
+<text x="828" y="301" font-size="15" fill="#222">2,000 fps</text>
+<text x="288" y="345" font-size="15" text-anchor="end" fill="#333">H.264 1080p real clip, hardware</text>
+<rect x="300" y="324" width="262.6" height="30" rx="3" fill="#1f77b4"/>
+<text x="571" y="345" font-size="15" fill="#222">1,010 fps</text>
+<text x="288" y="389" font-size="15" text-anchor="end" fill="#333">H.264 1080p real clip, software</text>
+<rect x="300" y="368" width="120.2" height="30" rx="3" fill="#1f77b4"/>
+<text x="428" y="389" font-size="15" fill="#222">462 fps</text>
+</svg>

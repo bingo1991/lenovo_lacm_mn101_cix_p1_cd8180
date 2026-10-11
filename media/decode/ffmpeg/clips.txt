@@ -1,0 +1,8 @@
+total 58020
+-rw-rw-r-- 1 tianxi tianxi   129174 Oct 11 12:57 av1-360p30.ivf
+-rw-rw-r-- 1 tianxi tianxi 10022759 Oct 11 12:57 h264-1080p60.h264
+-rw-rw-r-- 1 tianxi tianxi 31429405 Oct 11 12:57 h264-4k30.h264
+-rw-rw-r-- 1 tianxi tianxi 11858076 Oct 11 12:57 h265-1080p60.h265
+-rw-rw-r-- 1 tianxi tianxi  5242409 Oct 11 12:57 jellyfish-1080p-h264.mp4
+-rw-rw-r-- 1 tianxi tianxi   418421 Oct 11 12:57 photo-4k.jpg
+-rw-rw-r-- 1 tianxi tianxi   295966 Oct 11 12:57 vp9-360p30.webm

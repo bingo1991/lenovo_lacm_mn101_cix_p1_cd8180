@@ -1,0 +1,19 @@
+Input #0, h264, from '/tmp/cix-media2/clips/h264-1080p60.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 1920x1080, 25 fps, 120 tbr, 1200k tbn
+[h264_v4l2m2m @ 0xac93aa9486e0] Using device /dev/video0
+[h264_v4l2m2m @ 0xac93aa9486e0] driver 'mvx' on card 'Linlon Video device' in mplane mode
+[h264_v4l2m2m @ 0xac93aa9486e0] requesting formats: output=H264/none capture=YU12/yuv420p
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_v4l2m2m) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 1920x1080, q=2-31, 200 kb/s, 60 fps, 60 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 wrapped_avframe
+frame=  553 fps=0.0 q=-0.0 size=N/A time=00:00:00.01 bitrate=N/A speed=0.0333x elapsed=0:00:00.50    [out#0/null @ 0xac93aa946de0] video:244KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  600 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.01 bitrate=N/A speed=0.0308x elapsed=0:00:00.54    
+bench: utime=0.043s stime=0.160s rtime=0.541s
+bench: maxrss=172276KiB

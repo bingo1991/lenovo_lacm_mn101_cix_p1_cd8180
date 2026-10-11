@@ -1,0 +1,3 @@
+test,label,wall_s,cpu_percent
+h264 hw encode 1080p x300,"H.264 1080p, hardware encoder",1.32,152.0
+jpeg hw encode 1080p x30,"JPEG 1080p, hardware encoder",0.61,112.0

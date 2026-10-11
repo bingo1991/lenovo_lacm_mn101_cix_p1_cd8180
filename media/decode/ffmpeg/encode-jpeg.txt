@@ -1,0 +1,20 @@
+Input #0, lavfi, from 'testsrc2=size=3840x2160':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 3840x2160 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to '/tmp/cix-media/clips/photo-4k.jpg':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 3840x2160 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0xafd611b14470] The specified filename '/tmp/cix-media/clips/photo-4k.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0xafd611b14470] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0xafd611b143a0] video:409KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.302x elapsed=0:00:00.13    
+bench: utime=0.247s stime=0.072s rtime=0.133s
+bench: maxrss=234256KiB

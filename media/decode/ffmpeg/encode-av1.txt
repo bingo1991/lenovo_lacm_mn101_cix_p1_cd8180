@@ -1,0 +1,20 @@
+Input #0, lavfi, from 'testsrc2=size=640x360:rate=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 640x360 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> av1 (libaom-av1))
+Press [q] to stop, [?] for help
+[libaom-av1 @ 0xca42cc2cb3e0] v3.13.1
+[libaom-av1 @ 0xca42cc2cb3e0] Neither bitrate nor constrained quality specified, using default CRF of 32
+Output #0, ivf, to '/tmp/cix-media/clips/av1-360p30.ivf':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: av1 (AV01 / 0x31305641), yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libaom-av1
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=    1 fps=1.0 q=0.0 size=       0KiB time=00:00:00.03 bitrate=   7.7kbits/s speed=0.0333x elapsed=0:00:01.00    frame=    1 fps=0.7 q=0.0 size=       0KiB time=00:00:00.03 bitrate=   7.7kbits/s speed=0.0222x elapsed=0:00:01.50    frame=    1 fps=0.5 q=0.0 size=       0KiB time=00:00:00.03 bitrate=   7.7kbits/s speed=0.0167x elapsed=0:00:02.00    frame=    5 fps=2.0 q=0.0 size=      22KiB time=00:00:00.16 bitrate=1065.1kbits/s speed=0.0666x elapsed=0:00:02.50    frame=    9 fps=3.0 q=0.0 size=      27KiB time=00:00:00.30 bitrate= 741.2kbits/s speed=0.0999x elapsed=0:00:03.00    frame=   11 fps=3.1 q=0.0 size=      33KiB time=00:00:00.36 bitrate= 744.1kbits/s speed=0.105x elapsed=0:00:03.50    frame=   15 fps=3.7 q=0.0 size=      39KiB time=00:00:00.50 bitrate= 641.7kbits/s speed=0.125x elapsed=0:00:04.00    frame=   17 fps=3.8 q=0.0 size=      41KiB time=00:00:00.56 bitrate= 593.2kbits/s speed=0.126x elapsed=0:00:04.50    frame=   21 fps=4.2 q=0.0 size=      52KiB time=00:00:00.70 bitrate= 604.6kbits/s speed=0.14x elapsed=0:00:05.00    frame=   25 fps=4.5 q=0.0 size=      58KiB time=00:00:00.83 bitrate= 568.0kbits/s speed=0.151x elapsed=0:00:05.50    frame=   25 fps=4.2 q=0.0 size=      58KiB time=00:00:00.83 bitrate= 568.0kbits/s speed=0.139x elapsed=0:00:06.00    frame=   31 fps=4.8 q=0.0 size=      69KiB time=00:00:01.03 bitrate= 547.5kbits/s speed=0.159x elapsed=0:00:06.50    frame=   33 fps=4.7 q=0.0 size=      71KiB time=00:00:01.10 bitrate= 527.1kbits/s speed=0.157x elapsed=0:00:07.00    frame=   34 fps=4.5 q=0.0 size=      71KiB time=00:00:01.13 bitrate= 511.9kbits/s speed=0.151x elapsed=0:00:07.50    frame=   39 fps=4.9 q=0.0 size=      88KiB time=00:00:01.30 bitrate= 555.6kbits/s speed=0.162x elapsed=0:00:08.00    frame=   44 fps=5.2 q=0.0 size=      98KiB time=00:00:01.46 bitrate= 546.4kbits/s speed=0.172x elapsed=0:00:08.50    frame=   47 fps=5.2 q=0.0 size=     100KiB time=00:00:01.56 bitrate= 521.6kbits/s speed=0.174x elapsed=0:00:09.00    frame=   52 fps=5.5 q=0.0 size=     112KiB time=00:00:01.73 bitrate= 530.3kbits/s speed=0.182x elapsed=0:00:09.50    frame=   59 fps=5.9 q=0.0 size=     124KiB time=00:00:01.96 bitrate= 515.6kbits/s speed=0.197x elapsed=0:00:10.00    [out#0/ivf @ 0xca42cc2caaa0] video:125KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.585569%
+frame=   60 fps=6.0 q=0.0 Lsize=     126KiB time=00:00:02.00 bitrate= 516.7kbits/s speed=0.199x elapsed=0:00:10.06    
+bench: utime=14.807s stime=0.497s rtime=10.066s
+bench: maxrss=181696KiB

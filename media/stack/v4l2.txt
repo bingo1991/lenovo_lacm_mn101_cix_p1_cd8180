@@ -1,0 +1,204 @@
+== v4l2 devices
+Linlon Video device (platform:mvx):
+	/dev/video0
+	/dev/video1
+	/dev/video2
+	/dev/video3
+== /dev/video0
+Driver Info:
+	Driver name      : mvx
+	Card type        : Linlon Video device
+	Bus info         : platform:mvx
+	Driver version   : 7.0.0
+	Capabilities     : 0x8420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x0420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Output Multiplanar
+
+	[0]: 'H263' (H.263, compressed, dyn-resolution)
+	[1]: 'H264' (H.264, compressed, dyn-resolution)
+	[2]: 'HEVC' (HEVC, compressed, dyn-resolution)
+	[3]: 'MPG2' (MPEG-2 ES, compressed, dyn-resolution)
+	[4]: 'MPG4' (MPEG-4 Part 2 ES, compressed, dyn-resolution)
+	[5]: 'VP80' (VP8, compressed, dyn-resolution)
+	[6]: 'VP90' (VP9, compressed, dyn-resolution)
+	[7]: 'AV01' (AV1 OBU Stream, compressed, dyn-resolution)
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'Y0A8' (YUV420 AFBC 8 bit)
+	[1]: 'Y0AA' (YUV420 AFBC 10 bit)
+	[2]: 'Y2A8' (YUV422 AFBC 8 bit)
+	[3]: 'Y2AA' (YUV422 AFBC 10 bit)
+	[4]: 'YXA8' (GREY AFBC 8 bit)
+	[5]: 'YXAA' (GREY AFBC 10 bit)
+	[6]: 'NM12' (Y/UV 4:2:0 (N-C))
+	[7]: 'NV12' (Y/UV 4:2:0)
+	[8]: 'YM12' (Planar YUV 4:2:0 (N-C))
+	[9]: 'YU12' (Planar YUV 4:2:0)
+	[10]: 'NM21' (Y/VU 4:2:0 (N-C))
+	[11]: 'NV21' (Y/VU 4:2:0)
+	[12]: 'M010' (YUV 4:2:0 P010 (Microsoft forma)
+	[13]: 'P010' (10-bit Y/UV 4:2:0)
+	[14]: 'YUYV' (YUYV 4:2:2)
+	[15]: 'UYVY' (UYVY 4:2:2)
+	[16]: 'Y210' (10-bit YUYV Packed)
+	[17]: 'RGB3' (24-bit RGB 8-8-8)
+	[18]: 'RGBM' (24-bit RGB 8-8-8 3PLANNER)
+	[19]: 'GREY' (8-bit Greyscale)
+	[20]: 'Y10L' (10-bit GREY 16BIT LSB 1PLANNER)
+== /dev/video1
+Driver Info:
+	Driver name      : mvx
+	Card type        : Linlon Video device
+	Bus info         : platform:mvx
+	Driver version   : 7.0.0
+	Capabilities     : 0x8420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x0420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Output Multiplanar
+
+	[0]: 'Y0A8' (YUV420 AFBC 8 bit)
+	[1]: 'Y0AA' (YUV420 AFBC 10 bit)
+	[2]: 'Y2A8' (YUV422 AFBC 8 bit)
+	[3]: 'Y2AA' (YUV422 AFBC 10 bit)
+	[4]: 'NM12' (Y/UV 4:2:0 (N-C))
+	[5]: 'NV12' (Y/UV 4:2:0)
+	[6]: 'YM12' (Planar YUV 4:2:0 (N-C))
+	[7]: 'YU12' (Planar YUV 4:2:0)
+	[8]: 'NM21' (Y/VU 4:2:0 (N-C))
+	[9]: 'NV21' (Y/VU 4:2:0)
+	[10]: 'M010' (YUV 4:2:0 P010 (Microsoft forma)
+	[11]: 'P010' (10-bit Y/UV 4:2:0)
+	[12]: 'YUYV' (YUYV 4:2:2)
+	[13]: 'UYVY' (UYVY 4:2:2)
+	[14]: 'Y210' (10-bit YUYV Packed)
+	[15]: 'BA24' (32-bit ARGB 8-8-8-8)
+	[16]: 'RGB4' (32-bit A/XRGB 8-8-8-8)
+	[17]: 'RA24' (32-bit ABGR 8-8-8-8)
+	[18]: 'AB24' (32-bit RGBA 8-8-8-8)
+	[19]: 'AR24' (32-bit BGRA 8-8-8-8)
+	[20]: 'BGR4' (32-bit BGRA/X 8-8-8-8)
+	[21]: 'RGBM' (24-bit RGB 8-8-8 3PLANNER)
+	[22]: 'GREY' (8-bit Greyscale)
+	[23]: 'Y10L' (10-bit GREY 16BIT LSB 1PLANNER)
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'H264' (H.264, compressed, dyn-resolution)
+	[1]: 'HEVC' (HEVC, compressed, dyn-resolution)
+	[2]: 'VP80' (VP8, compressed, dyn-resolution)
+	[3]: 'VP90' (VP9, compressed, dyn-resolution)
+== /dev/video2
+Driver Info:
+	Driver name      : mvx
+	Card type        : Linlon Video device
+	Bus info         : platform:mvx
+	Driver version   : 7.0.0
+	Capabilities     : 0x8420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x0420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Output Multiplanar
+
+	[0]: 'JPEG' (JFIF JPEG, compressed, dyn-resolution)
+	[1]: 'MJPG' (Motion-JPEG, compressed, dyn-resolution)
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'Y0A8' (YUV420 AFBC 8 bit)
+	[1]: 'Y0AA' (YUV420 AFBC 10 bit)
+	[2]: 'Y2A8' (YUV422 AFBC 8 bit)
+	[3]: 'Y2AA' (YUV422 AFBC 10 bit)
+	[4]: 'YXA8' (GREY AFBC 8 bit)
+	[5]: 'YXAA' (GREY AFBC 10 bit)
+	[6]: 'NM12' (Y/UV 4:2:0 (N-C))
+	[7]: 'NV12' (Y/UV 4:2:0)
+	[8]: 'YM12' (Planar YUV 4:2:0 (N-C))
+	[9]: 'YU12' (Planar YUV 4:2:0)
+	[10]: 'NM21' (Y/VU 4:2:0 (N-C))
+	[11]: 'NV21' (Y/VU 4:2:0)
+	[12]: 'M010' (YUV 4:2:0 P010 (Microsoft forma)
+	[13]: 'P010' (10-bit Y/UV 4:2:0)
+	[14]: 'YUYV' (YUYV 4:2:2)
+	[15]: 'UYVY' (UYVY 4:2:2)
+	[16]: 'Y210' (10-bit YUYV Packed)
+	[17]: 'RGB3' (24-bit RGB 8-8-8)
+	[18]: 'RGBM' (24-bit RGB 8-8-8 3PLANNER)
+	[19]: 'GREY' (8-bit Greyscale)
+	[20]: 'Y10L' (10-bit GREY 16BIT LSB 1PLANNER)
+== /dev/video3
+Driver Info:
+	Driver name      : mvx
+	Card type        : Linlon Video device
+	Bus info         : platform:mvx
+	Driver version   : 7.0.0
+	Capabilities     : 0x8420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x0420c000
+		Video Memory-to-Memory
+		Video Memory-to-Memory Multiplanar
+		Streaming
+		Extended Pix Format
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Output Multiplanar
+
+	[0]: 'Y0A8' (YUV420 AFBC 8 bit)
+	[1]: 'Y0AA' (YUV420 AFBC 10 bit)
+	[2]: 'Y2A8' (YUV422 AFBC 8 bit)
+	[3]: 'Y2AA' (YUV422 AFBC 10 bit)
+	[4]: 'NM12' (Y/UV 4:2:0 (N-C))
+	[5]: 'NV12' (Y/UV 4:2:0)
+	[6]: 'YM12' (Planar YUV 4:2:0 (N-C))
+	[7]: 'YU12' (Planar YUV 4:2:0)
+	[8]: 'NM21' (Y/VU 4:2:0 (N-C))
+	[9]: 'NV21' (Y/VU 4:2:0)
+	[10]: 'M010' (YUV 4:2:0 P010 (Microsoft forma)
+	[11]: 'P010' (10-bit Y/UV 4:2:0)
+	[12]: 'YUYV' (YUYV 4:2:2)
+	[13]: 'UYVY' (UYVY 4:2:2)
+	[14]: 'Y210' (10-bit YUYV Packed)
+	[15]: 'BA24' (32-bit ARGB 8-8-8-8)
+	[16]: 'RGB4' (32-bit A/XRGB 8-8-8-8)
+	[17]: 'RA24' (32-bit ABGR 8-8-8-8)
+	[18]: 'AB24' (32-bit RGBA 8-8-8-8)
+	[19]: 'AR24' (32-bit BGRA 8-8-8-8)
+	[20]: 'BGR4' (32-bit BGRA/X 8-8-8-8)
+	[21]: 'RGBM' (24-bit RGB 8-8-8 3PLANNER)
+	[22]: 'GREY' (8-bit Greyscale)
+	[23]: 'Y10L' (10-bit GREY 16BIT LSB 1PLANNER)
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'JPEG' (JFIF JPEG, compressed, dyn-resolution)
+	[1]: 'MJPG' (Motion-JPEG, compressed, dyn-resolution)

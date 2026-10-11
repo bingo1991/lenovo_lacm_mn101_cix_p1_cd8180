@@ -1,0 +1,20 @@
+[h264 @ 0xaf3d94b5d230] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, h264, from '/tmp/cix-media2/clips/h264-4k30.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (High), yuv420p(progressive), 3840x2160, 25 fps, 60 tbr, 1200k tbn
+[h264_v4l2m2m @ 0xaf3d94f6bc10] Using device /dev/video0
+[h264_v4l2m2m @ 0xaf3d94f6bc10] driver 'mvx' on card 'Linlon Video device' in mplane mode
+[h264_v4l2m2m @ 0xaf3d94f6bc10] requesting formats: output=H264/none capture=YU12/yuv420p
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_v4l2m2m) -> wrapped_avframe (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 3840x2160, q=2-31, 200 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 wrapped_avframe
+frame=  130 fps=0.0 q=-0.0 size=N/A time=00:00:00.03 bitrate=N/A speed=0.0666x elapsed=0:00:00.50    frame=  287 fps=287 q=-0.0 size=N/A time=00:00:00.03 bitrate=N/A speed=0.0333x elapsed=0:00:01.00    [out#0/null @ 0xaf3d94b9fce0] video:122KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  300 fps=288 q=-0.0 Lsize=N/A time=00:00:00.03 bitrate=N/A speed=0.032x elapsed=0:00:01.04    
+bench: utime=0.081s stime=0.356s rtime=1.043s
+bench: maxrss=454100KiB

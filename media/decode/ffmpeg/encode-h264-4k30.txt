@@ -1,0 +1,19 @@
+Input #0, lavfi, from 'testsrc2=size=3840x2160:rate=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 3840x2160 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_v4l2m2m))
+Press [q] to stop, [?] for help
+[h264_v4l2m2m @ 0xc902a4689dd0] Using device /dev/video1
+[h264_v4l2m2m @ 0xc902a4689dd0] driver 'mvx' on card 'Linlon Video device' in mplane mode
+[h264_v4l2m2m @ 0xc902a4689dd0] requesting formats: output=NV12/nv12 capture=H264/none
+Output #0, h264, to '/tmp/cix-media/clips/h264-4k30.h264':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264, nv12(tv, progressive), 3840x2160 [SAR 1:1 DAR 16:9], q=2-31, 25000 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 h264_v4l2m2m
+frame=   56 fps=0.0 q=-0.0 size=    5632KiB time=00:00:01.83 bitrate=25165.8kbits/s speed=3.67x elapsed=0:00:00.50    frame=  135 fps=135 q=-0.0 size=   13568KiB time=00:00:04.46 bitrate=24884.1kbits/s speed=4.47x elapsed=0:00:01.00    frame=  213 fps=142 q=-0.0 size=   21504KiB time=00:00:07.06 bitrate=24928.4kbits/s speed=4.71x elapsed=0:00:01.50    frame=  292 fps=146 q=-0.0 size=   29696KiB time=00:00:09.70 bitrate=25079.3kbits/s speed=4.85x elapsed=0:00:02.00    [out#0/h264 @ 0xc902a46893f0] video:30693KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=  300 fps=147 q=-0.0 Lsize=   30693KiB time=00:00:09.96 bitrate=25227.6kbits/s speed=4.87x elapsed=0:00:02.04    
+bench: utime=4.160s stime=0.868s rtime=2.047s
+bench: maxrss=635956KiB

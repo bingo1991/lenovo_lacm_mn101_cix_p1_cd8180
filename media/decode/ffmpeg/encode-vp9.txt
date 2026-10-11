@@ -1,0 +1,20 @@
+Input #0, lavfi, from 'testsrc2=size=640x360:rate=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 640x360 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> vp9 (libvpx-vp9))
+Press [q] to stop, [?] for help
+[libvpx-vp9 @ 0xc48939f86410] v1.16.0
+[libvpx-vp9 @ 0xc48939f86410] Neither bitrate nor constrained quality specified, using default CRF of 32
+Output #0, webm, to '/tmp/cix-media/clips/vp9-360p30.webm':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: vp9, yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libvpx-vp9
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/webm @ 0xc48939f85af0] video:288KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.313856%
+frame=   60 fps=0.0 q=32.0 Lsize=     289KiB time=00:00:02.00 bitrate=1183.9kbits/s speed=5.34x elapsed=0:00:00.37    
+bench: utime=0.463s stime=0.114s rtime=0.375s
+bench: maxrss=135352KiB

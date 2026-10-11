@@ -1,0 +1,52 @@
+== modules
+amvx                  405504  0
+videobuf2_dma_sg       20480  1 amvx
+videobuf2_v4l2         36864  1 amvx
+videobuf2_common       86016  4 videobuf2_v4l2,videobuf2_dma_sg,amvx,videobuf2_memops
+videodev              393216  2 videobuf2_v4l2,amvx
+mc                     98304  3 videodev,videobuf2_v4l2,videobuf2_common
+mali_kbase           1421312  33
+== dri
+total 0
+drwxr-xr-x 2 root root        240 Oct 11 09:44 by-path
+crw-rw----+1 root video  226,   0 Oct 11 09:47 card0
+crw-rw----+1 root video  226,   1 Oct 11 09:47 card1
+crw-rw----+1 root video  226,   2 Oct 11 09:47 card2
+crw-rw----+1 root video  226,   3 Oct 11 09:47 card3
+crw-rw----+1 root video  226,   4 Oct 11 11:40 card4
+crw-rw----+1 root render 226, 128 Oct 11 09:47 renderD128
+crw-rw----+1 root render 226, 129 Oct 11 09:47 renderD129
+crw-rw----+1 root render 226, 130 Oct 11 09:47 renderD130
+crw-rw----+1 root render 226, 131 Oct 11 09:47 renderD131
+crw-rw----+1 root render 226, 132 Oct 11 09:47 renderD132
+== debugfs amvx
+/sys/kernel/debug/amvx:
+log
+
+/sys/kernel/debug/amvx/log:
+README
+drain
+group
+
+/sys/kernel/debug/amvx/log/drain:
+dmesg
+ram0
+ram1
+
+/sys/kernel/debug/amvx/log/drain/dmesg:
+
+/sys/kernel/debug/amvx/log/drain/ram0:
+msg
+
+/sys/kernel/debug/amvx/log/drain/ram1:
+msg
+
+/sys/kernel/debug/amvx/log/group:
+dev
+firmware_interface
+generic
+perf
+session
+
+/sys/kernel/debug/amvx/log/group/dev:
+drain

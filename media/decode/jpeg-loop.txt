@@ -1,0 +1,13 @@
+== 10x hw v4l2jpegdec, 20 s timeout per image
+iter 1 failed
+wall=22.09 cpu=7%
+== 10x sw jpegdec
+wall=0.92 cpu=100%
+== hw jpeg encode of the 4K image, 10 frames
+[vost#0:0 @ 0xbaef66c5ff10] Unknown encoder 'jpeg_v4l2m2m'
+[vost#0:0 @ 0xbaef66c5ff10] Error selecting an encoder
+Error opening output file -.
+Error opening output files: Encoder not found
+Command exited with non-zero status 8
+wall=0.21 cpu=60%
+rc=8

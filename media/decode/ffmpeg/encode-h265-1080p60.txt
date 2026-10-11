@@ -1,0 +1,19 @@
+Input #0, lavfi, from 'testsrc2=size=1920x1080:rate=60':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 60 fps, 60 tbr, 60 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (hevc_v4l2m2m))
+Press [q] to stop, [?] for help
+[hevc_v4l2m2m @ 0xbb08dffef010] Using device /dev/video1
+[hevc_v4l2m2m @ 0xbb08dffef010] driver 'mvx' on card 'Linlon Video device' in mplane mode
+[hevc_v4l2m2m @ 0xbb08dffef010] requesting formats: output=NV12/nv12 capture=HEVC/none
+Output #0, hevc, to '/tmp/cix-media/clips/h265-1080p60.h265':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: hevc, nv12(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 8000 kb/s, 60 fps, 60 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 hevc_v4l2m2m
+frame=  143 fps=0.0 q=-0.0 size=    2560KiB time=00:00:02.36 bitrate=8861.2kbits/s speed=4.73x elapsed=0:00:00.50    frame=  403 fps=403 q=-0.0 size=    7680KiB time=00:00:06.70 bitrate=9390.2kbits/s speed= 6.7x elapsed=0:00:01.00    [out#0/hevc @ 0xbb08dffee630] video:11580KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame=  600 fps=441 q=-0.0 Lsize=   11580KiB time=00:00:09.98 bitrate=9502.3kbits/s speed=7.33x elapsed=0:00:01.36    
+bench: utime=1.979s stime=0.468s rtime=1.362s
+bench: maxrss=211216KiB

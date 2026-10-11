@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="462" viewBox="0 0 960 462" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="960" height="462" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="bold" fill="#222">CPU used during video decode</text>
+<text x="288" y="81" font-size="15" text-anchor="end" fill="#333">H.264 1080p, hardware</text>
+<rect x="300" y="60" width="26.9" height="30" rx="3" fill="#d62728"/>
+<text x="335" y="81" font-size="15" fill="#222">0 cores</text>
+<text x="288" y="125" font-size="15" text-anchor="end" fill="#333">H.264 1080p, software</text>
+<rect x="300" y="104" width="445.2" height="30" rx="3" fill="#d62728"/>
+<text x="753" y="125" font-size="15" fill="#222">7 cores</text>
+<text x="288" y="169" font-size="15" text-anchor="end" fill="#333">HEVC 1080p, hardware</text>
+<rect x="300" y="148" width="49.2" height="30" rx="3" fill="#d62728"/>
+<text x="357" y="169" font-size="15" fill="#222">1 cores</text>
+<text x="288" y="213" font-size="15" text-anchor="end" fill="#333">HEVC 1080p, software</text>
+<rect x="300" y="192" width="233.7" height="30" rx="3" fill="#d62728"/>
+<text x="542" y="213" font-size="15" fill="#222">3 cores</text>
+<text x="288" y="257" font-size="15" text-anchor="end" fill="#333">H.264 2160p, hardware</text>
+<rect x="300" y="236" width="29.0" height="30" rx="3" fill="#d62728"/>
+<text x="337" y="257" font-size="15" fill="#222">0 cores</text>
+<text x="288" y="301" font-size="15" text-anchor="end" fill="#333">VP9 360p, hardware</text>
+<rect x="300" y="280" width="87.6" height="30" rx="3" fill="#d62728"/>
+<text x="396" y="301" font-size="15" fill="#222">1 cores</text>
+<text x="288" y="345" font-size="15" text-anchor="end" fill="#333">H.264 1080p real clip, hardware</text>
+<rect x="300" y="324" width="40.4" height="30" rx="3" fill="#d62728"/>
+<text x="348" y="345" font-size="15" fill="#222">1 cores</text>
+<text x="288" y="389" font-size="15" text-anchor="end" fill="#333">H.264 1080p real clip, software</text>
+<rect x="300" y="368" width="520.0" height="30" rx="3" fill="#d62728"/>
+<text x="828" y="389" font-size="15" fill="#222">8 cores</text>
+</svg>
