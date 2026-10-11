@@ -73,7 +73,8 @@ software decode and uses 0.6 cores against 7.7 cores. The GPU is a
 Mali-G720 with OpenCL 3.0 and Vulkan 1.4.
 
 Report: [docs/media.md](docs/media.md). Data and charts:
-[media](media).
+[media](media). A step by step guide for playback, decode and encode is in
+[docs/media-tutorial.md](docs/media-tutorial.md).
 
 ## How the data was collected
 

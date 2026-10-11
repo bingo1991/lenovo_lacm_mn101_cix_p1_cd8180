@@ -65,6 +65,8 @@ VPU 支持 H.264、HEVC、VP9、AV1、VP8、MPEG-2、MPEG-4、H.263 与 JPEG 硬
 Mali-G720，支持 OpenCL 3.0 与 Vulkan 1.4。
 
 报告见 [docs/media.md](docs/media.md)，数据与图表在 [media](media)。
+播放、解码、编码的操作步骤见
+[docs/media-tutorial.zh-CN.md](docs/media-tutorial.zh-CN.md)。
 
 ## 隐私
 

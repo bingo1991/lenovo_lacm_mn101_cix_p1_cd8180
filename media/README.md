@@ -3,6 +3,7 @@
 Video decode, image decode and encode data for the Lenovo LACM-MN101.
 
 The report is in [../docs/media.md](../docs/media.md).
+The usage guide is in [../docs/media-tutorial.md](../docs/media-tutorial.md).
 
 ## Layout
 

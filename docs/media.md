@@ -3,6 +3,9 @@
 Video decode, image decode and GPU facts for the Lenovo LACM-MN101
 (CIX Sky1 / CD8180). Raw data: [../media](../media).
 
+Step by step usage guide: [media-tutorial.md](media-tutorial.md)
+(中文: [media-tutorial.zh-CN.md](media-tutorial.zh-CN.md)).
+
 ## Official capabilities
 
 From the public CIX documents:
