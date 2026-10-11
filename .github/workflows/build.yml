@@ -1,0 +1,26 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  device-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dtc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y device-tree-compiler
+
+      - name: Build the device tree
+        run: make -C dts
+
+      - name: Check the device tree
+        run: dtc -I dtb -O dts -o /dev/null dts/cix-sky1-lenovo-lacm-mn101.dtb
+
+      - name: Reject build leftovers
+        run: |
+          test ! -e dts/cix-sky1-lenovo-lacm-mn101.pre.dts
